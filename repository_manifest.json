@@ -12,8 +12,8 @@
     "sha256": "8d855e8d3c7fc7ef6a081a56f83c2dda292fbed8ded32d4e523dbd6a62fc9dc1"
   },
   "docs/HARDWARE.md": {
-    "bytes": 1713,
-    "sha256": "5e99035f6f888091a8c109a83a89b2d38bda302031b8d8f976318b41ed656204"
+    "bytes": 17981,
+    "sha256": "6ca380a64e3ce1195a8056b778d43bddadd4c3df43fec530973bb1039e63e142"
   },
   "docs/investigation_history/213价签_Debug资源报告.md": {
     "bytes": 12911,
@@ -322,6 +322,14 @@
   "docs/investigation_history/恢复原厂.ps1": {
     "bytes": 2031,
     "sha256": "a152449dd01d157ea5e500cab98c5863bf620a752c6449922d0b6dd4258bb6be"
+  },
+  "docs/ORIGINAL_FIRMWARE.md": {
+    "bytes": 8141,
+    "sha256": "2da58565a604a7cea7e223bb9ba1432776a360fd18c7c75a354dd43ed96eee19"
+  },
+  "docs/PHOTO_INDEX.md": {
+    "bytes": 7739,
+    "sha256": "fbe3b48c542fb319262670566cd55930d05016955a1a5c552d8909237b723dd4"
   },
   "docs/photos/first_demo_upside_down_faint.jpg": {
     "bytes": 161412,
@@ -1132,8 +1140,8 @@
     "sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088"
   },
   "README.md": {
-    "bytes": 3138,
-    "sha256": "a9dc897aa1b2723ace5723f062dd1326fc195fe2ba1470ebc140feb91b592026"
+    "bytes": 5128,
+    "sha256": "865fa678e70ae1a0d239ccba752c0c51fe6ee4a65bcaa358cd0256911fc7d15f"
   },
   "tools/investigation_history/disassemble.py": {
     "bytes": 2217,
