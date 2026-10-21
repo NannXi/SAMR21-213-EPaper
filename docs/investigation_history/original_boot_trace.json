@@ -1,0 +1,167 @@
+{
+  "utc": "2026-10-21T00:56:04.612196+00:00",
+  "events": [
+    {
+      "kind": "breakpoints_installed",
+      "fp_ctrl": "0x41",
+      "comparators": [
+        "0x40000d6d",
+        "0x400014bd",
+        "0x400044b9",
+        "0x800044c1"
+      ]
+    },
+    {
+      "kind": "after_system_reset",
+      "state": "State.RUNNING",
+      "dsu_statusa": "0x0",
+      "dhcsr": "0x1000001",
+      "fp_ctrl": "0x41"
+    },
+    {
+      "kind": "display_create",
+      "panel_model": 1,
+      "driver_family": 1,
+      "caller": "0xb0f9"
+    },
+    {
+      "kind": "nfc_read",
+      "block": 0,
+      "buffer": "0x20004cb8",
+      "hex": "04169a6a1e4480004400f0ffe1106d00",
+      "i2c_return": 0,
+      "caller": "0x45b1"
+    },
+    {
+      "kind": "nfc_setup_finished"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x6",
+      "caller": "0x1c87"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x4",
+      "caller": "0x1c99"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x0",
+      "caller": "0x1ca5"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x61",
+      "caller": "0x1cad"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x50",
+      "caller": "0x1da1"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x10",
+      "caller": "0x1503"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x13",
+      "caller": "0x1503"
+    },
+    {
+      "kind": "epd_command",
+      "command": "0x12",
+      "caller": "0x1829"
+    },
+    {
+      "kind": "trace_complete_before_refresh",
+      "reason": "avoid polling through deep sleep; let original complete refresh after cleanup"
+    }
+  ],
+  "errors": [],
+  "method": "one original firmware system reset; hardware breakpoints only; no flash programming, no code injection",
+  "epd_commands": [
+    {
+      "command": 6,
+      "data": [
+        23,
+        23,
+        23
+      ],
+      "caller": "0x1c87"
+    },
+    {
+      "command": 4,
+      "data": [],
+      "caller": "0x1c99"
+    },
+    {
+      "command": 0,
+      "data": [
+        15
+      ],
+      "caller": "0x1ca5"
+    },
+    {
+      "command": 97,
+      "data": [
+        104,
+        0,
+        212
+      ],
+      "caller": "0x1cad"
+    },
+    {
+      "command": 80,
+      "data": [
+        119
+      ],
+      "caller": "0x1da1"
+    },
+    {
+      "command": 16,
+      "data": [],
+      "caller": "0x1503"
+    },
+    {
+      "command": 19,
+      "data": [],
+      "caller": "0x1503"
+    },
+    {
+      "command": 18,
+      "data": [],
+      "caller": "0x1829"
+    }
+  ],
+  "before_state": "State.SLEEPING",
+  "breakpoint_types": {
+    "0xd6c": "BreakpointType.HW",
+    "0x14bc": "BreakpointType.HW",
+    "0x44b8": "BreakpointType.HW",
+    "0x44c2": "BreakpointType.HW"
+  },
+  "nfc_i2c_live": {
+    "CTRLA": "0x200096",
+    "BAUD": "0x700ec"
+  },
+  "epd_spi_live": {
+    "CTRLA": "0x3001008e",
+    "CTRLB": "0x20200",
+    "BAUD": "0x0",
+    "PORTA.DIR": "0x10934000",
+    "PORTA.OUT": "0x13d80000",
+    "PORTB.DIR": "0x80c08000",
+    "PORTB.OUT": "0xc0c08000"
+  },
+  "post_trace_pc": "0x14bc",
+  "flash_comparison": {
+    "changed_byte_count": 1,
+    "first_changed": "0x3f890",
+    "last_changed": "0x3f890",
+    "code_and_initial_data_match": true
+  },
+  "final_state": "State.RUNNING"
+}

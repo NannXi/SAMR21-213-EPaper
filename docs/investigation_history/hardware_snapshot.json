@@ -1,0 +1,765 @@
+{
+  "utc": "2026-10-21T00:36:11.411021+00:00",
+  "method": "attach, read-only peripheral inspection, brief core halt/RAM read; no reset/program/erase",
+  "registers": {
+    "CPUID": {
+      "address": "0xE000ED00",
+      "bytes": 4,
+      "value": "0x410CC601"
+    },
+    "VTOR": {
+      "address": "0xE000ED08",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SCR": {
+      "address": "0xE000ED10",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "DSU.DID": {
+      "address": "0x41002118",
+      "bytes": 4,
+      "value": "0x10010319"
+    },
+    "DSU.STATUSA": {
+      "address": "0x41002101",
+      "bytes": 1,
+      "value": "0x02"
+    },
+    "DSU.STATUSB": {
+      "address": "0x41002102",
+      "bytes": 1,
+      "value": "0x12"
+    },
+    "PM.CTRL": {
+      "address": "0x40000400",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.SLEEP": {
+      "address": "0x40000401",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.CPUSEL": {
+      "address": "0x40000408",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.APBASEL": {
+      "address": "0x40000409",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.APBBSEL": {
+      "address": "0x4000040A",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.APBCSEL": {
+      "address": "0x4000040B",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.AHBMASK": {
+      "address": "0x40000414",
+      "bytes": 4,
+      "value": "0x0000007F"
+    },
+    "PM.APBAMASK": {
+      "address": "0x40000418",
+      "bytes": 4,
+      "value": "0x0000007F"
+    },
+    "PM.APBBMASK": {
+      "address": "0x4000041C",
+      "bytes": 4,
+      "value": "0x0000007F"
+    },
+    "PM.APBCMASK": {
+      "address": "0x40000420",
+      "bytes": 4,
+      "value": "0x00010000"
+    },
+    "PM.INTENCLR": {
+      "address": "0x40000434",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.INTENSET": {
+      "address": "0x40000435",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "PM.INTFLAG": {
+      "address": "0x40000436",
+      "bytes": 1,
+      "value": "0x01"
+    },
+    "PM.RCAUSE": {
+      "address": "0x40000438",
+      "bytes": 1,
+      "value": "0x01"
+    },
+    "WDT.CTRL": {
+      "address": "0x40001000",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "WDT.CONFIG": {
+      "address": "0x40001001",
+      "bytes": 1,
+      "value": "0xBB"
+    },
+    "WDT.EWCTRL": {
+      "address": "0x40001002",
+      "bytes": 1,
+      "value": "0x0B"
+    },
+    "WDT.INTENCLR": {
+      "address": "0x40001004",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "WDT.INTENSET": {
+      "address": "0x40001005",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "WDT.INTFLAG": {
+      "address": "0x40001006",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "WDT.STATUS": {
+      "address": "0x40001007",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SYSCTRL.INTENCLR": {
+      "address": "0x40000800",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SYSCTRL.INTENSET": {
+      "address": "0x40000804",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SYSCTRL.INTFLAG": {
+      "address": "0x40000808",
+      "bytes": 4,
+      "value": "0x00005A18"
+    },
+    "SYSCTRL.PCLKSR": {
+      "address": "0x4000080C",
+      "bytes": 4,
+      "value": "0x00005A18"
+    },
+    "SYSCTRL.XOSC": {
+      "address": "0x40000810",
+      "bytes": 2,
+      "value": "0x0080"
+    },
+    "SYSCTRL.XOSC32K": {
+      "address": "0x40000814",
+      "bytes": 2,
+      "value": "0x0080"
+    },
+    "SYSCTRL.OSC32K": {
+      "address": "0x40000818",
+      "bytes": 4,
+      "value": "0x003F0080"
+    },
+    "SYSCTRL.OSCULP32K": {
+      "address": "0x4000081C",
+      "bytes": 1,
+      "value": "0x13"
+    },
+    "SYSCTRL.OSC8M": {
+      "address": "0x40000820",
+      "bytes": 4,
+      "value": "0x88140382"
+    },
+    "SYSCTRL.DFLLCTRL": {
+      "address": "0x40000824",
+      "bytes": 2,
+      "value": "0x0080"
+    },
+    "SYSCTRL.DFLLMUL": {
+      "address": "0x4000082C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SYSCTRL.BOD33": {
+      "address": "0x40000834",
+      "bytes": 4,
+      "value": "0x0007000A"
+    },
+    "SYSCTRL.VREG": {
+      "address": "0x4000083C",
+      "bytes": 2,
+      "value": "0x0602"
+    },
+    "SYSCTRL.VREF": {
+      "address": "0x40000840",
+      "bytes": 4,
+      "value": "0x00780000"
+    },
+    "SYSCTRL.DPLLCTRLA": {
+      "address": "0x40000844",
+      "bytes": 1,
+      "value": "0x80"
+    },
+    "SYSCTRL.DPLLRATIO": {
+      "address": "0x40000848",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SYSCTRL.DPLLCTRLB": {
+      "address": "0x4000084C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SYSCTRL.DPLLSTATUS": {
+      "address": "0x40000850",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "GCLK.CTRL": {
+      "address": "0x40000C00",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "GCLK.STATUS": {
+      "address": "0x40000C01",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "GCLK.CLKCTRL": {
+      "address": "0x40000C02",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "GCLK.GENCTRL": {
+      "address": "0x40000C04",
+      "bytes": 4,
+      "value": "0x00010600"
+    },
+    "GCLK.GENDIV": {
+      "address": "0x40000C08",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "NVMCTRL.CTRLA": {
+      "address": "0x41004000",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "NVMCTRL.CTRLB": {
+      "address": "0x41004004",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "NVMCTRL.PARAM": {
+      "address": "0x41004008",
+      "bytes": 4,
+      "value": "0x00031000"
+    },
+    "NVMCTRL.INTENCLR": {
+      "address": "0x4100400C",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "NVMCTRL.INTENSET": {
+      "address": "0x41004010",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "NVMCTRL.INTFLAG": {
+      "address": "0x41004014",
+      "bytes": 1,
+      "value": "0x01"
+    },
+    "NVMCTRL.STATUS": {
+      "address": "0x41004018",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "NVMCTRL.ADDR": {
+      "address": "0x4100401C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "NVMCTRL.LOCK": {
+      "address": "0x41004020",
+      "bytes": 2,
+      "value": "0xFFFF"
+    },
+    "EIC.CTRL": {
+      "address": "0x40001800",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "EIC.STATUS": {
+      "address": "0x40001801",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "EIC.NMICTRL": {
+      "address": "0x40001802",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "EIC.NMIFLAG": {
+      "address": "0x40001803",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "EIC.EVCTRL": {
+      "address": "0x40001804",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.INTENCLR": {
+      "address": "0x40001808",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.INTENSET": {
+      "address": "0x4000180C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.INTFLAG": {
+      "address": "0x40001810",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.WAKEUP": {
+      "address": "0x40001814",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.CONFIG[0]": {
+      "address": "0x40001818",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "EIC.CONFIG[1]": {
+      "address": "0x4000181C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "RFCTRL.FECFG": {
+      "address": "0x42005400",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "PORTA.DIR": {
+      "address": "0x41004400",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTA.OUT": {
+      "address": "0x41004410",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTA.IN": {
+      "address": "0x41004420",
+      "bytes": 4,
+      "value": "0x80000000"
+    },
+    "PORTA.CTRL": {
+      "address": "0x41004424",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTA.PMUX": {
+      "address": "0x41004430",
+      "bytes": 16,
+      "hex": "00000000000000000000000000000006"
+    },
+    "PORTA.PINCFG": {
+      "address": "0x41004440",
+      "bytes": 32,
+      "hex": "4040404040404040404040404040404040404040404040400000014040014140"
+    },
+    "PORTB.DIR": {
+      "address": "0x41004480",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTB.OUT": {
+      "address": "0x41004490",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTB.IN": {
+      "address": "0x410044A0",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTB.CTRL": {
+      "address": "0x410044A4",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTB.PMUX": {
+      "address": "0x410044b0",
+      "bytes": 16,
+      "hex": "00000000000000000000000000000000"
+    },
+    "PORTB.PINCFG": {
+      "address": "0x410044c0",
+      "bytes": 32,
+      "hex": "4040404040404040404040404040404040400101010140400101010101014040"
+    },
+    "PORTC.DIR": {
+      "address": "0x41004500",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTC.OUT": {
+      "address": "0x41004510",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTC.IN": {
+      "address": "0x41004520",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTC.CTRL": {
+      "address": "0x41004524",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "PORTC.PMUX": {
+      "address": "0x41004530",
+      "bytes": 16,
+      "hex": "00000000000000000000000000000000"
+    },
+    "PORTC.PINCFG": {
+      "address": "0x41004540",
+      "bytes": 32,
+      "hex": "4040404040404040404040404040404040404040000000000000000000000000"
+    },
+    "SERCOM0.CTRLA": {
+      "address": "0x42000800",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM0.CTRLB": {
+      "address": "0x42000804",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM0.BAUD": {
+      "address": "0x4200080C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM0.INTENSET": {
+      "address": "0x42000816",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM0.INTFLAG": {
+      "address": "0x42000818",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM0.STATUS": {
+      "address": "0x4200081A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM0.SYNCBUSY": {
+      "address": "0x4200081C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM0.DBGCTRL": {
+      "address": "0x42000830",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM1.CTRLA": {
+      "address": "0x42000C00",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM1.CTRLB": {
+      "address": "0x42000C04",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM1.BAUD": {
+      "address": "0x42000C0C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM1.INTENSET": {
+      "address": "0x42000C16",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM1.INTFLAG": {
+      "address": "0x42000C18",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM1.STATUS": {
+      "address": "0x42000C1A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM1.SYNCBUSY": {
+      "address": "0x42000C1C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM1.DBGCTRL": {
+      "address": "0x42000C30",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM2.CTRLA": {
+      "address": "0x42001000",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM2.CTRLB": {
+      "address": "0x42001004",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM2.BAUD": {
+      "address": "0x4200100C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM2.INTENSET": {
+      "address": "0x42001016",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM2.INTFLAG": {
+      "address": "0x42001018",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM2.STATUS": {
+      "address": "0x4200101A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM2.SYNCBUSY": {
+      "address": "0x4200101C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM2.DBGCTRL": {
+      "address": "0x42001030",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM3.CTRLA": {
+      "address": "0x42001400",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM3.CTRLB": {
+      "address": "0x42001404",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM3.BAUD": {
+      "address": "0x4200140C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM3.INTENSET": {
+      "address": "0x42001416",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM3.INTFLAG": {
+      "address": "0x42001418",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM3.STATUS": {
+      "address": "0x4200141A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM3.SYNCBUSY": {
+      "address": "0x4200141C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM3.DBGCTRL": {
+      "address": "0x42001430",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM4.CTRLA": {
+      "address": "0x42001800",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM4.CTRLB": {
+      "address": "0x42001804",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM4.BAUD": {
+      "address": "0x4200180C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM4.INTENSET": {
+      "address": "0x42001816",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM4.INTFLAG": {
+      "address": "0x42001818",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM4.STATUS": {
+      "address": "0x4200181A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM4.SYNCBUSY": {
+      "address": "0x4200181C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM4.DBGCTRL": {
+      "address": "0x42001830",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM5.CTRLA": {
+      "address": "0x42001C00",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM5.CTRLB": {
+      "address": "0x42001C04",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM5.BAUD": {
+      "address": "0x42001C0C",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM5.INTENSET": {
+      "address": "0x42001C16",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM5.INTFLAG": {
+      "address": "0x42001C18",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "SERCOM5.STATUS": {
+      "address": "0x42001C1A",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "SERCOM5.SYNCBUSY": {
+      "address": "0x42001C1C",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "SERCOM5.DBGCTRL": {
+      "address": "0x42001C30",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "NVIC.ISER": {
+      "address": "0xE000E100",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "NVIC.ISPR": {
+      "address": "0xE000E200",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "USB.CTRLA": {
+      "address": "0x41005000",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "ADC.CTRLA": {
+      "address": "0x42004000",
+      "bytes": 1,
+      "value": "0x00"
+    },
+    "ADC.INPUTCTRL": {
+      "address": "0x42004010",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "TCC0.CTRLA": {
+      "address": "0x42002000",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "TCC1.CTRLA": {
+      "address": "0x42002400",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "TCC2.CTRLA": {
+      "address": "0x42002800",
+      "bytes": 4,
+      "value": "0x00000000"
+    },
+    "TC3.CTRLA": {
+      "address": "0x42002C00",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "TC4.CTRLA": {
+      "address": "0x42003000",
+      "bytes": 2,
+      "value": "0x0000"
+    },
+    "TC5.CTRLA": {
+      "address": "0x42003400",
+      "bytes": 2,
+      "value": "0x0000"
+    }
+  },
+  "errors": [
+    {
+      "name": "halt",
+      "error": "State.RESET"
+    },
+    {
+      "name": "original_lockbits_4B.bin",
+      "error": "Memory transfer fault (read) @ 0x00802000-0x00802003"
+    }
+  ],
+  "probe": {
+    "serial": "37FF71064E57343693001043",
+    "firmware": "V2J37M7",
+    "reported_target_voltage": 3.3018084393837905
+  },
+  "initial_state": "State.RESET",
+  "verified_swd_frequency_hz": 1000000,
+  "halt_duration_seconds": 0.0,
+  "final_state": "State.RESET"
+}

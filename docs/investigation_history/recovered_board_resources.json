@@ -1,0 +1,425 @@
+{
+  "board": {
+    "name": "LG Innotek ESL TAG 2.13B Rev0.1",
+    "pcb_date": "2016-01-20",
+    "case_model": "REBE-TZ21B"
+  },
+  "mcu": {
+    "part": "ATSAMR21G18A",
+    "dsu_did": "0x10010319",
+    "cpuid": "0x410CC601",
+    "flash_bytes": 262144,
+    "sram_bytes": 32768,
+    "security_PROT": false,
+    "nvm_lock_register": "0xFFFF",
+    "clock_inference_hz": 48000000,
+    "clock_evidence": "GCLK GENCTRL 0x00010700, GENDIV 0, PM CPUSEL 0, DFLL enabled"
+  },
+  "debug": {
+    "probe_serial": "37FF71064E57343693001043",
+    "probe_firmware": "V2J37M7",
+    "swd_tested_hz": [
+      100000,
+      1000000
+    ],
+    "flash_programmed_by_debugger": false,
+    "code_injected": false,
+    "breakpoints": "hardware only; four comparators observed",
+    "actions": "attach, temporary halt/resume, original firmware reset/release, read memory/configuration",
+    "reset_extension": {
+      "statusa_address": "0x41002101",
+      "CRSTEXT_mask": "0x02",
+      "release": "byte write 0x02, W1C; manufacturer reference",
+      "initial_observation": "State.RESET and CRSTEXT=1"
+    },
+    "final_state_in_session": "State.RUNNING"
+  },
+  "display": {
+    "label": "WF0213T50CZ16E41e",
+    "fpc": "WFT0213CZ16 LW",
+    "width_controller_pixels": 104,
+    "height_controller_pixels": 212,
+    "landscape_pixels": [
+      212,
+      104
+    ],
+    "colors": [
+      "black",
+      "white",
+      "red"
+    ],
+    "configured_model": 1,
+    "configured_color_mode": 1,
+    "controller_exact_part": "unconfirmed",
+    "serial": {
+      "instance": "SERCOM3",
+      "mode": 3,
+      "baud_register": 0,
+      "inferred_clock_hz": 24000000
+    },
+    "observed_commands": [
+      {
+        "command": 6,
+        "data": [
+          23,
+          23,
+          23
+        ],
+        "caller": "0x1c87"
+      },
+      {
+        "command": 4,
+        "data": [],
+        "caller": "0x1c99"
+      },
+      {
+        "command": 0,
+        "data": [
+          15
+        ],
+        "caller": "0x1ca5"
+      },
+      {
+        "command": 97,
+        "data": [
+          104,
+          0,
+          212
+        ],
+        "caller": "0x1cad"
+      },
+      {
+        "command": 80,
+        "data": [
+          119
+        ],
+        "caller": "0x1da1"
+      },
+      {
+        "command": 16,
+        "data": [],
+        "caller": "0x1503"
+      },
+      {
+        "command": 19,
+        "data": [],
+        "caller": "0x1503"
+      },
+      {
+        "command": 18,
+        "data": [],
+        "caller": "0x1829"
+      }
+    ],
+    "additional_gpio_transaction": {
+      "function": "0x1830",
+      "command": "0x40",
+      "line": "PA24 switches from output to input",
+      "stored_readback_address": "0x20002A2A",
+      "readback": "0x18",
+      "interpretation": "likely temperature read; not an IC identification"
+    },
+    "image_resource": {
+      "flash_address": "0x19C00",
+      "byte_length": 5936,
+      "row_stride": 28,
+      "pixels_per_byte": 4,
+      "bits_per_pixel": 2,
+      "bit_order": "MSB first",
+      "color_codes": {
+        "0": "black",
+        "1": "black (same original LUT output)",
+        "2": "red",
+        "3": "white"
+      },
+      "native_storage_pixels": [
+        104,
+        212
+      ],
+      "preview_rotation": "90 degrees counterclockwise"
+    }
+  },
+  "nfc": {
+    "manufacturer": "NXP (UID prefix and original code check)",
+    "exact_part": "not confirmed; behavior compatible with NTAG I2C style connected Type 2 tag",
+    "i2c_address_7bit": "0x55",
+    "i2c_speed_requested_hz": 100000,
+    "read_block_bytes": 16,
+    "observed_block0_hex": "04169a6a1e4480004400f0ffe1106d00",
+    "uid": "04169A6A1E4480",
+    "original_detected_flag_address": "0x2000011A",
+    "original_detected_flag": 1,
+    "ndef_text_mac": "FCC23DFFFED0E342",
+    "mac_runtime_address": "0x20000228",
+    "mac_runtime_endian": "little endian",
+    "capability_container": "E1 10 6D 00",
+    "CC_advertised_data_area_bytes": 872,
+    "image_upload_supported_by_original_firmware": "not demonstrated",
+    "sram_passthrough": "not tested"
+  },
+  "radio": {
+    "type": "SAMR21 integrated 2.4 GHz IEEE 802.15.4 radio",
+    "spi": "SERCOM4 internal wiring",
+    "spi_baud_register": 5,
+    "inferred_spi_clock_hz": 4000000,
+    "eui64": "FCC23DFFFED0E342",
+    "on_air_protocol": "not decoded",
+    "internal_pins": {
+      "MOSI": "PB30",
+      "MISO": "PC19",
+      "SCLK": "PC18",
+      "CS": "PB31",
+      "RESET": "PB15",
+      "IRQ": "PB00",
+      "SLP_TR": "PA20"
+    }
+  },
+  "adc": {
+    "enabled_in_snapshot": true,
+    "inputctrl": "0x0F00181B",
+    "mux_positive": "1/4 scaled I/O supply",
+    "purpose_inference": "supply or battery measurement; voltage conversion not calibrated here"
+  },
+  "watchdog": {
+    "CTRL": "0x00",
+    "enabled_in_snapshot": false
+  },
+  "peripheral_inventory_from_DFP": [
+    "AC",
+    "ADC",
+    "DMAC",
+    "DSU",
+    "EIC",
+    "EVSYS",
+    "GCLK",
+    "SBMATRIX",
+    "MTB",
+    "NVMCTRL",
+    "FUSES",
+    "PAC0",
+    "PAC1",
+    "PAC2",
+    "PM",
+    "PORT",
+    "PTC",
+    "RFCTRL",
+    "RTC",
+    "SERCOM0",
+    "SERCOM1",
+    "SERCOM2",
+    "SERCOM3",
+    "SERCOM4",
+    "SERCOM5",
+    "SYSCTRL",
+    "TC3",
+    "TC4",
+    "TC5",
+    "TCC0",
+    "TCC1",
+    "TCC2",
+    "USB",
+    "WDT",
+    "NVIC",
+    "SysTick",
+    "SystemControl"
+  ],
+  "pins": [
+    {
+      "signal": "EPD_CS",
+      "port": "PA23",
+      "qfn48_pin": 32,
+      "configuration": "GPIO, active low",
+      "evidence": "0x14BC/0x1508; observed command and data calls"
+    },
+    {
+      "signal": "EPD_DC",
+      "port": "PB22",
+      "qfn48_pin": 37,
+      "configuration": "GPIO, 0=command 1=data",
+      "evidence": "0x14BC/0x1508"
+    },
+    {
+      "signal": "EPD_RESET",
+      "port": "PB23",
+      "qfn48_pin": 38,
+      "configuration": "GPIO, active low",
+      "evidence": "0x1A64 reset sequence"
+    },
+    {
+      "signal": "EPD_BUSY",
+      "port": "PA27",
+      "qfn48_pin": 39,
+      "configuration": "GPIO input; driver waits while low",
+      "evidence": "0x13DC/0x1410"
+    },
+    {
+      "signal": "EPD_POWER_ENABLE",
+      "port": "PA28",
+      "qfn48_pin": 41,
+      "configuration": "GPIO, high enables screen power",
+      "evidence": "0x1A64/0x1530"
+    },
+    {
+      "signal": "EPD_SCLK",
+      "port": "PA25",
+      "qfn48_pin": 34,
+      "configuration": "SERCOM3 PAD3, function C",
+      "evidence": "0x52B8; active CTRLA 0x3001008E"
+    },
+    {
+      "signal": "EPD_MOSI_SDIO",
+      "port": "PA24",
+      "qfn48_pin": 33,
+      "configuration": "SERCOM3 PAD2, function C; also GPIO bidirectional read",
+      "evidence": "0x52B8 and 0x1830"
+    },
+    {
+      "signal": "SERCOM3_MISO_CONFIGURED",
+      "port": "PA22",
+      "qfn48_pin": 31,
+      "configuration": "SERCOM3 PAD0, function C; physical EPD return connection not verified",
+      "evidence": "0x52B8; 0x1830 reads PA24 instead"
+    },
+    {
+      "signal": "NFC_SDA",
+      "port": "PA16",
+      "qfn48_pin": 25,
+      "configuration": "SERCOM1 PAD0, function C",
+      "evidence": "0x4080; observed successful read from address 0x55"
+    },
+    {
+      "signal": "NFC_SCL",
+      "port": "PA17",
+      "qfn48_pin": 26,
+      "configuration": "SERCOM1 PAD1, function C",
+      "evidence": "0x4080; observed successful read from address 0x55"
+    },
+    {
+      "signal": "NFC_CONTROL",
+      "port": "PA15",
+      "qfn48_pin": 24,
+      "configuration": "GPIO, high during NFC I2C init; electrical purpose not measured",
+      "evidence": "0x4430/0x4470"
+    },
+    {
+      "signal": "UART_TX",
+      "port": "PA12",
+      "qfn48_pin": 21,
+      "configuration": "SERCOM2 PAD0, function C; software config 115200 baud",
+      "evidence": "0x5774; physical test pad continuity not measured"
+    },
+    {
+      "signal": "UART_RX",
+      "port": "PA13",
+      "qfn48_pin": 22,
+      "configuration": "SERCOM2 PAD1, function C; software config 115200 baud",
+      "evidence": "0x5774; physical test pad continuity not measured"
+    },
+    {
+      "signal": "OPTIONAL_SPI0_MOSI",
+      "port": "PA04",
+      "qfn48_pin": 9,
+      "configuration": "SERCOM0 PAD0, function D; device population unverified",
+      "evidence": "0x5418"
+    },
+    {
+      "signal": "OPTIONAL_SPI0_MISO",
+      "port": "PA06",
+      "qfn48_pin": 11,
+      "configuration": "SERCOM0 PAD2, function D; device population unverified",
+      "evidence": "0x5418"
+    },
+    {
+      "signal": "OPTIONAL_SPI0_SCLK",
+      "port": "PA07",
+      "qfn48_pin": 12,
+      "configuration": "SERCOM0 PAD3, function D; device population unverified",
+      "evidence": "0x5418"
+    },
+    {
+      "signal": "OPTIONAL_SPI0_CS",
+      "port": "PA05",
+      "qfn48_pin": 10,
+      "configuration": "GPIO; device population unverified",
+      "evidence": "0x5104/0x517C"
+    },
+    {
+      "signal": "OPTIONAL_SPI0_CONTROL",
+      "port": "PA08",
+      "qfn48_pin": 15,
+      "configuration": "GPIO; electrical purpose unverified",
+      "evidence": "0x5104/0x5140"
+    },
+    {
+      "signal": "SWCLK",
+      "port": "PA30",
+      "qfn48_pin": 45,
+      "configuration": "SWD",
+      "evidence": "manufacturer pinout + successful debug"
+    },
+    {
+      "signal": "SWDIO",
+      "port": "PA31",
+      "qfn48_pin": 46,
+      "configuration": "SWD",
+      "evidence": "manufacturer pinout + successful debug"
+    }
+  ],
+  "entry_points": {
+    "boot_vector": "0x00000000",
+    "boot_initial_sp": "0x20002060",
+    "boot_reset_handler": "0x00000AA0",
+    "app_vector": "0x00000C00",
+    "app_initial_sp": "0x20004D88",
+    "app_reset_handler": "0x000118BC",
+    "main": "0x0001194C",
+    "main_loop": "0x00011974",
+    "epd_create": "0x00000D6C",
+    "epd_init": "0x00001A64",
+    "epd_command": "0x000014BC",
+    "epd_data": "0x00001508",
+    "epd_refresh": "0x00001820",
+    "epd_read_via_GPIO": "0x00001830",
+    "nfc_setup": "0x00004594",
+    "nfc_read_block": "0x000044B8",
+    "nfc_write_block_DO_NOT_CALL_FOR_READ_ONLY_DEBUG": "0x000044D4",
+    "nfc_i2c_read": "0x0000421C",
+    "epd_spi_init": "0x000052B8",
+    "optional_spi0_init": "0x00005104",
+    "spi_flash_read_driver_present": "0x000097D4",
+    "uart_init": "0x00005774",
+    "gpio_write": "0x00004000",
+    "gpio_read_input": "0x00004054"
+  },
+  "memory_regions": {
+    "boot": "0x00000000..0x00000BFF",
+    "app_vectors": "0x00000C00",
+    "code_rodata_estimate": "through 0x00014443",
+    "initial_data_load": "0x00014444..0x0001453B",
+    "recovered_image": "0x00019C00..0x0001B32F",
+    "additional_image_like_data": "0x00030C00..0x00034FFF (formats not fully decoded)",
+    "original_config": "0x0003F800..0x0003F8FF",
+    "flash_FF_regions": "not automatically free; may be reserved image/update slots"
+  },
+  "post_debug_comparison": {
+    "code_and_initial_data_match": true,
+    "changed_flash_bytes": [
+      {
+        "address": "0x0003F890",
+        "before": "0x1e",
+        "after": "0x22",
+        "meaning": "original firmware runtime/config field; exact semantics unconfirmed"
+      }
+    ],
+    "auxiliary_rows_match": true
+  },
+  "limits": [
+    "NFC exact part/version, SRAM bridge and phone image upload remain untested",
+    "optional external SPI flash physical presence/capacity not confirmed",
+    "UART external electrical communication not tested; no USB UART adapter connected",
+    "controller exact part number not identified",
+    "no analog power waveforms or pad continuity measured",
+    "not a full instruction or external bus trace; image payload bytes were not individually halted",
+    "some earlier debug reads during sleep timed out; the complete final boot capture contains no errors"
+  ]
+}

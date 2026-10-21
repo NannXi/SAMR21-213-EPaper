@@ -1,0 +1,1178 @@
+{
+  ".gitattributes": {
+    "bytes": 160,
+    "sha256": "b76d3439db6d3a838120223bf33252f83598b8d32043ff807ba51928db8f001b"
+  },
+  ".gitignore": {
+    "bytes": 242,
+    "sha256": "f3b2ea3ee9de8513cd0840150ccc7eb7df01cd6240bcce4a0e65677c5cc8b4a6"
+  },
+  "docs/DISPLAY_QUALITY.md": {
+    "bytes": 1304,
+    "sha256": "8d855e8d3c7fc7ef6a081a56f83c2dda292fbed8ded32d4e523dbd6a62fc9dc1"
+  },
+  "docs/HARDWARE.md": {
+    "bytes": 1713,
+    "sha256": "5e99035f6f888091a8c109a83a89b2d38bda302031b8d8f976318b41ed656204"
+  },
+  "docs/investigation_history/213价签_Debug资源报告.md": {
+    "bytes": 12911,
+    "sha256": "89878f6ae75cc078afe289d167c5d2c3182aacb84d50f9e8c9d340a29c86edbc"
+  },
+  "docs/investigation_history/213价签_烧录与恢复说明.md": {
+    "bytes": 5248,
+    "sha256": "32e587041d7a93a0ba034baaa977f4bd155bef9863fa06904f1548683e1766ca"
+  },
+  "docs/investigation_history/backup_manifest.json": {
+    "bytes": 4604,
+    "sha256": "56f6570d415c5929145c411a6012f0c4d49d478a992a6305d8daad5a8045d853"
+  },
+  "docs/investigation_history/flash_manifest.json": {
+    "bytes": 7767,
+    "sha256": "b0961c838d94d866360e49d3345d3ef1c9907739751d055bb37a01552745ae66"
+  },
+  "docs/investigation_history/flash_preflight/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_preflight/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_preflight/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_preflight/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "9c243e5ea1c8fd804003ae9e893a75b86f65dbac12f805e01c0a71b66b7b7bb5"
+  },
+  "docs/investigation_history/flash_preflight/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "9c243e5ea1c8fd804003ae9e893a75b86f65dbac12f805e01c0a71b66b7b7bb5"
+  },
+  "docs/investigation_history/flash_preflight/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_preflight/result.json": {
+    "bytes": 1031,
+    "sha256": "2d764af0195ac84a218b98db1a617cf111ded20e941bfdc1fb68019532a44e9a"
+  },
+  "docs/investigation_history/flash_requirements.txt": {
+    "bytes": 39,
+    "sha256": "fc7d007e896fe52c4391f45843d47f8d16252a0fe0db97d1010c66bf486221a9"
+  },
+  "docs/investigation_history/flash_reset_catch.json": {
+    "bytes": 378,
+    "sha256": "e7289f2106d5f884cd6c964bc16afe145e7a1086485cea7a408945c1463127eb"
+  },
+  "docs/investigation_history/flash_reset_row_test/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_reset_row_test/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_reset_row_test/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_reset_row_test/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8"
+  },
+  "docs/investigation_history/flash_reset_row_test/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8"
+  },
+  "docs/investigation_history/flash_reset_row_test/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_reset_row_test/result.json": {
+    "bytes": 2207,
+    "sha256": "d411fbc43b0474467f653285db756c0be4f4b5a0dc7183c5ed71b697439ff0a7"
+  },
+  "docs/investigation_history/flash_restore_original/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_restore_original/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_restore_original/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_restore_original/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+  },
+  "docs/investigation_history/flash_restore_original/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_restore_original/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_restore_original/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_restore_original/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_restore_original/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "f906c95f946f6702f7ebabea66c7131637c9edfe640ac1ffb3366916aff7d480"
+  },
+  "docs/investigation_history/flash_restore_original/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "f906c95f946f6702f7ebabea66c7131637c9edfe640ac1ffb3366916aff7d480"
+  },
+  "docs/investigation_history/flash_restore_original/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_restore_original/result.json": {
+    "bytes": 3903,
+    "sha256": "d02ff9892dfe96ea878b1c980be9a4072515367bc9c53f4cb744c6c21de3c7a4"
+  },
+  "docs/investigation_history/flash_restore_original/samr21_swd_flash_used.py": {
+    "bytes": 14418,
+    "sha256": "e00916a08775cb907268c2ec5b7c9a82c5d826d28f18f82ab23f21d5274bf5c6"
+  },
+  "docs/investigation_history/flash_row_test/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_row_test/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_row_test/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_row_test/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "9c243e5ea1c8fd804003ae9e893a75b86f65dbac12f805e01c0a71b66b7b7bb5"
+  },
+  "docs/investigation_history/flash_row_test/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_row_test/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/flash_row_test/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/flash_row_test/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/flash_row_test/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "9c243e5ea1c8fd804003ae9e893a75b86f65dbac12f805e01c0a71b66b7b7bb5"
+  },
+  "docs/investigation_history/flash_row_test/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "9c243e5ea1c8fd804003ae9e893a75b86f65dbac12f805e01c0a71b66b7b7bb5"
+  },
+  "docs/investigation_history/flash_row_test/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/flash_row_test/result.json": {
+    "bytes": 2145,
+    "sha256": "8e06e41fd063838d8cadf4b9a8c5c25872b91702f69bffc27cd39378d9ac8253"
+  },
+  "docs/investigation_history/flash_validation_summary.json": {
+    "bytes": 838,
+    "sha256": "f8bdfafa3cd21e5ba4f8e6ba7d1997049a7c252a0d028ad1db1101db51c97b31"
+  },
+  "docs/investigation_history/hardware_snapshot.json": {
+    "bytes": 16948,
+    "sha256": "204518ce76a0218208c1f9c6746b47de26fb56818bbccb2c3f4cdfb17dff87c3"
+  },
+  "docs/investigation_history/hardware_snapshot_running.json": {
+    "bytes": 17763,
+    "sha256": "9b4d68472161b3f9eacda9d60bdbc043e4fed2fd37692c9d33230afb5b33f673"
+  },
+  "docs/investigation_history/original_aux1_256B.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/original_aux3_256B.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/original_boot_trace.json": {
+    "bytes": 3438,
+    "sha256": "72cbd7f48f27b156284d6b63e705dd2f2796c0d21bba9f13874455ae00d4ac27"
+  },
+  "docs/investigation_history/original_cal_8B.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "docs/investigation_history/original_calibration_16B.bin": {
+    "bytes": 16,
+    "sha256": "56e910e9a53f3f3fbb801e676950706ca5e208fed0bc53ac662b271cc7c4013c"
+  },
+  "docs/investigation_history/original_firmware_linear_disassembly.asm": {
+    "bytes": 1794185,
+    "sha256": "a0d4e40beabc3b9ecd19fe1009893797dc979d1c518bf1e34c279e8f224090cb"
+  },
+  "docs/investigation_history/original_flash_256KiB_read1.bin": {
+    "bytes": 262144,
+    "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+  },
+  "docs/investigation_history/original_flash_256KiB_read2.bin": {
+    "bytes": 262144,
+    "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+  },
+  "docs/investigation_history/original_flash_postdebug_256KiB.bin": {
+    "bytes": 262144,
+    "sha256": "f279e1586d94b7cb3e4fc31c874b97da0b4e1cfbc0d6a893a167e918d768bcba"
+  },
+  "docs/investigation_history/original_screen_recovered_212x104.png": {
+    "bytes": 650,
+    "sha256": "0c171c2c5fc1ee0f4a2d6c50106cf7f2e350ef1b4ecc90a40824cf236794a31d"
+  },
+  "docs/investigation_history/original_screen_recovered_4x.png": {
+    "bytes": 2386,
+    "sha256": "36f11d9afe8f0470f043cb1fd0368f4f0d059f189d918b7f2a8dc56ed68f03c7"
+  },
+  "docs/investigation_history/original_screen_resource_2bpp.bin": {
+    "bytes": 5936,
+    "sha256": "8c6cb481a2fab1a19e956ffb076cdbe5ae689ea5628d4afb3bac15462e2dfd16"
+  },
+  "docs/investigation_history/original_sram_after_trace_32KiB.bin": {
+    "bytes": 32768,
+    "sha256": "75a850abb790e35643e514e135f37c10e16914cf409b200c054e89a2f968441f"
+  },
+  "docs/investigation_history/original_sram_snapshot_32KiB.bin": {
+    "bytes": 32768,
+    "sha256": "f36f7f612819be6daaffd366297a5f9856919ed29d1d61547a048620caa6d6da"
+  },
+  "docs/investigation_history/original_startup_debug.json": {
+    "bytes": 314,
+    "sha256": "35f19625e6ebe9e3f15f781e1215c62df414dade7a9fa56099345188ebd3e206"
+  },
+  "docs/investigation_history/original_user_row_256B.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/original_user_row_64B.bin": {
+    "bytes": 64,
+    "sha256": "a5ad5939f6b7333747cf22f5ef5643224a76eee8340a2620cbba1d29b2ebde79"
+  },
+  "docs/investigation_history/postdebug_aux1_256B.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "docs/investigation_history/postdebug_aux3_256B.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "docs/investigation_history/postdebug_user_row_256B.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "docs/investigation_history/recovered_board_resources.json": {
+    "bytes": 11999,
+    "sha256": "924c4d862781b4b1d9e46188c815e8e9db888d81264671cc5ce7ad327949d379"
+  },
+  "docs/investigation_history/samr21_swd_flash.py": {
+    "bytes": 16204,
+    "sha256": "3fd35841fb3689d9839043064e93940be4a7ef063be2a48e7486141550da026e"
+  },
+  "docs/investigation_history/屏幕黑边分区标注.jpg": {
+    "bytes": 178063,
+    "sha256": "0d5662577dd2f52bf7c839b3c5677024c49c7ded03694cb835eb809cf05f83c3"
+  },
+  "docs/investigation_history/恢复原厂.ps1": {
+    "bytes": 2031,
+    "sha256": "a152449dd01d157ea5e500cab98c5863bf620a752c6449922d0b6dd4258bb6be"
+  },
+  "docs/photos/first_demo_upside_down_faint.jpg": {
+    "bytes": 161412,
+    "sha256": "a929d3cc327f0555ca0df411bd544f0ac2e50a806c52147cb37550d8997b0d8d"
+  },
+  "firmware/SAMR21_EPD_Keil/App/app.h": {
+    "bytes": 975,
+    "sha256": "58ab61b38684307f9b2d40968bafe22cc1ae1e7de52d65863e4e31624eda708b"
+  },
+  "firmware/SAMR21_EPD_Keil/App/graphics.c": {
+    "bytes": 3920,
+    "sha256": "91ebc31288dfcc4fb219cb8d4394142297eccc6d4a984679502dfb1b028d00ef"
+  },
+  "firmware/SAMR21_EPD_Keil/App/graphics.h": {
+    "bytes": 504,
+    "sha256": "692ef769391889a180cb19a74ec98d3918df396b6436535a0b25d3658be76c11"
+  },
+  "firmware/SAMR21_EPD_Keil/App/main.c": {
+    "bytes": 1341,
+    "sha256": "7149f1e868342ec6d01cb238321b6bbb28b99993bc19d5a7d1c45fed8282816d"
+  },
+  "firmware/SAMR21_EPD_Keil/border_photo_assessment.json": {
+    "bytes": 948,
+    "sha256": "ef4aeefe4086a5238f94e1c72c51468885d75f2d4ec8d4d2cc82e248100c0740"
+  },
+  "firmware/SAMR21_EPD_Keil/build.ps1": {
+    "bytes": 1614,
+    "sha256": "049591b49fe06a8f08453831c878ca8522b37dd9c0a6192555878de31f416c44"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/arm_common_tables.h": {
+    "bytes": 6156,
+    "sha256": "361cfd423ad0d6e49372767708fc1dfd1d7035d8ac94d81cab9a7d7d232783cd"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/arm_const_structs.h": {
+    "bytes": 3027,
+    "sha256": "7dec892e089bb12d2d5bc0cf1d78751390674768e41ff716c7de769fab32ecce"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/arm_math.h": {
+    "bytes": 255104,
+    "sha256": "82e65f61dadbca1caad56a07922aeb2cb23fa1af5309b38bf7ae6df6f9e58d83"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/cmsis_armcc.h": {
+    "bytes": 25913,
+    "sha256": "c466b975e6590c63e72af1da7c104d7e8b774257644dff1bad9d2a296e867493"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/cmsis_armclang.h": {
+    "bytes": 54173,
+    "sha256": "44fc288fed55cadba9a9f5a94d67ba9b6bbb4f7300fd0964222b23987cf78127"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/cmsis_compiler.h": {
+    "bytes": 5923,
+    "sha256": "2913e33f24753e84fbc9fdc6c191031989a008571193394948a90683eaedcf15"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/cmsis_gcc.h": {
+    "bytes": 59329,
+    "sha256": "cc6282af3b15dcba2b63026fa03180e1f5284817f3fc4028c7855df9f2ff51da"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_armv8mbl.h": {
+    "bytes": 96673,
+    "sha256": "2e3519f8b92faf53173bd4df0126e552a21c6e93e568b8e4c9c4df849b89958d"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_armv8mml.h": {
+    "bytes": 169283,
+    "sha256": "2302fa103ea116415b9eece30b836084ac28e8f3630ba3b36bdb8ba3a60e10d2"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm0.h": {
+    "bytes": 38250,
+    "sha256": "11a84e4fcaddece884a124136f3dfabd3b0544c50fa3e0748ea71ebc526464d9"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm0plus.h": {
+    "bytes": 46282,
+    "sha256": "770c0fe3542eee2b9e11287986dec3e3184bd5f3895d158519fa9b302d565f18"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm23.h": {
+    "bytes": 96592,
+    "sha256": "457749f51f9764d114a6d1f2d3b41af22b2306bab9e2e6d1062ecad2182912e6"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm3.h": {
+    "bytes": 110736,
+    "sha256": "8022be70ef733907cc2c86a81bab655433bacd5521e902d12512954e2106c3df"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm33.h": {
+    "bytes": 169211,
+    "sha256": "1895e436667b237f9aacb4f5e35eecb8c898d5736762b8af6cd05a6d7ea71e59"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm4.h": {
+    "bytes": 122077,
+    "sha256": "00e18f25a623b7b75933e7adb2ce15bd5f46d8c2508c5189e90d0e13b9cef7d9"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_cm7.h": {
+    "bytes": 146684,
+    "sha256": "d9af7c17c86ad8e784da3642c9fec02b514fd6c48691422a92c48788a60b4d64"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_sc000.h": {
+    "bytes": 46373,
+    "sha256": "ccfea407253b8cc89c83182880b6a9415342c46ebdaafeb068b888d32b391b1a"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/core_sc300.h": {
+    "bytes": 109229,
+    "sha256": "e4580d082f93fd7c0c9f64a6f74a0342699a155017a971a4ffc90d3dee240602"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/LICENSE.txt": {
+    "bytes": 11558,
+    "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+  },
+  "firmware/SAMR21_EPD_Keil/CMSIS/tz_context.h": {
+    "bytes": 2603,
+    "sha256": "015637ef12a3dc70d7338e6aed1b6220ce6dca17238559b5217e5b70d74773b8"
+  },
+  "firmware/SAMR21_EPD_Keil/demo_212x104.png": {
+    "bytes": 812,
+    "sha256": "a417cfb7c8b5454801e17128483f424b26978e2cdbbb9bb53d65c4d9caac91ca"
+  },
+  "firmware/SAMR21_EPD_Keil/demo_preview.png": {
+    "bytes": 3481,
+    "sha256": "ea0b3c4d1509917687b900a1323b421a5cd0b2ccde9a9400a2e0930bd363c88d"
+  },
+  "firmware/SAMR21_EPD_Keil/demo_visual_confirmation.json": {
+    "bytes": 427,
+    "sha256": "989dfbf5173a562fa97c468d6b67c98101a4cd714849a50df5f28484e660ffc5"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/ATSAMR21G18A.svd": {
+    "bytes": 697748,
+    "sha256": "cb70daf11490361772fe94e607b0a1b3c94a6d6835015d965be93d8e93ed2592"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/ac.h": {
+    "bytes": 44066,
+    "sha256": "cbf6cd664daa243d3d4f2b372c58c4b6a14bc4e85cb7cb1323fe2cb5a0364b47"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/adc.h": {
+    "bytes": 57205,
+    "sha256": "01956b9a9507a08f6ba9048e4f2108e96d30e03c9b4d557bd26024f76e655ede"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/dmac.h": {
+    "bytes": 99076,
+    "sha256": "81c1d7565f767790e14547c29f6dec504f140fb087f5376e7938d42ff78b58ba"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/dsu.h": {
+    "bytes": 34613,
+    "sha256": "582fd79d87962090763b4c5c1b94bd2f8f3a4abb39054199c0cb2c7eb000108c"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/eic.h": {
+    "bytes": 75752,
+    "sha256": "add1dca02a77d34246e47dbf2f6cb9ba4e6edd64f14970e6ccf9051505fd04e0"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/evsys.h": {
+    "bytes": 61419,
+    "sha256": "b1c1ba61ea4b2ff7d766754cfc9224ec644030a22cf83771deb96bf67ae85426"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/fuses.h": {
+    "bytes": 40391,
+    "sha256": "0f12e974c3bd379fd495b89dbeb26ad8f9d045664ec7f548324b22d1c72ef71f"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/gclk.h": {
+    "bytes": 27152,
+    "sha256": "f99230acc88df9e69de41e0285167e7d43868f05dc8b92905846505e43c5a69d"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/hmatrixb.h": {
+    "bytes": 5715,
+    "sha256": "e9525e176d81e02a81ec4fd12a563981f112176ac20b10836434ea37ab442e94"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/mtb.h": {
+    "bytes": 18045,
+    "sha256": "1742e6fdd410833dd63c0ccb2269ec2d5dfcb8ad6fea8e40fa0aa0edd0a49166"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/nvmctrl.h": {
+    "bytes": 29805,
+    "sha256": "e7a1737047d8b366148f7c2f3f5666811a0840679721aab2c178dc41a0e067c6"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/pac.h": {
+    "bytes": 3498,
+    "sha256": "b186277893fcd65fabaad2980c0559d515cb4c17ebd975779d6004f0d1ed3bb2"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/pm.h": {
+    "bytes": 47322,
+    "sha256": "ec4cf20ba540e5c27b6eb13a94ef0a05b6cd1983336dd4dab82edd95b26fe2b8"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/port.h": {
+    "bytes": 31453,
+    "sha256": "755f1e6c491480e1eec1c91fc1c3cd5e45073021ed69777f5eee76eb96ba80fb"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/ptc.h": {
+    "bytes": 1365,
+    "sha256": "18e1dc042356b8c672ea027555bee7951914dabb33921289302517c8c78fe322"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/rfctrl.h": {
+    "bytes": 5182,
+    "sha256": "60287b520e7ad24f88a2db8b3b15ae2857f1c3d55b96143be6e6c242e64a56cc"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/rtc.h": {
+    "bytes": 94184,
+    "sha256": "f3e7180be739818e9a92c94d4d7b1cc8aa09696eaa065d831564fc8ebc2d7299"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/sercom.h": {
+    "bytes": 258359,
+    "sha256": "f59d61645523a6baf7b8626ac73ba2709f8a3f9105785842dfbb0b99257e7eee"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/sysctrl.h": {
+    "bytes": 106355,
+    "sha256": "31ff327413d6e71aaefbb6de276d027182ff575ab03990f54506641c4682d719"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/tc.h": {
+    "bytes": 51624,
+    "sha256": "667a1f2f7124d09e847906fe798c0af2c00eae25cc5644433644dec1162bfb6a"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/tcc.h": {
+    "bytes": 195376,
+    "sha256": "2750d3544e4deddf998faca0d76c775166dba96656a67973fc08163d01bdb715"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/usb.h": {
+    "bytes": 168753,
+    "sha256": "50eb0c1650d34a6da965601dee83539a7e134d78218aa5564ecd7e121c8ed4cb"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component/wdt.h": {
+    "bytes": 21634,
+    "sha256": "f366799081d7d00ab9f8ff8ce3a8dfd99a6a622f2b3b272b59a9f95c4ac6afc2"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/component-version.h": {
+    "bytes": 1694,
+    "sha256": "9b399fc498708c6a379326d28bfd8127e12cfd4bdd9520095fb8c15a3ebea1e3"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/ac.h": {
+    "bytes": 1447,
+    "sha256": "82f15a8b63f4ff04344a17a7894b77e462b02a09cd54dd128876df4140555a52"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/adc.h": {
+    "bytes": 1459,
+    "sha256": "b8e850504a63a8a1195388030eb672b25a2d131be219509e3434aff9c71e4de0"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/dmac.h": {
+    "bytes": 1773,
+    "sha256": "3475fda1601a6af386f9e7ab6e4db112fd5012ab253610943e5f01d8fe7d2265"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/dsu.h": {
+    "bytes": 1004,
+    "sha256": "18cbc0d07fe9841775aed47335b61a246ca65fe28ad75e536ebb397f82f6194d"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/eic.h": {
+    "bytes": 1282,
+    "sha256": "76d330908fd9634c7cbc1d9fbe5d4ffb325590ac65f9f1ce100f45f50abb3105"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/evsys.h": {
+    "bytes": 2883,
+    "sha256": "e473634c6fb35c0fb9a522e9e4c0c41f4b1435b868ccf7ae770612c778b80d5a"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/fuses.h": {
+    "bytes": 869,
+    "sha256": "20e306a83cb991b66a882f1a88d6f7027481a3d65117d406d967e6d75590b270"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/gclk.h": {
+    "bytes": 2120,
+    "sha256": "545fde3fb3d86c4b63a689686f81cdd9fbcf0ae7100caefa9e45f26b7d3a43e5"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/mtb.h": {
+    "bytes": 1004,
+    "sha256": "f57faa9777d17762aec4dc03056392790217d3dd79e289bc7131d065f74059ca"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/nvmctrl.h": {
+    "bytes": 2140,
+    "sha256": "22f57acedc90987892c22d35528619d20b413e4f79d32e55ab683ef0a242612c"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/pac0.h": {
+    "bytes": 1105,
+    "sha256": "080ddd8b0e8c9a72ce7d695b20e5ccb9632f17d352be6e88fd5094ae438d3c2b"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/pac1.h": {
+    "bytes": 1105,
+    "sha256": "a04c7298be7e4d38b4463700b7b193323d9ab3d29ba430d0fa5a94edf4421f04"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/pac2.h": {
+    "bytes": 1105,
+    "sha256": "9768e06b08d1096168dd67dfde8cd483e549d2356467eff304a5287ef63795bd"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/pm.h": {
+    "bytes": 1305,
+    "sha256": "40f6afed7d1f62d080013848cbcf1335d19265293605c4435e2271f823ade70d"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/port.h": {
+    "bytes": 1439,
+    "sha256": "df407a51bdc4a7b16c6badabb0a685eb9d96c00c89be6de8934b44f54bf59a10"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/ptc.h": {
+    "bytes": 1093,
+    "sha256": "ac7b4b361202353f3a4490a2c0150fa334e209271283b0bd16680c136a3a48cc"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/rfctrl.h": {
+    "bytes": 1077,
+    "sha256": "891bec1045220c1d6e3ea8ef8aa31cfbb087e26fe7fcec7d2a177e96ff67c5d0"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/rtc.h": {
+    "bytes": 1672,
+    "sha256": "2495a948232b50907b41dc0bb97b1715f4fda7832ce8da515ac88b6198aaafdc"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sbmatrix.h": {
+    "bytes": 1756,
+    "sha256": "ddf9fc2da42af2ea8e30957a750c5e7c1700e17d5a724ebb00e840e4597a138f"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom0.h": {
+    "bytes": 1466,
+    "sha256": "fa98310410f0488ba2b04bd067389fdc798153a9c3eef2466f84ead19b7ebe26"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom1.h": {
+    "bytes": 1466,
+    "sha256": "f85c30db6037784027865cf4230b583056aacdf2f5e40ef2df66855be9775b25"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom2.h": {
+    "bytes": 1466,
+    "sha256": "9ffb61e5e3fc6a3943e84ab0cdbbfdc8ddf5a8fcc92f28a9fdee5a01df11ccb8"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom3.h": {
+    "bytes": 1466,
+    "sha256": "8b4957a4a208d3f900aa2aa2bc3606852a6d2ae0dc969cf5861c6de1202f4046"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom4.h": {
+    "bytes": 1466,
+    "sha256": "c3f47e640e5a3bc9a66fd0f452d0b7f1c4aabc0f9d05360338a2a1c7d40f7031"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sercom5.h": {
+    "bytes": 1466,
+    "sha256": "d31985da15c05cfb3385edad1464c92cb80b6a00090e6831f140fea8107dd815"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/sysctrl.h": {
+    "bytes": 2820,
+    "sha256": "9066ea3b860a0d42969e3205d57dd04f0903d25a0d80816c8d939fa573917388"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tc3.h": {
+    "bytes": 1902,
+    "sha256": "c2d636778047fff1dea43d740ea00049784b62e581493b27f289d98895c851cb"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tc4.h": {
+    "bytes": 1902,
+    "sha256": "7e11db67b5b9a0531301898dde65ea29b1161a13aa2b4f641acd9b6afc2de4ba"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tc5.h": {
+    "bytes": 1902,
+    "sha256": "6d9346f14e3e3f5a13bf122bfe0beed32ed5da1508b5cf114b83016f54c831a3"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tcc0.h": {
+    "bytes": 2187,
+    "sha256": "75f0c6ab8ce1cd92033a4d39c2fea2dcc3c8adbdc73953dbe9457119b1da08e3"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tcc1.h": {
+    "bytes": 2177,
+    "sha256": "e376ce5ccaef7c8879cd938276547e1a3d7eb2784404e0102ef32c105fecfb4c"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/tcc2.h": {
+    "bytes": 2177,
+    "sha256": "b9b12306352ae9956bed1ea204f26b264ca5ecdedb13ba98b24c351c7bad3651"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/usb.h": {
+    "bytes": 1372,
+    "sha256": "21ed1953f28c1b4ccd4418e0a4b901b3444c8d4a434bfe94ee1b438ff249c6af"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/instance/wdt.h": {
+    "bytes": 1093,
+    "sha256": "188e89c8c692f9e17313df79b912a2e5f3f819ae440feccd7c306d4fb5978b4d"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21e16a.h": {
+    "bytes": 57557,
+    "sha256": "cfa9894057e6d582a0c638f0cf7c3a862795b653727e03e3ccfcf830aeaaf911"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21e17a.h": {
+    "bytes": 57557,
+    "sha256": "e5feeb323931ba4a2f74d3251259eb84a774476d701f8e52bdecf637d26dcd9e"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21e18a.h": {
+    "bytes": 57557,
+    "sha256": "365733442ce0ec7c443813067ad9f47fcd1884c76c4731b5feeb15b2586292ee"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21e19a.h": {
+    "bytes": 66650,
+    "sha256": "af511ea8e8ceec8aec401095fb87393fb01b6919796c6b050bfd4dcdd9a42426"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21g16a.h": {
+    "bytes": 79046,
+    "sha256": "f724246c5c83a6ea2f386dbb67692646080106dd8dfbb11e8389fe5cba5561d8"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21g17a.h": {
+    "bytes": 79046,
+    "sha256": "44cd334e60d5457e212d63ad3e6d9a474bb1a8ec08e7d24e55ad5c39711c4b9e"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/pio/samr21g18a.h": {
+    "bytes": 79046,
+    "sha256": "50c34a4cb408dd80a19ada56ef8ff556481c0e82f3cdc4f51023b28a59659d18"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/sam.h": {
+    "bytes": 1384,
+    "sha256": "b6eb145f287522c7375d94e359628596b0d75bc7a2a02870f19f11d3693f2ee3"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21e16a.h": {
+    "bytes": 39857,
+    "sha256": "7f3c50ecb2274f152b52f03d35476fdcdee6a617145195810c3c594f714445bc"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21e17a.h": {
+    "bytes": 39857,
+    "sha256": "f98f23b9ab868a50dca1d2627bc936ec5df4a0d37fbb82fd25804ac5a731872c"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21e18a.h": {
+    "bytes": 39857,
+    "sha256": "b5cbc4a8de1e40a68737f2a04a38fd1b3e71570847f19164f56fa441d2adc0cf"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21e19a.h": {
+    "bytes": 39857,
+    "sha256": "e66de156091c450832650384feb43c03f6bc2497c3d1fa0b3c3eccd8276be32c"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21g16a.h": {
+    "bytes": 39857,
+    "sha256": "77c7f7d90820b71ac0e2fc33dd701e833d35b85991ee29fef957761612b84ea4"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21g17a.h": {
+    "bytes": 39857,
+    "sha256": "039934e3108d159aabdd93b5e1979968ab7cadb39a192c2fa13111da51b75fb2"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/samr21g18a.h": {
+    "bytes": 39857,
+    "sha256": "e74c009f2d586657ca15402a930c8947cc9f1d4d30eb7b845c9955e387994e82"
+  },
+  "firmware/SAMR21_EPD_Keil/Device/system_samr21.h": {
+    "bytes": 1044,
+    "sha256": "641823085333c61e5e757c9d5619a15bdc47278703f9675db865ef216c3da5d3"
+  },
+  "firmware/SAMR21_EPD_Keil/Drivers/epd.c": {
+    "bytes": 4854,
+    "sha256": "32913bb0d6875d0e1f59ecff73f158874ca6de411241ef7719e8e1dbde46245c"
+  },
+  "firmware/SAMR21_EPD_Keil/flash.ps1": {
+    "bytes": 1037,
+    "sha256": "5ffb88c87b848c9db30461b7e67875574104411641b9ea74d8ea7f5cc67edc16"
+  },
+  "firmware/SAMR21_EPD_Keil/Listings/epd_white.map": {
+    "bytes": 19022,
+    "sha256": "fa4459addfea08ad9aa2a7c26606cf910799195adbaef92b0844eac47aed325b"
+  },
+  "firmware/SAMR21_EPD_Keil/Listings/uvision_build.log": {
+    "bytes": 555,
+    "sha256": "b799d526bc321d732fd56b9785807111e88a9096a3f0c66e9d40e4aa42080d62"
+  },
+  "firmware/SAMR21_EPD_Keil/manifest.json": {
+    "bytes": 25652,
+    "sha256": "b417872bb99f6b18454563622db977701766aae006d67a9f79c5d01598ca4673"
+  },
+  "firmware/SAMR21_EPD_Keil/Objects/epd_white.axf": {
+    "bytes": 46060,
+    "sha256": "d32a1e63577781d92b69b293915ec61cec9dc10a1d68c839491de2a13306d9f6"
+  },
+  "firmware/SAMR21_EPD_Keil/Objects/epd_white.bin": {
+    "bytes": 2464,
+    "sha256": "099e805566d78b11d03a7fd6dbaadf6968f8bb146bc8c6415487e3c0ee07c325"
+  },
+  "firmware/SAMR21_EPD_Keil/Objects/epd_white.build_log.htm": {
+    "bytes": 1561,
+    "sha256": "dac03472c2da805b7ab9ff97fa91a4b0bdf3391b5e6d36d8f6bb7e4e73094025"
+  },
+  "firmware/SAMR21_EPD_Keil/Objects/epd_white.hex": {
+    "bytes": 6981,
+    "sha256": "8d0e36b7a9b047717cf96d772288ee969e930b152ecc9d7c2e31fb8f2148b023"
+  },
+  "firmware/SAMR21_EPD_Keil/README.md": {
+    "bytes": 4703,
+    "sha256": "15e1bf1344b4f224798088145778f2cfd5b49c898a0e6941400b600522cc833a"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "1e7fc4089760162856cb6830376f5c34bd86f5d90107167043f79b9736c754b4"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "dc0b5f89f94b0547cb2202c9e94a4dcba1bdef37a89bfba0108895ea89312711"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "dc0b5f89f94b0547cb2202c9e94a4dcba1bdef37a89bfba0108895ea89312711"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/result.json": {
+    "bytes": 3545,
+    "sha256": "238f1cd3be71cf3dc057373edd00f4bda360203ffabc317c31ffc930795684fb"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_093827_513798/result.json": {
+    "bytes": 2369,
+    "sha256": "59c06f8c22e18f56453ffe30af60acacb696117bbd6e8189ff6b398a7a2f1ed8"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094038_099105/result.json": {
+    "bytes": 2375,
+    "sha256": "cf7ffb158f9ebfc6e7216a36a09574bcdf03e03bb9b9dbe84485c6966e55ec5a"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "45c647c09df18f2505e6a8d234315e97e4d00ebfca18f47f6715ac90be262b5d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "1e7fc4089760162856cb6830376f5c34bd86f5d90107167043f79b9736c754b4"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "1e7fc4089760162856cb6830376f5c34bd86f5d90107167043f79b9736c754b4"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_094405_616972/result.json": {
+    "bytes": 4006,
+    "sha256": "f5d9df706f37536f98a9c6e6e3e2e353fecb67939919fc161d235aef0ad5cc2b"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "94216b5c5a96b5022026e56d471c284e5e9bfaae8481bccb36fd80a6e3665f11"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "45c647c09df18f2505e6a8d234315e97e4d00ebfca18f47f6715ac90be262b5d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "45c647c09df18f2505e6a8d234315e97e4d00ebfca18f47f6715ac90be262b5d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/framebuffer.bin": {
+    "bytes": 5512,
+    "sha256": "b77fd32d52a0a26acc3fb391742bae94ee2c0eb0e0aa7620dfb5e8888058d381"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_100655_075340/result.json": {
+    "bytes": 4105,
+    "sha256": "d543285083b4df24c0d34f596743b31c4428ee1403dac16f006fde2b4833ae13"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101131_807348/framebuffer.bin": {
+    "bytes": 5512,
+    "sha256": "b77fd32d52a0a26acc3fb391742bae94ee2c0eb0e0aa7620dfb5e8888058d381"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101131_807348/result.json": {
+    "bytes": 2460,
+    "sha256": "32728b848341d3ee85d544e1082865da790ad162ea2b27b8be422d578ec1e3ea"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/after_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/after_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/after_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/after_flash_verified.bin": {
+    "bytes": 262144,
+    "sha256": "da162a3500ae39db959b6e09cb80f15bc93281d62f5d579eaf54178f8d5158a2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/after_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_aux1.bin": {
+    "bytes": 256,
+    "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_aux3.bin": {
+    "bytes": 256,
+    "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_calibration.bin": {
+    "bytes": 8,
+    "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_flash_read1.bin": {
+    "bytes": 262144,
+    "sha256": "94216b5c5a96b5022026e56d471c284e5e9bfaae8481bccb36fd80a6e3665f11"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_flash_read2.bin": {
+    "bytes": 262144,
+    "sha256": "94216b5c5a96b5022026e56d471c284e5e9bfaae8481bccb36fd80a6e3665f11"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/before_user_row.bin": {
+    "bytes": 256,
+    "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/framebuffer.bin": {
+    "bytes": 5512,
+    "sha256": "a0754d72c4381487c507a70f18b9837a546dee3dc4ad9ad9f225294aff45f35f"
+  },
+  "firmware/SAMR21_EPD_Keil/Runs/20261021_101153_990043/result.json": {
+    "bytes": 4105,
+    "sha256": "a462ba4df0e3594b471e5fc00c149d384b179ff039220b8d50787ffab78eff14"
+  },
+  "firmware/SAMR21_EPD_Keil/samr21.sct": {
+    "bytes": 276,
+    "sha256": "cf3d11ba1decc0a43f7767fc08294c5fa93445f6b41264dd97fc5d281c1f1a2d"
+  },
+  "firmware/SAMR21_EPD_Keil/SAMR21_EPD.uvprojx": {
+    "bytes": 15604,
+    "sha256": "b42c1aebb24326b974b26bcfb0578d9d54f21da510ee8023e41788069dbd1dbc"
+  },
+  "firmware/SAMR21_EPD_Keil/Startup/startup_samr21.s": {
+    "bytes": 2059,
+    "sha256": "271a2561894a5e787abad88aa94c203686fbe257ac5afa4d9a0a1682a6c9f991"
+  },
+  "firmware/SAMR21_EPD_Keil/Startup/system_samr21.c": {
+    "bytes": 436,
+    "sha256": "a0801cbcf770ff8d4120fedf7452e1b88bc42c72acee0a12fcb341dc5b6e67e9"
+  },
+  "firmware/SAMR21_EPD_Keil/Tools/flash_app.py": {
+    "bytes": 6738,
+    "sha256": "0c4d7ab62e98038aabc5cb78136b5000a4997fb0bfd7267fef36259ce1eb241b"
+  },
+  "firmware/SAMR21_EPD_Keil/Tools/original_flash_256KiB_read1.bin": {
+    "bytes": 262144,
+    "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+  },
+  "firmware/SAMR21_EPD_Keil/Tools/requirements.txt": {
+    "bytes": 56,
+    "sha256": "b84ecf1e65f1e19ababfbb2b52f47eb74c9f41b8c7055d54d2b8dff126d876b9"
+  },
+  "firmware/SAMR21_EPD_Keil/Tools/samr21_swd_flash.py": {
+    "bytes": 16244,
+    "sha256": "e13de71a4dba4ff9d4e52d3ad55981ce4f88a1239ae4ed3f4650a26c5af52371"
+  },
+  "firmware/SAMR21_EPD_Keil/validation_summary.json": {
+    "bytes": 2909,
+    "sha256": "1d73d8dcfe273917ab7059a069bfda2a9671e83bfc300a4ee7ce983baf2b3e71"
+  },
+  "hardware/original_materials/.jpg": {
+    "bytes": 4994237,
+    "sha256": "1ef9d93f3a7d055a8e00008673944bedf75753e9b00963fe0aae2f16275a8a8c"
+  },
+  "hardware/original_materials/0价签标签.jpg": {
+    "bytes": 292339,
+    "sha256": "07139f52cae3ba391c123ab9fb66a909b5a623edabfbd9c487d557464cea15f0"
+  },
+  "hardware/original_materials/0整体图片.jpg": {
+    "bytes": 2858077,
+    "sha256": "eb86414d016b5a209f698399f554057795d51b1e38e8922acaec0576317fb75d"
+  },
+  "hardware/original_materials/1板子正面图片.jpg": {
+    "bytes": 5896810,
+    "sha256": "87b1b29d6fc233e7c63adb77c263c1d31b9cccac6662f591dff31c1f416eaa5b"
+  },
+  "hardware/original_materials/2板子背面图片.jpg": {
+    "bytes": 5434921,
+    "sha256": "c134c43ed98eafa9339c05455f95b06cb8e5024838e9a26a584f54f3cb57b3cc"
+  },
+  "hardware/original_materials/3墨水屏正面图片.jpg": {
+    "bytes": 5794981,
+    "sha256": "0a73ac9aa892f092c014b472e6c4132d925f477d22933f295202713985d30aed"
+  },
+  "hardware/original_materials/4墨水屏型号背面图片.jpg": {
+    "bytes": 5492798,
+    "sha256": "d3be6b8fec06d870a61d46cba3a85ac359b4fb1a9bd5db122594f324de1e93a6"
+  },
+  "hardware/original_materials/5板载2.4g天线走向与阻抗网络.jpg": {
+    "bytes": 1814647,
+    "sha256": "4f1f4ae742b6e432bc11dac78d1609737d3f1bebacb67a797cf9faa06c83d587"
+  },
+  "hardware/original_materials/6.1板载nfc线圈走向.jpg": {
+    "bytes": 5079259,
+    "sha256": "a4e257d24c8f7045c83c30bc1a3c27b53cffc35df04485052ab29bd9453fcd1e"
+  },
+  "hardware/original_materials/6.2板载nfc读取信息.jpg": {
+    "bytes": 288338,
+    "sha256": "0550581c2bb373fdfe0c57b16adcb11c31989291b02727e9e5fc014cce9921f1"
+  },
+  "hardware/original_materials/6.3板载nfc线圈详细数据.jpg": {
+    "bytes": 381085,
+    "sha256": "8c2c765789a097fb0e934e8d5443ff058f2e8588df16f87be89a41a91d1e31e8"
+  },
+  "hardware/original_materials/Microchip.SAMR21_DFP.2.1.155.atpack": {
+    "bytes": 1699318,
+    "sha256": "69c3e8627357cfe1cfdf3dc59712dc9cf626c51ccf2db9c5dabf33e10925714a"
+  },
+  "hardware/original_materials/readme.txt": {
+    "bytes": 2832,
+    "sha256": "9f9eff272c02aed1ce7e57433aa57251d04943ac70b7425f096dcaec681a6b97"
+  },
+  "hardware/original_materials/主控型号.jpg": {
+    "bytes": 3499583,
+    "sha256": "bec820fd0a8344157ab9fe7f9c838319cec6a7d59f8023677474fb3bcc617bf4"
+  },
+  "hardware/original_materials/屏幕详图/1000140798_1_0_4718200.jpg": {
+    "bytes": 4717390,
+    "sha256": "1d9bccb6b336feb9b6bad5519fdf01625d444602fa425c0faa31258ba6bba65d"
+  },
+  "hardware/original_materials/屏幕详图/1000140799_1_0_5605636.jpg": {
+    "bytes": 5604826,
+    "sha256": "bbc4637e41313cd49a5f7d8128632626314db3ca2f0fbd37a1736f4d0972112a"
+  },
+  "hardware/original_materials/屏幕详图/1000140800_1_0_5006245.jpg": {
+    "bytes": 5005435,
+    "sha256": "905294262de35d2d69e5b4e3320d12243ac93093f3d8279c28bc0496ac412fee"
+  },
+  "hardware/original_materials/屏幕详图/1000140802_1_0_5048850.jpg": {
+    "bytes": 5048040,
+    "sha256": "94308bddd0e7fab207a32cfd273a509b9ac3c7f52ba458522c55e289e5b5b53f"
+  },
+  "hardware/original_materials/屏幕详图/1000140804_1_0_5287886.jpg": {
+    "bytes": 5287076,
+    "sha256": "ac42a9622d739151d1e0742af3333b34468c17736548c52d1b96e1fa5d36f84c"
+  },
+  "hardware/original_materials/屏幕详图/1000140806.jpg": {
+    "bytes": 292339,
+    "sha256": "07139f52cae3ba391c123ab9fb66a909b5a623edabfbd9c487d557464cea15f0"
+  },
+  "hardware/original_materials/掉焊盘情况（不影响）.jpg": {
+    "bytes": 2341204,
+    "sha256": "793188246d545d5686821c60ba958f7345625077e328ab987e604231142b9b40"
+  },
+  "hardware/original_materials/正面烧录点（已焊端子座）.jpg": {
+    "bytes": 5315738,
+    "sha256": "10d031aea0793827d1b84ba47c45973d9194b908d5dd5280d826685eb9662a51"
+  },
+  "hardware/original_materials/背面烧录点（被屏幕盖住）.jpg": {
+    "bytes": 5059883,
+    "sha256": "d69afdf5f80c085442612ca6b3a450a84472a27c0651b720a484f71e968bad05"
+  },
+  "hardware/original_materials/黑边情况.jpg": {
+    "bytes": 4643350,
+    "sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088"
+  },
+  "README.md": {
+    "bytes": 3138,
+    "sha256": "a9dc897aa1b2723ace5723f062dd1326fc195fe2ba1470ebc140feb91b592026"
+  },
+  "tools/investigation_history/disassemble.py": {
+    "bytes": 2217,
+    "sha256": "591a9dbefccfe1c822a4752630e9cd711efd056fb7f667d2f6c7e230cbb7779d"
+  },
+  "tools/investigation_history/inspect_offline.py": {
+    "bytes": 3039,
+    "sha256": "dfa0553d100d9395792a6a50375351d04b7547b48bf4f782ff08400fb39874e9"
+  },
+  "tools/investigation_history/microchip_dap_reference.py": {
+    "bytes": 32925,
+    "sha256": "bdf03a29c69249bea485b85f4492a80c3c031bd6acfd6a195c98557f0eba0dbb"
+  },
+  "tools/investigation_history/probe_resources.py": {
+    "bytes": 6420,
+    "sha256": "08ba2e93561807c157c3cba71433cf997af2c117e5c1213a17d6e839aa82f205"
+  },
+  "tools/investigation_history/probe_running.py": {
+    "bytes": 6389,
+    "sha256": "3301663275ad11f74a663bdb1f29a1016854d5eec475e72fd526f08a301ee597"
+  },
+  "tools/investigation_history/README.md": {
+    "bytes": 272,
+    "sha256": "467a8d3b6dee407c67c9000391c1c765035d2599c415a44300e56ce1e5ea2ea9"
+  },
+  "tools/investigation_history/render_demo.py": {
+    "bytes": 1168,
+    "sha256": "6ebb54bbaa03a846d0765a1c983d09e3451f1d013fb84a500a2b38c25a981d5b"
+  },
+  "tools/investigation_history/render_resources.py": {
+    "bytes": 1886,
+    "sha256": "2ad917f577f68da530091df63fe39c5c43fd70409735e508d9e03f2ef6583a85"
+  },
+  "tools/investigation_history/trace_original.py": {
+    "bytes": 6925,
+    "sha256": "346697a72a93b3cc912048e7f3b8811552db91f5a97b4aa1eb0b1d0adef38231"
+  },
+  "tools/investigation_history/verify_reset_catch.py": {
+    "bytes": 1932,
+    "sha256": "709e98d847eac43db55ff643ededffc87156fff6ebf7732ea268e2a583e0f026"
+  }
+}

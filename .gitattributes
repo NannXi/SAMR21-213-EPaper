@@ -1,0 +1,8 @@
+# Preserve bytes, including original material line endings, for SHA-256 manifests.
+* -text
+*.c diff
+*.h diff
+*.py diff
+*.ps1 diff
+*.md diff
+*.json diff

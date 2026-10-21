@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-21T00:44:37.986748+00:00",
+  "events": [
+    {
+      "label": "attached",
+      "state": "State.RESET",
+      "statusa": "0x2",
+      "dhcsr": "0x2000001",
+      "vtor": "0x0"
+    }
+  ],
+  "errors": [
+    "Core did not halt after release"
+  ],
+  "final_state": "State.SLEEPING"
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-21",
+  "display": "Hello World / 2.13 inch e-Paper",
+  "orientation": "confirmed correct by user after 180-degree correction",
+  "user_confirmation": "方向正常，仍然偏淡",
+  "contrast_description": "黑字折角处都淡，白色在红底上感觉很泛",
+  "white_clear_then_demo": "completed; no user-reported improvement",
+  "contrast_issue_resolved": false,
+  "panel_aging_confirmed": false
+}

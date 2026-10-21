@@ -1,0 +1,14 @@
+{
+  "method": "Microchip reset_and_halt: DEMCR.VC_CORERESET, SYSRESETREQ, DHCSR.C_HALT, DSU.CRSTEXT W1C; no hardware breakpoint and no NVM commands",
+  "events": [
+    {
+      "dhcsr": "0x2000003",
+      "dsu_statusa": "0x2"
+    }
+  ],
+  "state": "State.HALTED",
+  "pc": "0xaa0",
+  "boot_reset_vector": "0xaa1",
+  "success": true,
+  "final_state": "State.RUNNING"
+}

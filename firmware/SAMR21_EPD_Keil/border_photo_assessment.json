@@ -1,0 +1,20 @@
+{
+  "photo": "D:/@Edgedownload/213资料/黑边情况.jpg",
+  "photo_sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088",
+  "photo_pixels": [
+    4096,
+    3072
+  ],
+  "red_refresh_visually_confirmed": true,
+  "annotation": "../屏幕黑边分区标注.jpg",
+  "observed_regions": [
+    "red rectangular active display",
+    "thin white inner border",
+    "outer purple/black mixed edge following notch and hole"
+  ],
+  "controlled_border_black_white_response_confirmed_by_user": true,
+  "outer_edge_unchanged_through_white_black_border_white_border_red_tests": true,
+  "inference": "Outer edge is outside the region controlled by tested image and border commands; ordinary refresh is unlikely to clear it.",
+  "unconfirmed": "Exact edge material, seal construction, or marginal ink retention cannot be determined from the photo alone.",
+  "hardware_actions_this_review": "none; full red image retained"
+}

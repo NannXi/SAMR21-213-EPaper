@@ -1,0 +1,64 @@
+{
+  "compiler": "Keil ARMCC 5.06 update 5 build 528",
+  "uvision_build": "0 errors, 0 warnings",
+  "firmware_sha256": "099e805566d78b11d03a7fd6dbaadf6968f8bb146bc8c6415487e3c0ee07c325",
+  "firmware_bytes": 2464,
+  "current_startup_command": 6,
+  "current_requested_display": "landscape 212x104, rotated 180 from first demo: white/black Hello World, red/white 2.13 inch e-Paper, small icons; border 0x77",
+  "full_flash_readback_match": true,
+  "auxiliary_unchanged": true,
+  "latest_run": "Runs/20261021_101153_990043/result.json",
+  "refresh_ms": 14976,
+  "observations": [
+    {
+      "test": "white display, white border",
+      "user": "画面全白，四周黑边基本没变"
+    },
+    {
+      "test": "white display, black border",
+      "user": "缺角那块多了一小条黑边，原本外层边边基本没动"
+    },
+    {
+      "test": "restore white border",
+      "user": "消失了。刚刚缺角处就是纯粹的黑，但是我观察到边边是那种颜色混合的。"
+    },
+    {
+      "test": "full red",
+      "user": "黑边情况.jpg confirms red active area, white controllable border, and unchanged outer mixed edge"
+    }
+  ],
+  "keil_native_flash_algorithm_configured": false,
+  "keil_native_debug_tested": false,
+  "custom_firmware_installed": true,
+  "demo_framebuffer_sha256": "a0754d72c4381487c507a70f18b9837a546dee3dc4ad9ad9f225294aff45f35f",
+  "demo_visual_confirmation": {
+    "date": "2026-10-21",
+    "display": "Hello World / 2.13 inch e-Paper",
+    "orientation": "confirmed correct by user after 180-degree correction",
+    "user_confirmation": "方向正常，仍然偏淡",
+    "contrast_description": "黑字折角处都淡，白色在红底上感觉很泛",
+    "white_clear_then_demo": "completed; no user-reported improvement",
+    "contrast_issue_resolved": false,
+    "panel_aging_confirmed": false
+  },
+  "photo_assessment": {
+    "photo": "D:/@Edgedownload/213资料/黑边情况.jpg",
+    "photo_sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088",
+    "photo_pixels": [
+      4096,
+      3072
+    ],
+    "red_refresh_visually_confirmed": true,
+    "annotation": "../屏幕黑边分区标注.jpg",
+    "observed_regions": [
+      "red rectangular active display",
+      "thin white inner border",
+      "outer purple/black mixed edge following notch and hole"
+    ],
+    "controlled_border_black_white_response_confirmed_by_user": true,
+    "outer_edge_unchanged_through_white_black_border_white_border_red_tests": true,
+    "inference": "Outer edge is outside the region controlled by tested image and border commands; ordinary refresh is unlikely to clear it.",
+    "unconfirmed": "Exact edge material, seal construction, or marginal ink retention cannot be determined from the photo alone.",
+    "hardware_actions_this_review": "none; full red image retained"
+  }
+}

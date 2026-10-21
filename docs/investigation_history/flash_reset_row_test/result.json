@@ -1,0 +1,89 @@
+{
+  "utc": "2026-10-21T01:16:12.677258+00:00",
+  "mode": "row-test",
+  "source_sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8",
+  "probe": "37FF71064E57343693001043",
+  "events": [
+    {
+      "kind": "reset_caught",
+      "pc": "0xaa0"
+    },
+    {
+      "kind": "preflight_passed",
+      "backup_sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8",
+      "differing_bytes": 1
+    },
+    {
+      "kind": "nvm_configured",
+      "original_ctrlb": "0x0",
+      "programming_ctrlb": "0x4039e"
+    },
+    {
+      "kind": "row_test_passed",
+      "address": "0x19c00",
+      "bytes": 256,
+      "erased_blank_checked": true,
+      "readback_verified": true
+    },
+    {
+      "kind": "full_flash_verified",
+      "sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8",
+      "bytes": 262144
+    },
+    {
+      "kind": "original_main_reached",
+      "pc": "0x1194c"
+    },
+    {
+      "kind": "original_refresh_reached",
+      "commands": [
+        "0x6",
+        "0x4",
+        "0x0",
+        "0x61",
+        "0x50",
+        "0x10",
+        "0x13",
+        "0x12"
+      ]
+    }
+  ],
+  "errors": [],
+  "success": true,
+  "method": "Halted CPU, SWD NVMCTRL ER/PBC/WP; 256-byte row blank checks; 64-byte page readbacks; full flash readback; no auxiliary writes",
+  "preflight": {
+    "did": "0x10010319",
+    "param": "0x31000",
+    "statusb": "0x12",
+    "lock": "0xffff",
+    "wdt_ctrl": "0x0",
+    "pc": "0xaa0"
+  },
+  "backup_sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8",
+  "backup_double_read_match": true,
+  "before_vs_factory": {
+    "different_bytes": 1,
+    "first_offsets": [
+      "0x3f890"
+    ]
+  },
+  "verified_flash_sha256": "82256cb40c72708d2e0d6999b2e0d10028b4b462cb0969169951156986fba4a8",
+  "full_flash_readback_match": true,
+  "auxiliary_unchanged": true,
+  "boot_check": {
+    "main_reached": true,
+    "epd_commands": [
+      6,
+      4,
+      0,
+      97,
+      80,
+      16,
+      19,
+      18
+    ],
+    "refresh_reached": true
+  },
+  "final_state": "State.RUNNING",
+  "elapsed_seconds": 17.453
+}

@@ -1,0 +1,139 @@
+{
+  "created_utc": "2026-10-21T01:05:37.188893+00:00",
+  "initial_flash_double_read_match": true,
+  "initial_flash_sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8",
+  "post_debug_comparison": {
+    "code_and_initial_data_match": true,
+    "changed_flash_bytes": [
+      {
+        "address": "0x0003F890",
+        "before": "0x1e",
+        "after": "0x22",
+        "meaning": "original firmware runtime/config field; exact semantics unconfirmed"
+      }
+    ],
+    "auxiliary_rows_match": true
+  },
+  "files": [
+    {
+      "name": "213价签_Debug资源报告.md",
+      "bytes": 12911,
+      "sha256": "89878f6ae75cc078afe289d167c5d2c3182aacb84d50f9e8c9d340a29c86edbc"
+    },
+    {
+      "name": "hardware_snapshot.json",
+      "bytes": 16948,
+      "sha256": "204518ce76a0218208c1f9c6746b47de26fb56818bbccb2c3f4cdfb17dff87c3"
+    },
+    {
+      "name": "hardware_snapshot_running.json",
+      "bytes": 17763,
+      "sha256": "9b4d68472161b3f9eacda9d60bdbc043e4fed2fd37692c9d33230afb5b33f673"
+    },
+    {
+      "name": "original_aux1_256B.bin",
+      "bytes": 256,
+      "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+    },
+    {
+      "name": "original_aux3_256B.bin",
+      "bytes": 256,
+      "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+    },
+    {
+      "name": "original_boot_trace.json",
+      "bytes": 3438,
+      "sha256": "72cbd7f48f27b156284d6b63e705dd2f2796c0d21bba9f13874455ae00d4ac27"
+    },
+    {
+      "name": "original_cal_8B.bin",
+      "bytes": 8,
+      "sha256": "a6fa107ff130f4cbff6cb7dd955f1402c25c3cc6853a33b42318bb827a5dab9c"
+    },
+    {
+      "name": "original_calibration_16B.bin",
+      "bytes": 16,
+      "sha256": "56e910e9a53f3f3fbb801e676950706ca5e208fed0bc53ac662b271cc7c4013c"
+    },
+    {
+      "name": "original_firmware_linear_disassembly.asm",
+      "bytes": 1794185,
+      "sha256": "a0d4e40beabc3b9ecd19fe1009893797dc979d1c518bf1e34c279e8f224090cb"
+    },
+    {
+      "name": "original_flash_256KiB_read1.bin",
+      "bytes": 262144,
+      "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+    },
+    {
+      "name": "original_flash_256KiB_read2.bin",
+      "bytes": 262144,
+      "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+    },
+    {
+      "name": "original_flash_postdebug_256KiB.bin",
+      "bytes": 262144,
+      "sha256": "f279e1586d94b7cb3e4fc31c874b97da0b4e1cfbc0d6a893a167e918d768bcba"
+    },
+    {
+      "name": "original_screen_recovered_212x104.png",
+      "bytes": 650,
+      "sha256": "0c171c2c5fc1ee0f4a2d6c50106cf7f2e350ef1b4ecc90a40824cf236794a31d"
+    },
+    {
+      "name": "original_screen_recovered_4x.png",
+      "bytes": 2386,
+      "sha256": "36f11d9afe8f0470f043cb1fd0368f4f0d059f189d918b7f2a8dc56ed68f03c7"
+    },
+    {
+      "name": "original_screen_resource_2bpp.bin",
+      "bytes": 5936,
+      "sha256": "8c6cb481a2fab1a19e956ffb076cdbe5ae689ea5628d4afb3bac15462e2dfd16"
+    },
+    {
+      "name": "original_sram_after_trace_32KiB.bin",
+      "bytes": 32768,
+      "sha256": "75a850abb790e35643e514e135f37c10e16914cf409b200c054e89a2f968441f"
+    },
+    {
+      "name": "original_sram_snapshot_32KiB.bin",
+      "bytes": 32768,
+      "sha256": "f36f7f612819be6daaffd366297a5f9856919ed29d1d61547a048620caa6d6da"
+    },
+    {
+      "name": "original_startup_debug.json",
+      "bytes": 314,
+      "sha256": "35f19625e6ebe9e3f15f781e1215c62df414dade7a9fa56099345188ebd3e206"
+    },
+    {
+      "name": "original_user_row_256B.bin",
+      "bytes": 256,
+      "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+    },
+    {
+      "name": "original_user_row_64B.bin",
+      "bytes": 64,
+      "sha256": "a5ad5939f6b7333747cf22f5ef5643224a76eee8340a2620cbba1d29b2ebde79"
+    },
+    {
+      "name": "postdebug_aux1_256B.bin",
+      "bytes": 256,
+      "sha256": "de47ddeede39e57f44f531d600332463d333046a3b11c3115fe8ac460aa2bd1d"
+    },
+    {
+      "name": "postdebug_aux3_256B.bin",
+      "bytes": 256,
+      "sha256": "bd086c08f13d07eb8d2d31c7b306c652e2a0f5058fde4db0e312389a7d237874"
+    },
+    {
+      "name": "postdebug_user_row_256B.bin",
+      "bytes": 256,
+      "sha256": "cb97eb21b0ccc6f88e06e75e96aada1fdfc5657a959d5ae5198556c68199b5d2"
+    },
+    {
+      "name": "recovered_board_resources.json",
+      "bytes": 11999,
+      "sha256": "924c4d862781b4b1d9e46188c815e8e9db888d81264671cc5ce7ad327949d379"
+    }
+  ]
+}

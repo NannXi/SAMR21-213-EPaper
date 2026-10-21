@@ -1,0 +1,22 @@
+{
+  "factory_sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8",
+  "full_restore_succeeded": true,
+  "all_262144_bytes_match_factory_before_resume": true,
+  "rewritten_rows": 395,
+  "chip_erase_used": false,
+  "auxiliary_writes_used": false,
+  "auxiliary_unchanged": true,
+  "original_main_and_refresh_observed": true,
+  "human_visual_refresh_confirmed": true,
+  "human_reply": "看到了刷新",
+  "reset_vector_catch_and_row_write_verified": true,
+  "custom_firmware_has_not_been_written": true,
+  "custom_to_factory_end_to_end_tested": false,
+  "final_state": "State.RUNNING",
+  "full_restore_record": "flash_restore_original/result.json",
+  "final_tool_row_test_record": "flash_reset_row_test/result.json",
+  "dependencies": {
+    "pyocd": "0.46.0",
+    "libusb-package": "1.0.30.0"
+  }
+}
