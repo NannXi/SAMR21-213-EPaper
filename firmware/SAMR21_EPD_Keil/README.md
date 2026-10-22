@@ -20,7 +20,7 @@ MCU 固件由 C 和 ARM 汇编组成，使用 Keil ARMCC 5、CMSIS 和 Microchip
 
 打开 `SAMR21_EPD.uvprojx`，选择 ARM Compiler 5，F7 编译。目标采用通用 Cortex-M0+，实际外设定义来自附带的 SAMR21 头文件。尚未配置 Keil 原生 FLM 下载及 Keil 内部在线调试，下载使用已实测的外部 SWD 工具。
 
-命令行编译：
+命令行编译（已对齐uVision的分段与链接顺序，2026-10-22隔离重编BIN与原实测版本逐字节一致）：
 
 ```powershell
 .\build.ps1 -KeilRoot 'D:\12-keil5'
@@ -44,7 +44,7 @@ python -m venv .venv
 023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8
 ```
 
-默认使用本次实测 ST-Link 序列号，可通过环境变量 `EPD_PROBE_SERIAL` 选择其他探针。`flash.ps1` 优先使用工程内 `.venv`，也兼容本次工作目录的环境。
+默认使用本次实测 ST-Link 序列号，可通过环境变量 `EPD_PROBE_SERIAL` 选择其他探针。`flash.ps1` 优先使用工程内 `.venv`，可用 `-PythonExe` 指定其他环境。
 
 每次下载前双读备份完整 Flash，并保存辅助区；仅擦写所需的 256 字节行，每个 64 字节页写后校验，向量表所在行最后写入。随后校验完整 Flash 及辅助区。记录保存于 `Runs/`。
 
@@ -70,4 +70,4 @@ CS=PA23，SDIO=PA24，SCLK=PA25，BUSY=PA27（低忙），电源使能=PA28，D/
 
 屏幕初始化参数来自原厂程序的静态分析和运行捕获，使用原有 OTP 波形，没有加载自定义 LUT 或调整升压电压。具体驱动 IC 尚未最终确认。同类参考：[GxEPD2_213c](https://github.com/ZinggJM/GxEPD2/blob/master/src/epd3c/GxEPD2_213c.cpp)，本项目未复制该库代码。
 
-NFC 传图、无线通信和整机低功耗尚未实现。当前轻睡眠用于保持调试访问。Microchip 和 ARM 文件保留原版权声明；原厂二进制备份不属于本工程原创源码。
+本显示例程未包含NFC传图、无线通信和整机低功耗；手机NFC传图已在[独立项目](https://github.com/NannXi/SAMR21-213-NFC)实现。当前轻睡眠用于保持调试访问。Microchip 和 ARM 文件保留原版权声明；原厂二进制备份不属于本工程原创源码。

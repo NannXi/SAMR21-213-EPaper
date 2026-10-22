@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-22",
+  "scope": "Documentation, repository checks and host build/launcher tooling",
+  "source_before_maintenance": "cef7a481b47762390c02c3ddce204cc23938c758",
+  "keil_rebuild": {
+    "compiler": "ARMCC 5.06 u5 build 528",
+    "isolated": true,
+    "result": "PASS",
+    "bin_matches_existing": true,
+    "bin_bytes": 2464,
+    "sha256": "099e805566d78b11d03a7fd6dbaadf6968f8bb146bc8c6415487e3c0ee07c325",
+    "build_script_fix": "Removed split_sections and aligned link object order to validated uVision project"
+  },
+  "hardware_connected_or_flashed": false,
+  "historical_evidence_and_original_materials_modified": false,
+  "existing_release_assets_replaced": false
+}

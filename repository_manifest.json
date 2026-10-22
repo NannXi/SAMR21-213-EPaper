@@ -3,17 +3,33 @@
     "bytes": 160,
     "sha256": "b76d3439db6d3a838120223bf33252f83598b8d32043ff807ba51928db8f001b"
   },
+  ".github/ISSUE_TEMPLATE/bug_report.md": {
+    "bytes": 448,
+    "sha256": "eb19e789e188894e787eb57d8fd4cdb6a8cb269ea588c98689ae97eeffdafb55"
+  },
+  ".github/workflows/check.yml": {
+    "bytes": 464,
+    "sha256": "a39b43e3e3269d03825673dbe26182565eb91b32a3ac113a0b378f7741b03283"
+  },
   ".gitignore": {
     "bytes": 242,
     "sha256": "f3b2ea3ee9de8513cd0840150ccc7eb7df01cd6240bcce4a0e65677c5cc8b4a6"
+  },
+  "CONTRIBUTING.md": {
+    "bytes": 2433,
+    "sha256": "2a07e5dd5b5980d8419ee0e3e8b9777f834094e483b1f94c1b17d3bfd25a0f83"
   },
   "docs/DISPLAY_QUALITY.md": {
     "bytes": 1304,
     "sha256": "8d855e8d3c7fc7ef6a081a56f83c2dda292fbed8ded32d4e523dbd6a62fc9dc1"
   },
+  "docs/GETTING_STARTED.md": {
+    "bytes": 3623,
+    "sha256": "1df8e9c1ce60e7399bce98bdf748d5f38bec5580dbc91c2591853ad6dac2d19c"
+  },
   "docs/HARDWARE.md": {
-    "bytes": 17981,
-    "sha256": "6ca380a64e3ce1195a8056b778d43bddadd4c3df43fec530973bb1039e63e142"
+    "bytes": 18160,
+    "sha256": "b543f109df1796894772c582c908dbe51be22de3b649f9e6ed0fa648ed22808a"
   },
   "docs/investigation_history/213价签_Debug资源报告.md": {
     "bytes": 12911,
@@ -335,6 +351,14 @@
     "bytes": 161412,
     "sha256": "a929d3cc327f0555ca0df411bd544f0ac2e50a806c52147cb37550d8997b0d8d"
   },
+  "docs/repository_review_20261022.json": {
+    "bytes": 691,
+    "sha256": "19a50cbd968c6e603bfb74a2a7cd787c12e18db554cc0f69b5933561175e926e"
+  },
+  "docs/STATUS.md": {
+    "bytes": 2658,
+    "sha256": "927665a8e06fc6e5e9f101dd2c0a992a89748ac487102e38b94a5de92072e0a1"
+  },
   "firmware/SAMR21_EPD_Keil/App/app.h": {
     "bytes": 975,
     "sha256": "58ab61b38684307f9b2d40968bafe22cc1ae1e7de52d65863e4e31624eda708b"
@@ -356,8 +380,8 @@
     "sha256": "ef4aeefe4086a5238f94e1c72c51468885d75f2d4ec8d4d2cc82e248100c0740"
   },
   "firmware/SAMR21_EPD_Keil/build.ps1": {
-    "bytes": 1614,
-    "sha256": "049591b49fe06a8f08453831c878ca8522b37dd9c0a6192555878de31f416c44"
+    "bytes": 1595,
+    "sha256": "d21f8ac18c7b11f194d387f9ea3b196241ddfebbd063e0ea254207ce980682a0"
   },
   "firmware/SAMR21_EPD_Keil/CMSIS/arm_common_tables.h": {
     "bytes": 6156,
@@ -756,8 +780,8 @@
     "sha256": "32913bb0d6875d0e1f59ecff73f158874ca6de411241ef7719e8e1dbde46245c"
   },
   "firmware/SAMR21_EPD_Keil/flash.ps1": {
-    "bytes": 1037,
-    "sha256": "5ffb88c87b848c9db30461b7e67875574104411641b9ea74d8ea7f5cc67edc16"
+    "bytes": 954,
+    "sha256": "2c0a567a6f4577dee7b4d8f84ddd32bc8dcc306e134c3501d5567dbe4cc90884"
   },
   "firmware/SAMR21_EPD_Keil/Listings/epd_white.map": {
     "bytes": 19022,
@@ -768,8 +792,8 @@
     "sha256": "b799d526bc321d732fd56b9785807111e88a9096a3f0c66e9d40e4aa42080d62"
   },
   "firmware/SAMR21_EPD_Keil/manifest.json": {
-    "bytes": 25652,
-    "sha256": "b417872bb99f6b18454563622db977701766aae006d67a9f79c5d01598ca4673"
+    "bytes": 24947,
+    "sha256": "686d1d40a05d2861b48055564f4d2e7915ef00b9867ee81f372a7acd9f6c38ac"
   },
   "firmware/SAMR21_EPD_Keil/Objects/epd_white.axf": {
     "bytes": 46060,
@@ -788,8 +812,8 @@
     "sha256": "8d0e36b7a9b047717cf96d772288ee969e930b152ecc9d7c2e31fb8f2148b023"
   },
   "firmware/SAMR21_EPD_Keil/README.md": {
-    "bytes": 4703,
-    "sha256": "15e1bf1344b4f224798088145778f2cfd5b49c898a0e6941400b600522cc833a"
+    "bytes": 4909,
+    "sha256": "813b43ed300cce7fdea6580eb7575d1c56dd3ff82425130cf64a5260a1d8c04e"
   },
   "firmware/SAMR21_EPD_Keil/Runs/20261021_093631_997991/after_aux1.bin": {
     "bytes": 256,
@@ -1139,9 +1163,17 @@
     "bytes": 4643350,
     "sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088"
   },
+  "NOTICE.md": {
+    "bytes": 1006,
+    "sha256": "65ea2072ba4aa07b50b1d2ae1c1f60bc30f1bb3f62350064a76e1592ceb82390"
+  },
   "README.md": {
-    "bytes": 5128,
-    "sha256": "865fa678e70ae1a0d239ccba752c0c51fe6ee4a65bcaa358cd0256911fc7d15f"
+    "bytes": 4085,
+    "sha256": "5b2a4d2a62f05c30e6a9b7039351030bbb3fd732f65d765123dd4b41d6ae152f"
+  },
+  "tools/check_repository.py": {
+    "bytes": 6021,
+    "sha256": "a6d8370e912e6687b69549ed34a03f641820336979b219cdfa88e1aab3ed6c84"
   },
   "tools/investigation_history/disassemble.py": {
     "bytes": 2217,
