@@ -4,9 +4,9 @@ LG Innotek ESL TAG2.13B 的 **Keil5 C/ASM 固件 + 原生 Android 图片编辑�
 
 <img src="android/artwork/icon-preview.png" alt="墨屏黑白红像素图标" width="112">
 
-**当前组合：Android v0.1.4 + 板端固件 v0.1.2。** 用户已确认 v0.1.2 手机上传成功；v0.1.4 汇总此前所有应用迭代。
+**当前组合：Android v0.1.5 + 板端固件 v0.1.2。** 用户已确认 v0.1.2 手机上传成功；v0.1.5 在固件确认提交后停止 NFC 轮询并提示可拿开手机。
 
-[下载 Android v0.1.4](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.1.4/epaper-nfc-v0.1.4-debug.apk) · [版本与校验](docs/RELEASES.md) · [快速开始](docs/GETTING_STARTED.md)
+[下载 Android v0.1.5](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.1.5/epaper-nfc-v0.1.5-debug.apk) · [Android v0.1.4](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.1.4/epaper-nfc-v0.1.4-debug.apk) · [版本与校验](docs/RELEASES.md) · [快速开始](docs/GETTING_STARTED.md)
 
 ## 使用流程
 
@@ -14,9 +14,9 @@ LG Innotek ESL TAG2.13B 的 **Keil5 C/ASM 固件 + 原生 Android 图片编辑�
 2. 手机安装应用并打开 NFC。Android 8.0/API26 以上，需要 NFC-A；不需要 root 或 Shizuku。
 3. 在固定的圆角预览中看效果；在“图像调整”里选图、顺时针旋转 90°、缩放并拖动裁切。
 4. 调整亮度、对比度、黑白红/黑白、关闭/有序/扩散抖动，以及 0–100% 抖动强度。
-5. 点击“上传到墨水屏”，按提示靠近线圈。识别后保持位置，等待传输和刷新完成，再移开手机。
+5. 点击“上传到墨水屏”，按提示靠近线圈。识别后保持位置；出现“等待屏幕刷新”及“OK，可以拿开手机”后即可移开，主板会继续刷新。
 
-等待连接、传图和刷新期间应用保持亮屏，完成、取消、失败或进入后台后释放。应用只申请 NFC 权限；系统文件选择器授予单张图片访问，不申请联网、照片库或存储权限。
+等待连接和传图期间应用保持亮屏；收到提交 ACK 后停止 NFC 轮询并解除常亮。刷新提示由 OK 按钮关闭，屏幕由主板继续刷新。应用只申请 NFC 权限；系统文件选择器授予单张图片访问，不申请联网、照片库或存储权限。
 
 预览是三色实际像素，不能代表实物反射对比度。图片亮度/对比度不会调节屏幕电压；本板物理偏淡问题仍存在。
 
@@ -48,4 +48,4 @@ LG Innotek ESL TAG2.13B 的 **Keil5 C/ASM 固件 + 原生 Android 图片编辑�
 
 本方案依赖主板 VCC。传输时保持稳定供电：掉电后 SRAM 镜像地址可能回到 EEPROM，继续 RF 写有影响原 NDEF 的风险。尚未发布自动恢复 EEPROM 或更改锁位的功能，详见[硬件与验证](docs/HARDWARE_AND_VALIDATION.md)。
 
-整理日期：2026-10-23。Android v0.1.4 是此前所有应用迭代的汇总版。
+整理日期：2026-10-23。Android 仅保留 v0.1.4 汇总版与 v0.1.5 提交后取机版两个 Release。

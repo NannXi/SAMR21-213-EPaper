@@ -2,7 +2,7 @@
 
 ## 离线仓库校验
 
-项目根目录：
+仓库根目录：
 
 ```powershell
 python tools/check_repository.py
@@ -12,10 +12,10 @@ python tools/check_repository.py
 
 ## Java 核心
 
-JDK17，在项目根目录：
+JDK17，在仓库根目录：
 
 ```powershell
-.\nfc\tests\run-core.ps1 -JavaHome 'C:\Tools\jdk17'
+.\tests\run-core.ps1 -JavaHome 'C:\Tools\jdk17'
 ```
 
 覆盖白/黑/红极性、四角与中间坐标、三色量化、抖动强度0/25/50/75/100、0%关闭、100%兼容、边界限制、标准CRC32向量与EPD1帧。产物在忽略的 `android/build/core-tests`。
@@ -36,6 +36,6 @@ python tests/hardware_mailbox.py
 
 ## 手机验收
 
-v0.1.2已收到用户上传成功反馈。v0.1.4固定预览、旋转图标、常亮以及多机/移场/掉电条件仍需实机数据，见[验收步骤](../docs/HARDWARE_AND_VALIDATION.md)。
+v0.1.2已收到用户上传成功反馈。v0.1.4固定预览、旋转图标、常亮以及v0.1.5 ACK后取机提示、多机/移场/掉电条件仍需实机数据，见[验收步骤](../docs/HARDWARE_AND_VALIDATION.md)。
 
-当前校验结果与实验报告分开存放，原始Flash/EEPROM备份和历史报告不因CI重新生成。NFC 子工程以仓库根目录清单统一校验；核心 Java 测试由根目录 CI 运行。
+当前校验结果与实验报告分开存放，原始Flash/EEPROM备份和历史报告不因CI重新生成。
