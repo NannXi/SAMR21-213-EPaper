@@ -13,5 +13,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
       - name: Check documentation, Keil inputs and byte manifests
         run: python tools/check_repository.py
+      - name: Test NFC image processing and wire protocol
+        shell: pwsh
+        run: ./nfc/tests/run-core.ps1 -JavaHome $env:JAVA_HOME

@@ -6,16 +6,16 @@ LG Innotek ESL TAG2.13B 的硬件资料、原厂固件备份恢复记录和 Keil
 
 本仓库的默认示例为横向 **212×104 黑白红**：上半白底黑字 Hello World，下半红底白字 2.13 inch e-Paper，带像素图标；上电刷新一次。方向已由用户确认。黑字折角偏淡、红底白字发泛仍未解决，尚不能认定为屏幕老化。
 
-## 两个仓库怎么选
+## 仓库内容
 
 | 目的 | 入口 |
 |---|---|
 | 看主板、屏幕、引脚和原始照片 | 本仓库：[硬件介绍](docs/HARDWARE.md)、[24 项原始资料索引](docs/PHOTO_INDEX.md) |
 | 编译显示示例、做白屏/红屏/边框实验、恢复原厂 | 本仓库：[快速开始](docs/GETTING_STARTED.md)、[Keil 工程](firmware/SAMR21_EPD_Keil/README.md) |
-| 手机选图、调整图片并用 NFC 上传 | [SAMR21-213-NFC](https://github.com/NannXi/SAMR21-213-NFC)，Android v0.1.4 配板端 v0.1.2 |
+| 手机选图、调整图片并用 NFC 上传 | [`nfc/`](nfc/)，Android v0.1.4 配板端 v0.1.2；发布包见 [Releases](https://github.com/NannXi/SAMR21-213-EPaper/releases) |
 | 了解哪些做过、哪些还未知 | [当前状态与证据](docs/STATUS.md)、[显示质量记录](docs/DISPLAY_QUALITY.md) |
 
-NFC 后续已在独立仓库打通，用户确认手机上传成功；这里的显示示例继续独立保留，不包含 NFC 业务。原始备份、照片与历史报告保留原貌。
+NFC 工程已并入本仓库，Keil 显示工程、NFC 固件、Android 应用和全部硬件资料在同一份版本树中。原 `SAMR21-213-NFC` 仓库暂时保留，待本仓库验收后再决定是否删除。
 
 ## 硬件概况
 
@@ -44,6 +44,7 @@ NFC 后续已在独立仓库打通，用户确认手机上传成功；这里的�
 
 | 路径 | 内容 |
 |---|---|
+| [HARDWARE.md](HARDWARE.md) | 面向读者的硬件介绍、照片和摸索过程 |
 | [docs/HARDWARE.md](docs/HARDWARE.md) | 供电、主控、SWD、屏幕、NFC、无线、UART、ADC、可选存储及接口边界 |
 | [docs/PHOTO_INDEX.md](docs/PHOTO_INDEX.md) | 22 张照片、原始说明与离线 DFP 包，共 24 项 |
 | [docs/ORIGINAL_FIRMWARE.md](docs/ORIGINAL_FIRMWARE.md) | 原厂内存布局、函数入口、图像格式、备份和恢复证据 |
@@ -56,4 +57,4 @@ NFC 后续已在独立仓库打通，用户确认手机上传成功；这里的�
 
 运行 `python tools/check_repository.py` 可离线检查资料链接、JSON、Keil 输入和哈希清单。GitHub Actions 执行同一检查；不连接实物，不把自动检查等同于硬件验证。
 
-整理日期：2026-10-22。硬件实验记录主要来自 2026-10-21；最新板端应用在 NFC 仓库维护。
+整理日期：2026-10-23。硬件实验记录主要来自 2026-10-21；NFC 应用和板端协议已并入 `nfc/`。

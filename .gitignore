@@ -11,3 +11,5 @@ __pycache__/
 *.lst
 # Existing validation runs are committed explicitly; future backups stay local.
 firmware/SAMR21_EPD_Keil/Runs/*/
+# NFC release binaries are uploaded as GitHub Release assets, not source files.
+nfc/releases/

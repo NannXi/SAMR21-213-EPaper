@@ -8,12 +8,12 @@
     "sha256": "eb19e789e188894e787eb57d8fd4cdb6a8cb269ea588c98689ae97eeffdafb55"
   },
   ".github/workflows/check.yml": {
-    "bytes": 464,
-    "sha256": "a39b43e3e3269d03825673dbe26182565eb91b32a3ac113a0b378f7741b03283"
+    "bytes": 716,
+    "sha256": "1669ed47c6df963e4cdaf95011fbbe46828cba7795e90f295b141728f233ceec"
   },
   ".gitignore": {
-    "bytes": 242,
-    "sha256": "f3b2ea3ee9de8513cd0840150ccc7eb7df01cd6240bcce4a0e65677c5cc8b4a6"
+    "bytes": 338,
+    "sha256": "3ab3766cfe5603787811aa98b0a5be6bafda9c0aee65367f2022e2b7304991ab"
   },
   "CONTRIBUTING.md": {
     "bytes": 2433,
@@ -1163,13 +1163,657 @@
     "bytes": 4643350,
     "sha256": "e42d8cbf867b0a8b6febc4a823c49274295e543d8e299db8edcf44a19b774088"
   },
+  "HARDWARE.md": {
+    "bytes": 3332,
+    "sha256": "82966d4ccdb7263cdead5765e41c3fe75a027b76eb693b2b8f0519d3c5f1081f"
+  },
+  "nfc/.gitattributes": {
+    "bytes": 104,
+    "sha256": "0a4c95d0c738127f21483cff4e78ca1a135c37d53b25763b5916b744bce6bbe7"
+  },
+  "nfc/.gitignore": {
+    "bytes": 461,
+    "sha256": "772a81b3c0938db506e659f6f83958fe87675e29138842eae8190359879447cb"
+  },
+  "nfc/android/app/src/main/AndroidManifest.xml": {
+    "bytes": 946,
+    "sha256": "99cc00e9d5d533b09c24280f8dc0873583e1287caced183e68ef3e908cf9229c"
+  },
+  "nfc/android/app/src/main/java/io/github/nannxi/epaper/ImageProcessor.java": {
+    "bytes": 3254,
+    "sha256": "bf7f8fc9301e4a327f0fc5145bd2cb8da1aacff8a40311779a432e0c6ca9fe36"
+  },
+  "nfc/android/app/src/main/java/io/github/nannxi/epaper/MainActivity.java": {
+    "bytes": 33304,
+    "sha256": "64bcd2152adadedff0ee2fa0095c7f3dd2a6d2ed9f76498402ea6b175f922e03"
+  },
+  "nfc/android/app/src/main/java/io/github/nannxi/epaper/NfcTransfer.java": {
+    "bytes": 7924,
+    "sha256": "0e0662cc2791434aac6f01fedb229ccbcc54fc20a8eeb1ca70933dfde4ee89b1"
+  },
+  "nfc/android/app/src/main/java/io/github/nannxi/epaper/Wire.java": {
+    "bytes": 1248,
+    "sha256": "2ca6a0dfc97687d0e4e7f9294c3c48e2ffa5ca2bb19e787e826a774e2314d5db"
+  },
+  "nfc/android/app/src/main/res/drawable/ic_launcher_foreground.xml": {
+    "bytes": 930,
+    "sha256": "374c195b4d47fc74e0e00a3a02b917ca04763dff579b415fe2993e26cc05a0b7"
+  },
+  "nfc/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+    "bytes": 210,
+    "sha256": "58969dc75ae16e455bb7f1be94e103aeea28e969a9cae8f6de76ed3497219d12"
+  },
+  "nfc/android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "bytes": 398,
+    "sha256": "aaffc056396ef763b88cc26b860920daaeae3f70b7264facbe1b224b88b927a0"
+  },
+  "nfc/android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "bytes": 332,
+    "sha256": "4c362cd4b7c40df74d8ce137d0ab164cf6931cdad12623dacc698dfa70d83b99"
+  },
+  "nfc/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "bytes": 502,
+    "sha256": "0069a0914c825b013369081dda7d802268283bed633cd5279de8359230bc7346"
+  },
+  "nfc/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "bytes": 675,
+    "sha256": "f37dbd28ae693876b8fa1edad65ad058792877f8955f265b428c1ca8a73da83f"
+  },
+  "nfc/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "bytes": 828,
+    "sha256": "950cca070c6eb00008087c8b704e92ff9801c04a0621196b42e019fc88080f5c"
+  },
+  "nfc/android/app/src/main/res/values/colors.xml": {
+    "bytes": 68,
+    "sha256": "a430de4dfbd83dd5324292bafb94a7cb3045b2f441804556ee3ccd839d22b499"
+  },
+  "nfc/android/artwork/icon-preview.png": {
+    "bytes": 2172,
+    "sha256": "c3cea6ba3388b7ad82763b9c870b8673a7d8a28948c504557d2857528a715c0f"
+  },
+  "nfc/android/artwork/icon.svg": {
+    "bytes": 695,
+    "sha256": "1523029837897d48c3bdcd9dc4b693a2a723c0cb0e1e33da0ab37b5a0f0534ae"
+  },
+  "nfc/android/build.ps1": {
+    "bytes": 3122,
+    "sha256": "b12ae8c92b241e36862daaddaf4b66e90dc31b8b98f735835d69e4f69eb8eb4a"
+  },
+  "nfc/android/README.md": {
+    "bytes": 2823,
+    "sha256": "d5a6676461ec280d7a58b5c4201a2a849d09650d40f2655cabe64c3c210f3114"
+  },
+  "nfc/android/tools/render_icon.py": {
+    "bytes": 1917,
+    "sha256": "35f25ef2d8b94e2fd0a2035b0c5347196ff983bbfb3204c4c1f6402de07d1bf5"
+  },
+  "nfc/CONTRIBUTING.md": {
+    "bytes": 2480,
+    "sha256": "cd3dcd33790d63cd57fbcbc6aeb2aca73211f5dee2c6b9132e23b211d11d2d7e"
+  },
+  "nfc/docs/android_build_validation.json": {
+    "bytes": 1139,
+    "sha256": "1813ad384be6f5ce32171ac11212cf500daf16c066c6c74dcaf18c6993c16712"
+  },
+  "nfc/docs/ARCHITECTURE.md": {
+    "bytes": 2377,
+    "sha256": "a6e41dd4badd26b9b44a782a795c045c1ded46a4d26df80bcb73a2ed99bafce9"
+  },
+  "nfc/docs/CHANGELOG.md": {
+    "bytes": 886,
+    "sha256": "4045008459ebbc2856f3618ebb3d98016230fcc21f2b855581553738eb7e504a"
+  },
+  "nfc/docs/firmware_flash_validation.json": {
+    "bytes": 4098,
+    "sha256": "3a08e4f4968f473dbd14f547c95a6acab1899d059687f860799876a1b972afd7"
+  },
+  "nfc/docs/GETTING_STARTED.md": {
+    "bytes": 2926,
+    "sha256": "022bf38332a14b3481c84ab88a9a3e0503e548c8ce0fbb02f4c3954dfede2126"
+  },
+  "nfc/docs/HARDWARE_AND_VALIDATION.md": {
+    "bytes": 5596,
+    "sha256": "c95a1c49c7d7a16181c5417d49cd19fc37ee49c0f5b2df8c84cd2b1156e3c305"
+  },
+  "nfc/docs/hardware_protocol_validation.json": {
+    "bytes": 1422,
+    "sha256": "2382000ccc01f375a01c7138a71833c3b516a180bd6f3d51cfbb5065a1c225c2"
+  },
+  "nfc/docs/nfc_eeprom_before.bin": {
+    "bytes": 896,
+    "sha256": "aa2fadb624c42d9080efaa951cda56df7e70629cf3d91661896b21ebaacf4b55"
+  },
+  "nfc/docs/nfc_probe_validation.json": {
+    "bytes": 582,
+    "sha256": "8eabfcd360fc75c67bc93f06bc40c4f8be739ad4457b886d4e588398823497b7"
+  },
+  "nfc/docs/nfc_sram_before.bin": {
+    "bytes": 64,
+    "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+  },
+  "nfc/docs/PROTOCOL.md": {
+    "bytes": 4625,
+    "sha256": "a057339addeb93a03e6be8e8f7dc978890ff7935c679a0b4527af5dfb863bacd"
+  },
+  "nfc/docs/RELEASES.md": {
+    "bytes": 949,
+    "sha256": "1c76484b1cd2d4ed1ae2dee9f85ac0d470d90124155241a41d34cbd1aa545725"
+  },
+  "nfc/docs/repository_review_20261022.json": {
+    "bytes": 1101,
+    "sha256": "1f4c91aad7acc5b38091d7411970c806d636fef3df37575065bfa4585d31a6a9"
+  },
+  "nfc/docs/stability_validation.json": {
+    "bytes": 6065,
+    "sha256": "413a1c3b31d39641cf0004c5733ed6224245f9230d40162e942111c5d509d06b"
+  },
+  "nfc/docs/TROUBLESHOOTING.md": {
+    "bytes": 2533,
+    "sha256": "a258e601d0b37b5b79cd909c0ee70320a16155a2ec9f61521e48c832a43952ca"
+  },
+  "nfc/firmware/App/app.h": {
+    "bytes": 1006,
+    "sha256": "cda4205d0a04dcb3f052d91a0afaea5d195615cf540ead5e97730b0ffd7bf6aa"
+  },
+  "nfc/firmware/App/graphics.c": {
+    "bytes": 4045,
+    "sha256": "304c29d38c553646d475f02d78d0dfe8f040224b21b59e9ed8a570619bc754d3"
+  },
+  "nfc/firmware/App/graphics.h": {
+    "bytes": 518,
+    "sha256": "fed466974e9c82c35dbb81b9c7056a4e01ef00cfaf04c755849ab8147184c9a7"
+  },
+  "nfc/firmware/App/main.c": {
+    "bytes": 1669,
+    "sha256": "e673e536cf50862de9b2dc37a8791d52cac0389ef6be6acb6942f430b4f19e4e"
+  },
+  "nfc/firmware/App/nfc.h": {
+    "bytes": 810,
+    "sha256": "cd23bc180f397c3e40141cb7f55bd6152f68d42961b66e983d561f9e81265c59"
+  },
+  "nfc/firmware/App/protocol.c": {
+    "bytes": 6720,
+    "sha256": "782b1fad5a0d04302d56fd75403f855403bb2f986f9939c1052633377c274883"
+  },
+  "nfc/firmware/App/protocol.h": {
+    "bytes": 229,
+    "sha256": "aaf37da0e39fcda5fa2aaa0e2d905d3ffe4cacf3fdd4e562c2771b1d1635aad5"
+  },
+  "nfc/firmware/build.ps1": {
+    "bytes": 1705,
+    "sha256": "035eac0b56c7e821c85c6f9646cc0d4088885d31c6bdcc1e4b75c73511374fc5"
+  },
+  "nfc/firmware/CMSIS/arm_common_tables.h": {
+    "bytes": 6156,
+    "sha256": "361cfd423ad0d6e49372767708fc1dfd1d7035d8ac94d81cab9a7d7d232783cd"
+  },
+  "nfc/firmware/CMSIS/arm_const_structs.h": {
+    "bytes": 3027,
+    "sha256": "7dec892e089bb12d2d5bc0cf1d78751390674768e41ff716c7de769fab32ecce"
+  },
+  "nfc/firmware/CMSIS/arm_math.h": {
+    "bytes": 255104,
+    "sha256": "82e65f61dadbca1caad56a07922aeb2cb23fa1af5309b38bf7ae6df6f9e58d83"
+  },
+  "nfc/firmware/CMSIS/cmsis_armcc.h": {
+    "bytes": 25913,
+    "sha256": "c466b975e6590c63e72af1da7c104d7e8b774257644dff1bad9d2a296e867493"
+  },
+  "nfc/firmware/CMSIS/cmsis_armclang.h": {
+    "bytes": 54173,
+    "sha256": "44fc288fed55cadba9a9f5a94d67ba9b6bbb4f7300fd0964222b23987cf78127"
+  },
+  "nfc/firmware/CMSIS/cmsis_compiler.h": {
+    "bytes": 5923,
+    "sha256": "2913e33f24753e84fbc9fdc6c191031989a008571193394948a90683eaedcf15"
+  },
+  "nfc/firmware/CMSIS/cmsis_gcc.h": {
+    "bytes": 59329,
+    "sha256": "cc6282af3b15dcba2b63026fa03180e1f5284817f3fc4028c7855df9f2ff51da"
+  },
+  "nfc/firmware/CMSIS/core_armv8mbl.h": {
+    "bytes": 96673,
+    "sha256": "2e3519f8b92faf53173bd4df0126e552a21c6e93e568b8e4c9c4df849b89958d"
+  },
+  "nfc/firmware/CMSIS/core_armv8mml.h": {
+    "bytes": 169283,
+    "sha256": "2302fa103ea116415b9eece30b836084ac28e8f3630ba3b36bdb8ba3a60e10d2"
+  },
+  "nfc/firmware/CMSIS/core_cm0.h": {
+    "bytes": 38250,
+    "sha256": "11a84e4fcaddece884a124136f3dfabd3b0544c50fa3e0748ea71ebc526464d9"
+  },
+  "nfc/firmware/CMSIS/core_cm0plus.h": {
+    "bytes": 46282,
+    "sha256": "770c0fe3542eee2b9e11287986dec3e3184bd5f3895d158519fa9b302d565f18"
+  },
+  "nfc/firmware/CMSIS/core_cm23.h": {
+    "bytes": 96592,
+    "sha256": "457749f51f9764d114a6d1f2d3b41af22b2306bab9e2e6d1062ecad2182912e6"
+  },
+  "nfc/firmware/CMSIS/core_cm3.h": {
+    "bytes": 110736,
+    "sha256": "8022be70ef733907cc2c86a81bab655433bacd5521e902d12512954e2106c3df"
+  },
+  "nfc/firmware/CMSIS/core_cm33.h": {
+    "bytes": 169211,
+    "sha256": "1895e436667b237f9aacb4f5e35eecb8c898d5736762b8af6cd05a6d7ea71e59"
+  },
+  "nfc/firmware/CMSIS/core_cm4.h": {
+    "bytes": 122077,
+    "sha256": "00e18f25a623b7b75933e7adb2ce15bd5f46d8c2508c5189e90d0e13b9cef7d9"
+  },
+  "nfc/firmware/CMSIS/core_cm7.h": {
+    "bytes": 146684,
+    "sha256": "d9af7c17c86ad8e784da3642c9fec02b514fd6c48691422a92c48788a60b4d64"
+  },
+  "nfc/firmware/CMSIS/core_sc000.h": {
+    "bytes": 46373,
+    "sha256": "ccfea407253b8cc89c83182880b6a9415342c46ebdaafeb068b888d32b391b1a"
+  },
+  "nfc/firmware/CMSIS/core_sc300.h": {
+    "bytes": 109229,
+    "sha256": "e4580d082f93fd7c0c9f64a6f74a0342699a155017a971a4ffc90d3dee240602"
+  },
+  "nfc/firmware/CMSIS/LICENSE.txt": {
+    "bytes": 11558,
+    "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363"
+  },
+  "nfc/firmware/CMSIS/tz_context.h": {
+    "bytes": 2603,
+    "sha256": "015637ef12a3dc70d7338e6aed1b6220ce6dca17238559b5217e5b70d74773b8"
+  },
+  "nfc/firmware/Device/ATSAMR21G18A.svd": {
+    "bytes": 697748,
+    "sha256": "cb70daf11490361772fe94e607b0a1b3c94a6d6835015d965be93d8e93ed2592"
+  },
+  "nfc/firmware/Device/component/ac.h": {
+    "bytes": 44442,
+    "sha256": "0d2bdd6d2f7eeb8f6e4904ecd2c27cf6056a155696889c80aa90e41bc617a337"
+  },
+  "nfc/firmware/Device/component/adc.h": {
+    "bytes": 57696,
+    "sha256": "cbd07fdbc1ae5e61649ccc1954668988729e4284f2294578c83b7d41982daf11"
+  },
+  "nfc/firmware/Device/component/dmac.h": {
+    "bytes": 99852,
+    "sha256": "10dd1683c2722837dfceeedc9944424015a0e916b93978b62f615244c996944f"
+  },
+  "nfc/firmware/Device/component/dsu.h": {
+    "bytes": 34960,
+    "sha256": "e974cbfc8d5875844dca0331338ec84e82507e5a3c3cc12dd676d1004b4bc558"
+  },
+  "nfc/firmware/Device/component/eic.h": {
+    "bytes": 76301,
+    "sha256": "fee2a23a9505945adb190cb14d742d2db55a742cf35e1dc6809a95626b889d50"
+  },
+  "nfc/firmware/Device/component/evsys.h": {
+    "bytes": 61846,
+    "sha256": "a6af19ecf433226acd386bb6929387430ccffa7c99506d3bba411508ed0df525"
+  },
+  "nfc/firmware/Device/component/fuses.h": {
+    "bytes": 40683,
+    "sha256": "f322bb380a95adab5306347b9fc5e6e2453615f40bb5e5126864442dd6bb439e"
+  },
+  "nfc/firmware/Device/component/gclk.h": {
+    "bytes": 27386,
+    "sha256": "cd046d3c1d6519bd3ae074979e6faa32da1242aeb15a8c93c17e8a16ad9fdd9f"
+  },
+  "nfc/firmware/Device/component/hmatrixb.h": {
+    "bytes": 5806,
+    "sha256": "f0daafe8bd19a932dd08ab187a715ec70536b495036909556ac262e051b9b1c9"
+  },
+  "nfc/firmware/Device/component/mtb.h": {
+    "bytes": 18277,
+    "sha256": "be2e464c0a47b45afcc66602fb49295659fe864ccc732054c4fb03c5e3bdcdd6"
+  },
+  "nfc/firmware/Device/component/nvmctrl.h": {
+    "bytes": 30049,
+    "sha256": "b55eee627f6065c0d94c105f077517f6a9b1444484e4dbd98a82589c836d846e"
+  },
+  "nfc/firmware/Device/component/pac.h": {
+    "bytes": 3558,
+    "sha256": "7487b9ec2f0d7fb54f1dcfebb42179c20b57ecf6686e2d75ee84856f50a26470"
+  },
+  "nfc/firmware/Device/component/pm.h": {
+    "bytes": 47729,
+    "sha256": "215be2b15e7560c6278bd2f24eb5f0baea35f4dcf4ec1c0470e392822cb7a83b"
+  },
+  "nfc/firmware/Device/component/port.h": {
+    "bytes": 31760,
+    "sha256": "bc5c70ec294327cc39a9252e92cfc452918a2390211950c2a3593090baf9f096"
+  },
+  "nfc/firmware/Device/component/ptc.h": {
+    "bytes": 1401,
+    "sha256": "90f7a7f697fb2a39b28896b7e6e474d7f652beb113bb23e2d93bc29c7b182887"
+  },
+  "nfc/firmware/Device/component/rfctrl.h": {
+    "bytes": 5246,
+    "sha256": "89cb36ff9de792bb9df95ce6814a775c230055ea2a707c604a99ae38398130f4"
+  },
+  "nfc/firmware/Device/component/rtc.h": {
+    "bytes": 94930,
+    "sha256": "2a3b2ba306ef1de0f3aae25e4d46e48704774ce2e2e5f1e39cbe5eabbe741046"
+  },
+  "nfc/firmware/Device/component/sercom.h": {
+    "bytes": 260223,
+    "sha256": "87e1a4e7ef669d64a0cf1a4ada23545b7b4ce4bb784da48a08e915266c854b81"
+  },
+  "nfc/firmware/Device/component/sysctrl.h": {
+    "bytes": 107130,
+    "sha256": "4c49674e5e1b13f9955a438abafb58b853545c1f1fab92e375425a218745c650"
+  },
+  "nfc/firmware/Device/component/tc.h": {
+    "bytes": 52096,
+    "sha256": "af1f5b5589daeaee8ad3da5006108db4991b4049ec6b10df4d157f6a528b4162"
+  },
+  "nfc/firmware/Device/component/tcc.h": {
+    "bytes": 196790,
+    "sha256": "b1b090e7a1f0e6401723d952c6f0f588764ccdd87c6263c935645bbe84f9f2b6"
+  },
+  "nfc/firmware/Device/component/usb.h": {
+    "bytes": 170045,
+    "sha256": "317ec4b75f18de8441c032060df24630e47b779e8361c2f8c3a8db3b8c3895fc"
+  },
+  "nfc/firmware/Device/component/wdt.h": {
+    "bytes": 21844,
+    "sha256": "4718c8e0a3692652edf453d438ef375c74ca2c8a00b24cb38f3d4f781fc952e5"
+  },
+  "nfc/firmware/Device/component-version.h": {
+    "bytes": 1750,
+    "sha256": "fbbf14a86ceed76fcf5a291924be9af6bf9c2b905207581a4f447a027a5b4460"
+  },
+  "nfc/firmware/Device/instance/ac.h": {
+    "bytes": 1480,
+    "sha256": "ad0146d48d40ed883de07c24e91fcee96ca4743002b054491199ace143e0ba87"
+  },
+  "nfc/firmware/Device/instance/adc.h": {
+    "bytes": 1492,
+    "sha256": "b55cf62362d9a001bcaf25d25d05364965761bbe6b33f0b761ba767420f20641"
+  },
+  "nfc/firmware/Device/instance/dmac.h": {
+    "bytes": 1809,
+    "sha256": "099ce7301e46ff77f0107c86eb2576741d83a2b79137eb38c85b3f557dafc59c"
+  },
+  "nfc/firmware/Device/instance/dsu.h": {
+    "bytes": 1032,
+    "sha256": "237c63245021739cf83cefb051df0c0b609fb17a4e66937fb9b4bfb24acac7f1"
+  },
+  "nfc/firmware/Device/instance/eic.h": {
+    "bytes": 1313,
+    "sha256": "8ded1a6af895e4b1118ce996d60450635dca209cca3aeeb8422574c85fdfe2f6"
+  },
+  "nfc/firmware/Device/instance/evsys.h": {
+    "bytes": 2931,
+    "sha256": "cc6de61a4e87526b1b7988e0b98cb20db2f5c9ab0ee20540ec4133be93c14e9b"
+  },
+  "nfc/firmware/Device/instance/fuses.h": {
+    "bytes": 893,
+    "sha256": "ed333762ffafe6859e899489399cfa00021c3d8d9a8bce4b2b3e3abc1438e72a"
+  },
+  "nfc/firmware/Device/instance/gclk.h": {
+    "bytes": 2163,
+    "sha256": "5f849213603fc3ac9369619fb862961c8ad8a155111ae397e6ee4bf47bedd605"
+  },
+  "nfc/firmware/Device/instance/mtb.h": {
+    "bytes": 1032,
+    "sha256": "1dfd6c2838d39824b87e166d0f28637cc2168f8186ea03686463d046b6180f63"
+  },
+  "nfc/firmware/Device/instance/nvmctrl.h": {
+    "bytes": 2186,
+    "sha256": "af12a340d88e29dfecf97690720ecff871577224ccbc58faa17e1b7daf66f495"
+  },
+  "nfc/firmware/Device/instance/pac0.h": {
+    "bytes": 1134,
+    "sha256": "570b9a66e55159e9b04708041a977fbe7e78a8e5bf44185177dcb6f0b7f765aa"
+  },
+  "nfc/firmware/Device/instance/pac1.h": {
+    "bytes": 1134,
+    "sha256": "aaecd95446a4e0833291fc3e9e06d2329acc4df07338a64ea9b222267402b7d1"
+  },
+  "nfc/firmware/Device/instance/pac2.h": {
+    "bytes": 1134,
+    "sha256": "49d7577129cc5045104629ca6eef7412ab311913b800bb21977c8ccbd3915d67"
+  },
+  "nfc/firmware/Device/instance/pm.h": {
+    "bytes": 1338,
+    "sha256": "331bb6d4f51759b008b612dcd76648d71cd7347ddf991cdb2a7bb0502c132a06"
+  },
+  "nfc/firmware/Device/instance/port.h": {
+    "bytes": 1472,
+    "sha256": "56f98d3fc11d62395d7b5c8255762c31bd4eb4761b844b04f338d729c4906e88"
+  },
+  "nfc/firmware/Device/instance/ptc.h": {
+    "bytes": 1122,
+    "sha256": "399a94ab698449cb8ba5bfec345e8f565ebfdda948e427f36e5af766d7015bb3"
+  },
+  "nfc/firmware/Device/instance/rfctrl.h": {
+    "bytes": 1106,
+    "sha256": "01b5672c20c10f709f76c5b561443e47e85ef328ea729bcde5448abd558db89e"
+  },
+  "nfc/firmware/Device/instance/rtc.h": {
+    "bytes": 1707,
+    "sha256": "0dae8e1043c67f12dca6df57fd7b1194cabce259c40f721d6012ad8d7c61e4a5"
+  },
+  "nfc/firmware/Device/instance/sbmatrix.h": {
+    "bytes": 1796,
+    "sha256": "9e7b55c2bf3cbc3147b9c513635a486b495fb50f9acc168431e3f8fdbf303b49"
+  },
+  "nfc/firmware/Device/instance/sercom0.h": {
+    "bytes": 1499,
+    "sha256": "7b8e5f8ebc11fa3800dfef25f5b40d31fb5f22fc7f63550611d698aef7847522"
+  },
+  "nfc/firmware/Device/instance/sercom1.h": {
+    "bytes": 1499,
+    "sha256": "12f23c08eb7d6298a1bcc7ce26980a003e41ad5bb5e9c6bdc94ab646d0a122ce"
+  },
+  "nfc/firmware/Device/instance/sercom2.h": {
+    "bytes": 1499,
+    "sha256": "1675df6010f8fa6bf576c2b18049c72ec2949044509c2e3b509f7f168553d194"
+  },
+  "nfc/firmware/Device/instance/sercom3.h": {
+    "bytes": 1499,
+    "sha256": "f3ce068adba98eb0254bc59d4f036e66236830e73aafd99bd999a9122d63ac9a"
+  },
+  "nfc/firmware/Device/instance/sercom4.h": {
+    "bytes": 1499,
+    "sha256": "afa3f53ca295e9aff0349beb78a5138d54993d231aada9cbf04ab2663b907888"
+  },
+  "nfc/firmware/Device/instance/sercom5.h": {
+    "bytes": 1499,
+    "sha256": "65643694291307dea419390003f5b32ca8e35d0368101ff59a9d827e9d328223"
+  },
+  "nfc/firmware/Device/instance/sysctrl.h": {
+    "bytes": 2875,
+    "sha256": "309fceda9140f9913f9e44c8bb678b47933c669846f3c69de2c7e77ea39fd4a9"
+  },
+  "nfc/firmware/Device/instance/tc3.h": {
+    "bytes": 1940,
+    "sha256": "14116319f987362fad8392a2e458fa4650aaf0ab46479acd78f67d67f2354418"
+  },
+  "nfc/firmware/Device/instance/tc4.h": {
+    "bytes": 1940,
+    "sha256": "e42812d65695d32f5f89db98bdcd4ce7172aa8180af4b774594d9337180a9261"
+  },
+  "nfc/firmware/Device/instance/tc5.h": {
+    "bytes": 1940,
+    "sha256": "a7a4747bf62bbf94049cb6d6ced0ea19a26b59ec71266dbcfaba1417b7a13748"
+  },
+  "nfc/firmware/Device/instance/tcc0.h": {
+    "bytes": 2227,
+    "sha256": "c8105eaf8b82656a43c4554b58fc93980eea363d0cf33d6319b0a3234df6d9d4"
+  },
+  "nfc/firmware/Device/instance/tcc1.h": {
+    "bytes": 2217,
+    "sha256": "51d228d036fab36370619bfdc5e20e56b4ac4d122ce5aca9572a5b7c3524117f"
+  },
+  "nfc/firmware/Device/instance/tcc2.h": {
+    "bytes": 2217,
+    "sha256": "3c66cf4564452ea71f260dbff2552cc2e892362f3ba74bb6dd9f26aa57d3bc54"
+  },
+  "nfc/firmware/Device/instance/usb.h": {
+    "bytes": 1404,
+    "sha256": "1baea09ca672b8389c0b755f8a695bc72e42e7e6c540b183c5acfdc12e4784cc"
+  },
+  "nfc/firmware/Device/instance/wdt.h": {
+    "bytes": 1122,
+    "sha256": "5cdf7ddffd7f1db387eb8f8ab2d03da234531e7819d487a691b2d8ae9617264a"
+  },
+  "nfc/firmware/Device/pio/samr21e16a.h": {
+    "bytes": 58476,
+    "sha256": "c3faac757a5b1213549f4b4687ecc126d6635358602b20f3ed3a6a1776a42c63"
+  },
+  "nfc/firmware/Device/pio/samr21e17a.h": {
+    "bytes": 58476,
+    "sha256": "af5c5c0254131081cf4752bcc69dd36f48face42dbda40d51049bbe2395d350b"
+  },
+  "nfc/firmware/Device/pio/samr21e18a.h": {
+    "bytes": 58476,
+    "sha256": "9263af35c0088bbbe281c4c8c8db5698292cc1ee8086d7751b05c5697d2aabee"
+  },
+  "nfc/firmware/Device/pio/samr21e19a.h": {
+    "bytes": 67711,
+    "sha256": "21391bccdf21118cc5ba695e1b08c9ce14d9ddbdc03c5e4ee3808c8acc32fcc1"
+  },
+  "nfc/firmware/Device/pio/samr21g16a.h": {
+    "bytes": 80301,
+    "sha256": "d7e981939c705b9be8075e5e8156b3eb52481a8bed39e7bebe6ec5e30f980e2a"
+  },
+  "nfc/firmware/Device/pio/samr21g17a.h": {
+    "bytes": 80301,
+    "sha256": "2a033a888c096c775bcf8293a3275b6346844aac4c90111f418e3ac674893f15"
+  },
+  "nfc/firmware/Device/pio/samr21g18a.h": {
+    "bytes": 80301,
+    "sha256": "8ace1d27f0910e667a8f47944695f598283d01b66293d5483a42496ed9e7dbae"
+  },
+  "nfc/firmware/Device/sam.h": {
+    "bytes": 1426,
+    "sha256": "dada155e9f2aa343853318629942ff1711232bee2bc1082a4ed43c8dd31283f5"
+  },
+  "nfc/firmware/Device/samr21e16a.h": {
+    "bytes": 40438,
+    "sha256": "7bdedb8fe139f1e1d3750760da7e057d6355a6e023c17a1961384e73837ec51c"
+  },
+  "nfc/firmware/Device/samr21e17a.h": {
+    "bytes": 40438,
+    "sha256": "473459eaf55795b22d1618069cd68422042b5de47cc79d40c7fec703e97466bf"
+  },
+  "nfc/firmware/Device/samr21e18a.h": {
+    "bytes": 40438,
+    "sha256": "4f618d8364c140650360cfc4ad814c605f45aee0074472f40f97cf5f5893ef37"
+  },
+  "nfc/firmware/Device/samr21e19a.h": {
+    "bytes": 40438,
+    "sha256": "30093f6cf019ec9a279d7ee31f0bfac10f71df4a31373a95a67af7808cdeac31"
+  },
+  "nfc/firmware/Device/samr21g16a.h": {
+    "bytes": 40438,
+    "sha256": "5fd5a49055c92831b4af891e48f504e59089c2232eaad77acf47be23882e4d45"
+  },
+  "nfc/firmware/Device/samr21g17a.h": {
+    "bytes": 40438,
+    "sha256": "4d49c68ab9656dea1a5667b2ae97fa71f5c376a2a2600ec556c007a90e2c6fba"
+  },
+  "nfc/firmware/Device/samr21g18a.h": {
+    "bytes": 40438,
+    "sha256": "1a234667f87e93925242e715e217292782bde25a3ea5d7c5a94b5412ba7df7d6"
+  },
+  "nfc/firmware/Device/system_samr21.h": {
+    "bytes": 1082,
+    "sha256": "f1b9228ded0f4bbf1c598da95ebab0e898918d54b92b008b7bbef4086b4350ce"
+  },
+  "nfc/firmware/Drivers/epd.c": {
+    "bytes": 5031,
+    "sha256": "53ce577c83493e8034d67cbd5e5cc920532b1badf24e2f5d6cc24cefd0ab6b03"
+  },
+  "nfc/firmware/Drivers/nfc.c": {
+    "bytes": 7063,
+    "sha256": "a06cd7f6e8d8a7a61b2a23dd26067f42e457e6162a36823bd3a86a0f4747aadc"
+  },
+  "nfc/firmware/flash.ps1": {
+    "bytes": 971,
+    "sha256": "26a355b335c0a1e6038ba58a0c6133a4555059663b32fde3ce1cd4871a22a465"
+  },
+  "nfc/firmware/Objects/epd_white.axf": {
+    "bytes": 78352,
+    "sha256": "048daa8343c5fb3392a8d60745ea8f012ee8bd0f25895a7818a5a3cbcaf24c36"
+  },
+  "nfc/firmware/Objects/epd_white.bin": {
+    "bytes": 5980,
+    "sha256": "820c3cc38be04efa9ddf91563e0750b07f23227f682ea5bbdace806cc2cad479"
+  },
+  "nfc/firmware/Objects/epd_white.hex": {
+    "bytes": 16873,
+    "sha256": "fc46948ca5fa87affd254fabab51fbfc723c88c1f81221f43a41375d3ea829d6"
+  },
+  "nfc/firmware/README.md": {
+    "bytes": 2059,
+    "sha256": "cfb1a7d6f2426e7f6d1168bf439bdb7f450c9900cf1978eabc4baea0ad042590"
+  },
+  "nfc/firmware/samr21.sct": {
+    "bytes": 289,
+    "sha256": "b2e2d330dcbb3f3190dfc2b89e40a6e69c6c07d7c7d44c7334038a79cabba811"
+  },
+  "nfc/firmware/SAMR21_EPD.uvprojx": {
+    "bytes": 15795,
+    "sha256": "f17fb03e379de4cdd39d50508ecd7f14f205d714758ff3d89825354280e2e1c6"
+  },
+  "nfc/firmware/Startup/startup_samr21.s": {
+    "bytes": 2108,
+    "sha256": "dc58472c23d67f079a1d07a5f82534e4dd62e8cca06caee4687930d5ac6a7fd5"
+  },
+  "nfc/firmware/Startup/system_samr21.c": {
+    "bytes": 510,
+    "sha256": "9f7f49c02b7c7256e6a7c18a1e2bbe100adb808c675b67bb4f20187ab2b15918"
+  },
+  "nfc/firmware/Tools/flash_app.py": {
+    "bytes": 6864,
+    "sha256": "ed3acf4cfa82b34c116d7ce1e543d07a95a279faa1e5776b847aaf4e5b5438d6"
+  },
+  "nfc/firmware/Tools/original_flash_256KiB_read1.bin": {
+    "bytes": 262144,
+    "sha256": "023efc81fb12f6bbfec844374120924c8c1e8597ea3e2884af3306df3d8639c8"
+  },
+  "nfc/firmware/Tools/requirements.txt": {
+    "bytes": 59,
+    "sha256": "92e8e7a588e2bf9f9aa17b570259da65236772f58d078b90f63055efa2770a90"
+  },
+  "nfc/firmware/Tools/samr21_swd_flash.py": {
+    "bytes": 16578,
+    "sha256": "0ff808c18c7eb324f6ce9223773e2edf4af21cb899180576178bd658d390057c"
+  },
+  "nfc/NOTICE.md": {
+    "bytes": 582,
+    "sha256": "47ef75c44234b2060eade7d9c79daaac70010962ee0bc456c0e77afeb709da52"
+  },
+  "nfc/README.md": {
+    "bytes": 3940,
+    "sha256": "8e320b94419135e6c9973f104c5443e34e0c5d76f1a48f80ceca339c752d4d18"
+  },
+  "nfc/tests/CoreTest.java": {
+    "bytes": 3526,
+    "sha256": "ab15269d19c01d4e80d907a6fd055dae70f01ebac30752a45375b6b8f73668b9"
+  },
+  "nfc/tests/hardware_mailbox.py": {
+    "bytes": 5184,
+    "sha256": "f18ea9a063d981cd7d8026bcf59519b9844b249daac539e7d6ab74f2b3c5f482"
+  },
+  "nfc/tests/README.md": {
+    "bytes": 1959,
+    "sha256": "d6250e10b819c03928553d2648f83a4dddfb6d94ee547424983828acb74513b7"
+  },
+  "nfc/tests/run-core.ps1": {
+    "bytes": 702,
+    "sha256": "dafe96408b6f4ec9da06a89e85fe1d1c1e28e96acde821f7c31f4f84b45172cf"
+  },
   "NOTICE.md": {
     "bytes": 1006,
     "sha256": "65ea2072ba4aa07b50b1d2ae1c1f60bc30f1bb3f62350064a76e1592ceb82390"
   },
   "README.md": {
-    "bytes": 4085,
-    "sha256": "5b2a4d2a62f05c30e6a9b7039351030bbb3fd732f65d765123dd4b41d6ae152f"
+    "bytes": 4227,
+    "sha256": "65ced8b531fc7e0a49a6d027c640ad8107552c30d25176a2ffd3c04b0fa68e50"
   },
   "tools/check_repository.py": {
     "bytes": 6021,
