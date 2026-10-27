@@ -1644,8 +1644,8 @@
     "sha256": "b79e8a5f476d5c6331764bcf8e1590316a50176ac5336e4a822d844d7c67ebd1"
   },
   "nfc/firmware/Device/ATSAMR21G18A.svd": {
-    "bytes": 697748,
-    "sha256": "cb70daf11490361772fe94e607b0a1b3c94a6d6835015d965be93d8e93ed2592"
+    "bytes": 679010,
+    "sha256": "c96dc7a97e7c1591cdb45d99ef6e443dd1d229ba76d98356e7abf46840ff482e"
   },
   "nfc/firmware/Device/component/ac.h": {
     "bytes": 44066,
