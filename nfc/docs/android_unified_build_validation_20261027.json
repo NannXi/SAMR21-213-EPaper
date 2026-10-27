@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "version": "0.2.0",
+  "version_code": 7,
+  "application_label": "澧ㄥ睆",
+  "apk_sha256": "5523ed86d5dcf33f34daad5075df1ccbcb8550a1f4a430bb17b11afb4936bd91",
+  "firmware_sha256": "db6bd67b874f72d54216ce80bb9c8812167a2bd89111275094f4481480f4d8af",
+  "signature_schemes": [
+    "v2",
+    "v3"
+  ],
+  "certificate_sha256": "b798b530ff90aa9e5ab52a83fb5f4613b01988647c206fec0d625a4bc57d848b",
+  "same_certificate_as_v0_1_5": true,
+  "core_tests": "PASS: clock encoding, signed timezone, bounds, clock packet CRC, exact Oswald glyph preview; image palette/orientation/dithering/CRC",
+  "font_license_packaged": true,
+  "ui_runtime_tested": false,
+  "phone_rf_tested": false,
+  "phone_connected_via_adb": false,
+  "firmware_compatibility": "0.2.0 required for clock; old 0.1.2 supports image only",
+  "fixed_preview_and_footer_source_check": true,
+  "clock_time_capture": "after tag identity verification",
+  "clock_full_refresh_hours": [
+    1,
+    24
+  ],
+  "post_submit_rf_polling": false
+}

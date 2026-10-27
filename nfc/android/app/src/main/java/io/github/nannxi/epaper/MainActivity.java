@@ -29,7 +29,18 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
   private NfcAdapter nfc;
   private CanvasView canvas;
   private Bitmap source;
-  private LinearLayout previewCard, adjustCard;
+  private LinearLayout previewCard, adjustCard, clockCard, modeBar;
+  private TextView[] modeOptions, refreshOptions;
+  private TextView clockTimeLabel;
+  private Spinner fullHoursSpinner;
+  private int displayMode=0, refreshPolicy=1, fullHours=1;
+  private boolean pendingClock;
+  private int pendingPolicy,pendingHours;
+  private final Handler previewHandler=new Handler(Looper.getMainLooper());
+  private final Runnable previewTicker=new Runnable() { public void run() {
+    if(displayMode==1 && !waiting && !running.get()) updateClockPreview();
+    previewHandler.postDelayed(this,1000);
+  }};
   private TextView status,
       scaleValue,
       brightnessValue,
@@ -235,15 +246,29 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
             new AlertDialog.Builder(this)
                 .setTitle("墨屏")
                 .setMessage(
-                    "图片编辑与 NFC 上传\n\n"
+                    "图片推送与 NFC 时钟授时\n\n"
                         + "2.13 英寸 · 212 × 104 · 黑白红\n"
-                        + "版本 0.1.5\n\n"
+                        + "版本 0.2.0\n\n"
                         + "上传期间保持主板供电，手机靠近背面的 NFC 线圈。")
                 .setPositiveButton("知道了", null)
                 .show());
     brand.addView(about);
     header.addView(brand);
     gap(header, 14);
+    modeBar=row();
+    modeBar.setPadding(dp(4),dp(4),dp(4),dp(4));
+    modeBar.setBackground(shape(PALE,14,0));
+    modeOptions=new TextView[2];
+    String[] modeNames={"推送图片","推送时间"};
+    for(int i=0;i<2;i++) {
+      final int mode=i;
+      TextView option=text(modeNames[i],14,INK);bold(option);option.setGravity(Gravity.CENTER);
+      modeBar.addView(option,new LinearLayout.LayoutParams(0,dp(44),1));
+      option.setOnClickListener(v->{if(!waiting&&!running.get()){displayMode=mode;updateMode();}});
+      modeOptions[i]=option;
+    }
+    header.addView(modeBar);
+    gap(header,10);
     previewCard = card(header);
     previewCard.setPadding(dp(8), dp(8), dp(8), dp(8));
     canvas = new CanvasView();
@@ -311,7 +336,37 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     TextView note = text("预览已转换为屏幕像素，实物颜色会略有差异。", 11, MUTED);
     note.setGravity(Gravity.CENTER);
     note.setPadding(dp(8), 0, dp(8), dp(16));
-    page.addView(note);
+    adjustCard.addView(note);
+    clockCard=card(page);
+    TextView clockTitle=text("时钟设置",17,INK);bold(clockTitle);clockCard.addView(clockTitle);
+    gap(clockCard,12);
+    clockTimeLabel=text("",28,GREEN);bold(clockTimeLabel);clockCard.addView(clockTimeLabel);
+    clockCard.addView(text("靠近 NFC 后发送手机当前时间、时区和刷新设置。",12,MUTED));
+    gap(clockCard,22);
+    clockCard.addView(text("分钟更新方式",13,MUTED));
+    gap(clockCard,9);
+    LinearLayout refreshBar=row();refreshBar.setBackground(shape(BG,13,0));
+    refreshOptions=new TextView[2];
+    String[] policies={"每次全刷","局刷＋定期全刷"};
+    for(int i=0;i<2;i++) {
+      final int policy=i;TextView option=text(policies[i],12,MUTED);bold(option);option.setGravity(Gravity.CENTER);
+      refreshBar.addView(option,new LinearLayout.LayoutParams(0,dp(48),1));
+      option.setOnClickListener(v->{if(!waiting&&!running.get()){refreshPolicy=policy;updateMode();}});
+      refreshOptions[i]=option;
+    }
+    clockCard.addView(refreshBar);gap(clockCard,18);
+    clockCard.addView(text("局刷模式：每隔几小时全刷一次",13,MUTED));
+    fullHoursSpinner=new Spinner(this);
+    String[] hours=new String[24];for(int i=0;i<24;i++)hours[i]="每 "+(i+1)+" 小时全刷";
+    ArrayAdapter<String> hoursAdapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,hours);
+    fullHoursSpinner.setAdapter(hoursAdapter);
+    fullHoursSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+      public void onItemSelected(AdapterView<?> a,View v,int pos,long id){fullHours=pos+1;}
+      public void onNothingSelected(AdapterView<?> a){}
+    });
+    clockCard.addView(fullHoursSpinner,new LinearLayout.LayoutParams(-1,dp(52)));
+    gap(clockCard,12);
+    clockCard.addView(text("24 小时制 · 大字时钟\n局刷仍可能出现暂时淡粉色残影。时钟未校准，断电后需要重新授时。",12,MUTED));
     LinearLayout footer = column();
     footer.setPadding(dp(20), dp(12), dp(20), dp(14));
     footer.setBackground(shape(Color.WHITE, 0, LINE));
@@ -338,7 +393,8 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     root.requestApplyInsets();
     makeSample();
     building = false;
-    update();
+    updateMode();
+    previewHandler.post(previewTicker);
     if (nfc == null) {
       status.setText("此设备不支持 NFC，仍可编辑图片");
       upload.setEnabled(false);
@@ -436,8 +492,30 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     return v > 0 ? "+" + v : String.valueOf(v);
   }
 
+  private void updateClockPreview() {
+    java.util.Calendar now=java.util.Calendar.getInstance();
+    int hour=now.get(java.util.Calendar.HOUR_OF_DAY), minute=now.get(java.util.Calendar.MINUTE);
+    clockTimeLabel.setText(String.format(java.util.Locale.ROOT,"%02d:%02d:%02d",hour,minute,now.get(java.util.Calendar.SECOND)));
+    int[] values=ClockPreview.pixels(hour,minute);
+    Bitmap image=Bitmap.createBitmap(212,104,Bitmap.Config.ARGB_8888);
+    image.setPixels(values,0,212,0,0,212,104);canvas.preview=image;canvas.invalidate();
+  }
+
+  private void updateMode() {
+    select(modeOptions,displayMode);select(refreshOptions,refreshPolicy);
+    adjustCard.setVisibility(displayMode==0?View.VISIBLE:View.GONE);
+    clockCard.setVisibility(displayMode==1?View.VISIBLE:View.GONE);
+    fullHoursSpinner.setEnabled(refreshPolicy==1 && !waiting && !running.get());
+    fullHoursSpinner.setAlpha(refreshPolicy==1?1f:.4f);
+    canvas.setContentDescription(displayMode==1?"24 小时时钟预览":"墨水屏预览，可拖动调整图片裁切");
+    upload.setText(displayMode==1?"推送手机时间与设置":"上传图片到墨水屏");
+    status.setText(displayMode==1?"靠近后自动取手机当前时间 · 保持主板供电":"准备就绪 · 上传前请为墨水屏供电");
+    if(displayMode==1)updateClockPreview();else update();
+  }
+
   private void update() {
     if (building || source == null) return;
+    if(displayMode==1){updateClockPreview();return;}
     scaleValue.setText(Math.round(zoom * 100) + "%");
     brightnessValue.setText(signed(brightness.getProgress() - 80));
     contrastValue.setText(signed(contrast.getProgress() - 60));
@@ -485,6 +563,9 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
   private void editorEnabled(boolean enabled) {
     enableTree(previewCard, enabled);
     enableTree(adjustCard, enabled);
+    enableTree(clockCard,enabled);
+    enableTree(modeBar,enabled);
+    fullHoursSpinner.setEnabled(enabled && refreshPolicy==1);
     strength.setEnabled(enabled && ditherMode != 0);
     upload.setEnabled(enabled && nfc != null);
     upload.setAlpha(enabled && nfc != null ? 1f : .5f);
@@ -501,7 +582,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
   }
 
   private void startUpload() {
-    if (running.get() || waiting || pixels == null || nfc == null) return;
+    if (running.get() || waiting || (displayMode==0 && pixels == null) || nfc == null) return;
     if (!nfc.isEnabled()) {
       new AlertDialog.Builder(this)
           .setTitle("请开启 NFC")
@@ -512,7 +593,8 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
           .show();
       return;
     }
-    pending = ImageProcessor.pack(pixels);
+    pendingClock=displayMode==1;pendingPolicy=refreshPolicy;pendingHours=fullHours;
+    pending = pendingClock?null:ImageProcessor.pack(pixels);
     cancelled.set(false);
     waiting = true;
     editorEnabled(false);
@@ -546,7 +628,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     progress.setProgressBackgroundTintList(ColorStateList.valueOf(LINE));
     body.addView(progress, new LinearLayout.LayoutParams(-1, dp(8)));
     gap(body, 14);
-    dialogStep = text("1 连接     ·     2 传图     ·     3 刷新", 11, MUTED);
+    dialogStep = text(pendingClock?"1 连接     ·     2 授时     ·     3 刷新":"1 连接     ·     2 传图     ·     3 刷新", 11, MUTED);
     dialogStep.setGravity(Gravity.CENTER);
     body.addView(dialogStep);
     gap(body, 15);
@@ -621,17 +703,14 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
         () -> {
           NfcTransfer transfer = new NfcTransfer(cancelled);
           try {
-            transfer.upload(
-                tag,
-                pending,
-                new NfcTransfer.Listener() {
+            NfcTransfer.Listener listener=new NfcTransfer.Listener() {
                   public void identified(String uid) {
                     transferUi(
                         () -> {
                           dialogTitle.setText("请勿移动手机");
-                          dialogText.setText("墨水屏已连接，正在传输图片。");
+                          dialogText.setText(pendingClock?"墨水屏已连接，正在发送手机当前时间与设置。":"墨水屏已连接，正在传输图片。");
                           dialogPercent.setText("0%");
-                          dialogStep.setText("✓ 已连接     ·     正在传图     ·     等待提交");
+                          dialogStep.setText(pendingClock?"✓ 已连接     ·     正在授时     ·     等待提交":"✓ 已连接     ·     正在传图     ·     等待提交");
                         });
                   }
 
@@ -651,9 +730,9 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
                           keepScreen(false);
                           progress.setProgress(100);
                           dialogTitle.setText("等待屏幕刷新");
-                          dialogText.setText("图片已提交，屏幕正在刷新。可以拿开手机。");
+                          dialogText.setText(pendingClock?"时间与设置已确认，屏幕将进入时钟模式。可以拿开手机。":"图片已提交，屏幕正在刷新。可以拿开手机。");
                           dialogPercent.setText("100%");
-                          dialogStep.setText("✓ 已连接     ·     ✓ 已传图     ·     等待屏幕刷新");
+                          dialogStep.setText(pendingClock?"✓ 已连接     ·     ✓ 已授时     ·     等待屏幕刷新":"✓ 已连接     ·     ✓ 已传图     ·     等待屏幕刷新");
                           dialog.setCancelable(false);
                           Button done = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
                           done.setText("OK，可以拿开手机");
@@ -661,11 +740,13 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
                               v -> {
                                 finishDialog();
                                 status.setTextColor(GREEN);
-                                status.setText("图片已提交 · 屏幕正在刷新");
+                                status.setText(pendingClock?"时钟已设置 · 屏幕独立运行":"图片已提交 · 屏幕正在刷新");
                               });
                         });
                   }
-                });
+                };
+            if(pendingClock)transfer.configureClock(tag,pendingPolicy,pendingHours,listener);
+            else transfer.upload(tag,pending,listener);
           } catch (Exception e) {
             runOnUiThread(
                 () -> {
@@ -750,6 +831,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     cancelled.set(true);
     keepScreen(false);
     disableReader();
+    previewHandler.removeCallbacks(previewTicker);
     worker.shutdownNow();
     super.onDestroy();
   }
@@ -800,7 +882,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
 
     @Override
     public boolean onTouchEvent(android.view.MotionEvent e) {
-      if (waiting || running.get() || !isEnabled()) return true;
+      if (displayMode==1 || waiting || running.get() || !isEnabled()) return true;
       if (e.getAction() == MotionEvent.ACTION_DOWN) {
         previousX = e.getX();
         previousY = e.getY();

@@ -21,11 +21,13 @@ typedef struct {
     uint32_t temperature_raw;
     uint32_t border;
     uint32_t bytes_sent;
+    uint32_t refresh_mode,partial_count,full_count,busy_seen;
 } AppStatus;
 extern volatile AppStatus g_status;
 extern uint32_t SystemCoreClock;
 void delay_ms(uint32_t ms);
 void epd_gpio_init(void);
 int epd_display(uint8_t border, uint32_t pattern);
+int epd_clock_refresh(uint8_t full_refresh);
 void epd_emergency_off(void);
 #endif

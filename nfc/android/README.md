@@ -1,5 +1,13 @@
 # Android 应用：墨屏
 
+## 当前 v0.2.0 / versionCode 7
+
+配套图片＋时钟合并固件v0.2.0。顶部图片/时间切换，固定预览与底部操作；时间页选择每分钟全刷或局刷＋1–24小时全刷。ClockConfig在身份确认后取手机时间、时区和毫秒；ClockPreview与板端使用同源Oswald字形。时钟不需要选择图片。构建脚本从Manifest取版本，输出新版APK。
+
+Oswald许可随APK打包在res/raw/font_oswald_license.txt。新界面与RF授时尚待手机验收。
+
+## 历史 v0.1.5 说明
+
 原生 Java，Android 8/API26 起，目标 API35，无第三方运行库。当前 v0.1.5/versionCode 6，配套板端 v0.1.2。用户已确认 v0.1.2 手机上传成功；新界面和常亮待手机验收。
 
 ## 构建

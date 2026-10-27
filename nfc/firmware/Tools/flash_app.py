@@ -9,7 +9,7 @@ from samr21_swd_flash import Programmer,sha,SN,SIZE,FACTORY_SHA
 
 PROJECT=Path(__file__).resolve().parents[1]
 FIELDS=['magic','stage','error','ticks_ms','command','completed','last_epd_command','busy',
-        'busy_wait_ms','refresh_ms','temperature_raw','border','bytes_sent']
+        'busy_wait_ms','refresh_ms','temperature_raw','border','bytes_sent','refresh_mode','partial_count','full_count','busy_seen']
 
 def symbols():
     with (PROJECT/'Objects/epd_white.axf').open('rb') as stream:
@@ -21,6 +21,10 @@ def status(target,address):
     return dict(zip(FIELDS,values))
 
 def connect():
+    import os
+    if os.environ.get('EPD_DEBUGGER','jlink').lower()=='jlink':
+        from jlink_backend import JLinkSession
+        return JLinkSession()
     session=ConnectHelper.session_with_chosen_probe(blocking=False,unique_id=SN,options={
         'target_override':'cortex_m','frequency':1000000,'connect_mode':'attach','auto_unlock':False,
         'resume_on_disconnect':False,'pack.debug_sequences.enable':False,'no_config':True,
@@ -71,7 +75,7 @@ def run():
                 p.restore_config()
                 p.safe_to_run=True
                 p.reset_halt()
-                if (p.t.read_core_register('pc')&~1)!=(reset&~1): raise RuntimeError('Application reset entry mismatch')
+                if p.t.read32(4)!=reset: raise RuntimeError('Application reset vector mismatch')
                 p.t.resume()
                 p.event('application_started',reset_pc=hex(reset&~1),image_bytes=len(image),programmed_rows=size//256)
             elif args.action!='status':

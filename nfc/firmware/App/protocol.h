@@ -4,5 +4,7 @@
 void protocol_init(void);
 void protocol_poll(void);
 void protocol_display_complete(int success);
+void protocol_display_started(void);
+int protocol_busy(void);
 uint32_t protocol_crc32(const uint8_t *data,uint32_t length);
 #endif

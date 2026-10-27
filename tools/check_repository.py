@@ -114,6 +114,17 @@ def main():
                          "docs/nfc_eeprom_before.bin"]:
             if not (ROOT / required).is_file():
                 errors.append("Missing recovery input: " + required)
+    merged_manifest = ROOT / "nfc/android/app/src/main/AndroidManifest.xml"
+    if merged_manifest.exists():
+        attr = "{http://schemas.android.com/apk/res/android}"
+        manifest = ET.parse(merged_manifest).getroot()
+        evidence = json.loads((ROOT / "nfc/docs/android_unified_build_validation_20261027.json").read_text(encoding="utf-8"))
+        if (manifest.attrib[attr + "versionName"] != evidence["version"] or
+                int(manifest.attrib[attr + "versionCode"]) != evidence["version_code"]):
+            errors.append("Unified Android version differs from build evidence")
+        fw = ROOT / "nfc/firmware/Objects/epd_white.bin"
+        if entry(fw)["sha256"] != evidence["firmware_sha256"]:
+            errors.append("Unified firmware differs from APK compatibility evidence")
     print(json.dumps(counts, indent=2))
     if errors:
         for error in errors:

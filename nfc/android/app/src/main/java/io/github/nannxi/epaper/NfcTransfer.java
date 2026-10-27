@@ -125,10 +125,18 @@ public final class NfcTransfer {
   }
 
   public void upload(Tag tag, byte[] image, Listener listener) throws IOException {
+    send(tag, image, -1, 1, listener);
+  }
+
+  public void configureClock(Tag tag, int policy, int fullHours, Listener listener) throws IOException {
+    send(tag, null, policy, fullHours, listener);
+  }
+
+  private void send(Tag tag, byte[] image, int policy, int fullHours, Listener listener) throws IOException {
     NfcA nfc = NfcA.get(tag);
     if (nfc == null) throw new IOException("这不是支持的 NFC-A 价签");
     try {
-      log("App 0.1.5 / mailbox 90h..9Fh");
+      log("App 0.2.0 / mailbox 90h..9Fh");
       log(
           "Android "
               + android.os.Build.VERSION.RELEASE
@@ -174,6 +182,19 @@ public final class NfcTransfer {
       listener.identified(id.toString());
       long transfer = new java.security.SecureRandom().nextInt() & 0xffffffffL;
       if (transfer == 0) transfer = 1;
+      if (policy >= 0) {
+        if ((identity[41] & 3) != 3)
+          throw new IOException("当前固件不支持时钟，请先升级到图片＋时钟合并固件 v0.2.0");
+        byte[] clock = ClockConfig.now(policy, fullHours);
+        log("CLOCK transfer=" + Long.toHexString(transfer) + " policy=" + policy + " fullHours=" + fullHours);
+        byte[] ack = exchange(nfc, Wire.packet(ClockConfig.OP_CLOCK, 0, transfer, 0, clock));
+        if ((ack[16] != 2 && ack[16] != 3) || ack[42] != 1 || (ack[43] & 255) != policy || (ack[44] & 255) != fullHours)
+          throw new IOException("固件未确认时钟设置");
+        listener.progress(100);
+        listener.submitted();
+        return;
+      }
+      if (image == null || image.length != 5512) throw new IOException("图片数据长度错误");
       byte[] begin = new byte[11];
       Wire.put16(begin, 0, 212);
       Wire.put16(begin, 2, 104);
@@ -200,7 +221,7 @@ public final class NfcTransfer {
       }
       byte[] commit = Wire.packet(3, sequence, transfer, image.length, new byte[0]);
       byte[] ack = exchange(nfc, commit);
-      if (ack[16] != 2) throw new IOException("固件未确认开始屏幕刷新");
+      if (ack[16] != 2 && ack[16] != 3) throw new IOException("固件未确认开始屏幕刷新");
       listener.submitted();
     } finally {
       try {

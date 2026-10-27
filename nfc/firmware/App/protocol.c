@@ -2,6 +2,7 @@
 #include "protocol.h"
 #include "nfc.h"
 #include "graphics.h"
+#include "device_clock.h"
 #define FRAME_BYTES (2U*EPD_PLANE_BYTES)
 static uint8_t image[FRAME_BYTES],last_request[64],reply[64];
 static uint32_t transfer_id,expected_crc,received,last_activity;
@@ -26,7 +27,9 @@ static void response(const uint8_t *request,uint8_t result) {
     reply[16]=display_state;reply[17]=1;put16(reply+18,212);put16(reply+20,104);put16(reply+22,FRAME_BYTES);
     put32(reply+24,expected_crc);put32(reply+28,0x31525742U);
     for(i=0;i<7;++i)reply[32+i]=g_nfc.uid[i];
-    reply[39]=NFC_RF_PAGE;reply[40]=2; /* RF layout/timing revision. */
+    reply[39]=NFC_RF_PAGE;reply[40]=2;
+    reply[41]=3;reply[42]=(uint8_t)g_clock_enabled;reply[43]=(uint8_t)g_clock_policy;reply[44]=(uint8_t)g_clock_full_hours;
+    put32(reply+48,device_clock_seconds()); /* RF layout/timing revision. */
     put32(reply+60,protocol_crc32(reply,60));reply_pending=1;
 }
 static int write_reply(void) {
@@ -62,7 +65,16 @@ static void accept(const uint8_t *request) {
         else if(protocol_crc32(image,FRAME_BYTES)!=expected_crc)error=6;
         else {
             for(i=0;i<FRAME_BYTES;++i)g_framebuffer[i/EPD_PLANE_BYTES][i%EPD_PLANE_BYTES]=image[i];
-            display_state=2;active=0;next_sequence++;pending_display=1;
+            device_clock_stop();
+            display_state=2;active=0;next_sequence++;pending_display=7;
+        }
+    } else if(op==6U) {
+        if(display_state==2U||active)error=4;
+        else if(!id||seq!=0U||offset!=0U||length!=16U||!device_clock_valid(request+16))error=3;
+        else {
+            transfer_id=id;received=0;expected_crc=0;next_sequence=1;
+            device_clock_configure(request+16);
+            display_state=2;pending_display=8;g_nfc.transfer=id;g_nfc.received=0;
         }
     } else if(op==5U) {
         if(id!=transfer_id||display_state==2U)error=4;
@@ -70,7 +82,7 @@ static void accept(const uint8_t *request) {
     } else if(op!=4U)error=3;
     if(!error) {for(i=0;i<64;++i)last_request[i]=request[i];last_valid=1;last_activity=g_status.ticks_ms;g_nfc.packets++;}
     response(request,error);
-    if(op==3U&&!error) {if(write_reply())reply_pending=0;}
+    if((op==3U||op==6U)&&!error) {if(write_reply())reply_pending=0;}
 }
 void protocol_init(void) {
     active=0;display_state=0;last_valid=0;received=0;transfer_id=0;expected_crc=0;
@@ -106,13 +118,13 @@ void protocol_poll(void) {
         if((g_nfc.poll_count%10U)!=0U)return;
     }
     if(reply_pending) {if(write_reply())reply_pending=0;else {nfc_write_reg(6,0x40,0);return;}}
-    if(pending_display&&!reply_pending) {pending_display=0;g_status.command=7;return;}
+    if(pending_display&&!reply_pending) {g_status.command=pending_display;pending_display=0;return;}
     for(i=0;i<1;++i)if(!nfc_read_block((uint8_t)(0xf8+i),request+i*16)) {nfc_write_reg(6,0x40,0);return;}
     nfc_write_reg(6,0x40,0);
     if(request[0]=='E'&&request[1]=='P'&&request[2]=='D'&&request[3]=='1') {
         for(i=1;i<4;++i)if(!nfc_read_block((uint8_t)(0xf8+i),request+i*16)) {nfc_write_reg(6,0x40,0);return;}
         nfc_write_reg(6,0x40,0);
-        if(protocol_crc32(request,60)==get32(request+60)) {accept(request);if(pending_display&&!reply_pending) {pending_display=0;g_status.command=7;}}
+        if(protocol_crc32(request,60)==get32(request+60)) {accept(request);if(pending_display&&!reply_pending) {g_status.command=pending_display;pending_display=0;}}
         else {g_nfc.crc_errors++;return;}
     }
     if(active&&(uint32_t)(g_status.ticks_ms-last_activity)>30000U) {active=0;display_state=0;last_valid=0;received=0;response(0,7);}
@@ -121,3 +133,6 @@ void protocol_display_complete(int success) {
     display_state=success?3:4;
     response(last_valid?last_request:0,success?0:8);
 }
+
+int protocol_busy(void) {return active||pending_display||display_state==2U;}
+void protocol_display_started(void) {display_state=2U;}

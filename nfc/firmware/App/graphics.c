@@ -2,6 +2,10 @@
  * Plane 0 / plane 1 bits: white=1/1, black=0/1, red=0/0.
  */
 #include "graphics.h"
+#include "clock_font.h"
+
+const uint8_t g_clock_cell_x[CLOCK_CELL_COUNT]={5,53,101,115,163};
+const uint8_t g_clock_cell_width[CLOCK_CELL_COUNT]={44,44,10,44,44};
 
 uint8_t g_framebuffer[2][EPD_PLANE_BYTES];
 
@@ -27,6 +31,14 @@ static const Glyph font[] = {
     {'p', {0,30,17,17,30,16,16}},
     {'r', {0,0,22,25,16,16,16}},
     {'w', {0,0,17,17,21,21,10}}
+    ,{'0', {14,17,19,21,25,17,14}}
+    ,{'4', {2,6,10,18,31,2,2}}
+    ,{'5', {31,16,30,1,1,17,14}}
+    ,{'6', {6,8,16,30,17,17,14}}
+    ,{'7', {31,1,2,4,8,8,8}}
+    ,{'8', {14,17,17,14,17,17,14}}
+    ,{'9', {14,17,17,15,1,2,12}}
+    ,{':', {0,12,12,0,12,12,0}}
 };
 
 void gfx_clear(GfxColor color)
@@ -122,4 +134,37 @@ void gfx_demo(void)
     outline(100,91,12,7,GFX_WHITE);
     gfx_rect(105,98,2,2,GFX_WHITE);
     gfx_rect(102,100,8,1,GFX_WHITE);
+}
+
+void gfx_clock(uint8_t hour, uint8_t minute)
+{
+    char text[6];
+    uint32_t cell,x,y,digit;
+    text[0]=(char)('0'+(hour/10U));
+    text[1]=(char)('0'+(hour%10U));
+    text[2]=':';
+    text[3]=(char)('0'+(minute/10U));
+    text[4]=(char)('0'+(minute%10U));
+    text[5]=0;
+    gfx_clear(GFX_WHITE);
+    for(cell=0;cell<CLOCK_CELL_COUNT;cell++) {
+        if(cell==2U) { continue; }
+        digit=(uint32_t)(text[cell]-'0');
+        for(y=0;y<CLOCK_HEIGHT;y++) {
+            for(x=0;x<44U;x++) {
+                if(clock_digits[digit][y*6U+x/8U] & (0x80U>>(x&7U))) {
+                    gfx_pixel((int)(g_clock_cell_x[cell]+x),(int)(CLOCK_TOP+y),GFX_BLACK);
+                }
+            }
+        }
+    }
+    for(y=0;y<6U;y++) {
+        for(x=0;x<6U;x++) {
+            int dx=(int)(2U*x)-5,dy=(int)(2U*y)-5;
+            if(dx*dx+dy*dy<=36) {
+                gfx_pixel((int)(103U+x),(int)(34U+y),GFX_BLACK);
+                gfx_pixel((int)(103U+x),(int)(62U+y),GFX_BLACK);
+            }
+        }
+    }
 }

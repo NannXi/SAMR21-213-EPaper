@@ -1,5 +1,9 @@
 # 硬件与验证状态
 
+## 2026-10-27 合并版补充
+
+当前Android/固件均v0.2.0。J-Link OB烧录、全Flash回读保护、实板图片/时钟模式切换及策略测试独立存档，见[合并说明](UNIFIED_20261027.md)。[APK构建证据](android_unified_build_validation_20261027.json)记录编译、签名和Java核心测试，新手机UI及RF授时尚待验收。下方为历史证据，不覆盖改写。
+
 整理日期：2026-10-22。对象是当前 LG Innotek ESL TAG2.13B Rev0.1 / REBE-TZ21B，不能把单块板结论直接推广到所有 2.13 寸价签。
 
 ## 本板资源

@@ -1,5 +1,9 @@
 # 架构与数据流
 
+## v0.2.0 时钟数据流
+
+模式切换 → 选择刷新设置 → 等待贴卡 → 身份与能力识别 → 现取手机时间/时区 → CLOCK06 → ACK → 手机关闭ReaderMode → 板端全刷进入时钟。device_clock按分钟更新；RF在场或接图时推迟刷新。图片COMMIT关闭时钟。预览与固件共用同源字体。
+
 ## 手机
 
 `MainActivity` 负责选图、212×104 裁切预览、编辑与上传状态。`ImageProcessor` 进行亮度/对比度、三色量化及 Bayer/Floyd–Steinberg 抖动，再打包两个 2756 字节平面。

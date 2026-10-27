@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-27T04:16:07.537074+00:00",
+  "action": "flash",
+  "success": true,
+  "errors": [],
+  "firmware_bytes": 13332,
+  "firmware_sha256": "db6bd67b874f72d54216ce80bb9c8812167a2bd89111275094f4481480f4d8af",
+  "programmed_rows": 53,
+  "auxiliary_unchanged": true,
+  "full_flash_readback_match": true,
+  "unwritten_flash_preserved": true,
+  "backup_double_read_match": true,
+  "application_status": {
+    "magic": 1162888241,
+    "stage": 6,
+    "error": 0,
+    "ticks_ms": 16334,
+    "command": 0,
+    "completed": 1,
+    "last_epd_command": 2,
+    "busy": 0,
+    "busy_wait_ms": 16,
+    "refresh_ms": 14972,
+    "temperature_raw": 24,
+    "border": 119,
+    "bytes_sent": 5521,
+    "refresh_mode": 0,
+    "partial_count": 0,
+    "full_count": 1,
+    "busy_seen": 0
+  },
+  "final_state": "State.RUNNING"
+}

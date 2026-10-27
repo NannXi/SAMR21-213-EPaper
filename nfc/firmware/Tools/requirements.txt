@@ -1,3 +1,5 @@
 pyocd==0.46.0
 libusb-package==1.0.30.0
 pyelftools==0.33
+
+pylink-square==1.7.0

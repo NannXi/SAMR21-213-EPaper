@@ -7,6 +7,25 @@ public final class CoreTest {
   }
 
   public static void main(String[] args) {
+    long stamp=1793054123456L;
+    byte[] clock=ClockConfig.payload(stamp,480,1,6);
+    check(clock.length==16 && clock[0]==1 && clock[1]==1 && clock[2]==6,"clock config schema");
+    check(Wire.u32(clock,4)==stamp/1000 && Wire.u16(clock,8)==480 && Wire.u16(clock,10)==456,"clock time and subsecond");
+    byte[] western=ClockConfig.payload(stamp,-330,0,24);
+    check((short)Wire.u16(western,8)==-330 && western[1]==0,"negative timezone and full policy");
+    int invalid=0;
+    for(int[] c:new int[][]{{1,0,480},{1,25,480},{2,1,480},{1,1,841},{1,1,-841}}) {
+      try{ClockConfig.payload(stamp,c[2],c[0],c[1]);}catch(IllegalArgumentException e){invalid++;}
+    }
+    check(invalid==5,"invalid settings rejected");
+    byte[] clockFrame=Wire.packet(6,0,123,0,clock);
+    check(clockFrame[5]==6 && clockFrame[14]==16 && Wire.crc(clockFrame,60)==Wire.u32(clockFrame,60),"clock wire CRC");
+    int[] preview=ClockPreview.pixels(12,34), preview2=ClockPreview.pixels(12,35);int changed=0;
+    for(int y=0;y<104;y++)for(int x=0;x<212;x++)if(preview[y*212+x]!=preview2[y*212+x]) {
+      check(x>=163 && x<207 && y>=8 && y<96,"clock preview only last digit changes");changed++;
+    }
+    check(changed>0,"clock preview changes");
+    System.out.println("PASS: clock config, signed timezone, bounds, packet CRC, exact glyph preview");
     int[] p = new int[212 * 104];
     Arrays.fill(p, 0xffffffff);
     byte[] a = ImageProcessor.pack(p);

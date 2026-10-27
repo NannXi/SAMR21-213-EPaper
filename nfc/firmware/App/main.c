@@ -1,6 +1,7 @@
 #include "app.h"
 #include "nfc.h"
 #include "protocol.h"
+#include "device_clock.h"
 
 volatile AppStatus g_status;
 
@@ -41,9 +42,15 @@ int main(void)
         if (request != 0U) {
             g_status.command = 0;
             g_status.error = 0;
-            if (request >= 1U && request <= 7U) {
+            if(request==8U) {
+                int success=device_clock_draw(1);
+                if(!success)device_clock_stop();
+                protocol_display_complete(success);
+            } else if (request >= 1U && request <= 7U) {
+                device_clock_stop();
                 if (epd_display(request == 2U ? 0x37U : 0x77U,
                                 request == 7U ? 4U : (request == 6U ? 3U : (request == 5U ? 2U : (request == 4U))))) {
+                    g_status.full_count++;
                     g_status.completed++;
                     g_status.stage = 6;
                     if(request==7U)protocol_display_complete(1);
@@ -53,6 +60,7 @@ int main(void)
                 g_status.stage = 0xe0;
             }
         }
-        __NOP(); /* NFC preview: stay awake; low power is not enabled. */
+        device_clock_poll();
+        __NOP(); /* Stay awake for the SRAM mailbox; low power is not enabled. */
     }
 }

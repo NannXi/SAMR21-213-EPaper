@@ -1,5 +1,15 @@
 # Keil5 固件
 
+## 当前合并固件 v0.2.0
+
+同一个固件接收图片和授时命令；App/device_clock.c驱动24小时分钟时钟，支持每分钟全刷或局刷＋1–24小时全刷。Drivers/epd.c保留原厂全刷，局刷沿用已确认的60帧擦除/100帧写黑与C款Oswald字体。配置、时间与图片不掉电保存，未校准。
+
+Objects/epd_white.bin/.hex/.axf名称保留，Release另命名samr21-unified-v0.2.0。当前下载默认J-Link OB，依赖pylink-square与SEGGER DLL，可设JLINK_SERIAL/JLINK_DLL；EPD_DEBUGGER=stlink切回旧ST-Link路径，使用EPD_PROBE_SERIAL。SWD引脚不变。recover仍使用旧ST-Link工具，不能直接视为J-Link恢复路径。
+
+下载先备份、双读和设备核对，最终全Flash回读、未写区与辅助区比对；不整片擦除、不改熔丝/锁。详见[合并验证](../docs/UNIFIED_20261027.md)。
+
+## 旧版接线与构建基础（默认探针以本页上方为准）
+
 MCU：ATSAMR21G18A，8 MHz，Cortex-M0+。打开 `SAMR21_EPD.uvprojx`，选择 ARM Compiler 5。源代码是 C/ASM；Python 仅用于电脑端 SWD 下载、备份与验证。
 
 ```powershell

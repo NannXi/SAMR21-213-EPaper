@@ -1,5 +1,9 @@
 # SAMR21 2.13 inch e-Paper
 
+## 图片＋时钟合并版 v0.2.0 · 2026-10-27
+
+[墨屏 v0.2.0](nfc/README.md) 已合并图片上传与大字时钟：顶部“推送图片 / 推送时间”，可选每分钟全刷，或局刷并每1–24小时全刷。见[合并说明与验收](nfc/docs/UNIFIED_20261027.md)。只维护本 EPaper 仓库，旧 NFC 仓库保留历史，不再更新。下方独立工程与旧版说明作为历史入口保留。
+
 LG Innotek ESL TAG2.13B 的硬件资料、原厂固件备份恢复记录和 Keil5 C/ASM 显示工程。
 
 ![默认画面：实际 MCU 帧缓冲回读](firmware/SAMR21_EPD_Keil/demo_preview.png)
@@ -16,10 +20,10 @@ LG Innotek ESL TAG2.13B 的硬件资料、原厂固件备份恢复记录和 Keil
 |---|---|
 | 看主板、屏幕、引脚和原始照片 | 本仓库：[硬件介绍](docs/HARDWARE.md)、[24 项原始资料索引](docs/PHOTO_INDEX.md) |
 | 编译显示示例、做白屏/红屏/边框实验、恢复原厂 | 本仓库：[快速开始](docs/GETTING_STARTED.md)、[Keil 工程](firmware/SAMR21_EPD_Keil/README.md) |
-| 手机选图、调整图片并用 NFC 上传 | [`nfc/`](nfc/)，Android v0.1.5 配板端 v0.1.2；发布包见 [Releases](https://github.com/NannXi/SAMR21-213-EPaper/releases) |
+| 手机选图、调整图片并用 NFC 上传 | [`nfc/`](nfc/)，Android v0.2.0 配合并固件 v0.2.0；发布包见 [Releases](https://github.com/NannXi/SAMR21-213-EPaper/releases) |
 | 了解哪些做过、哪些还未知 | [当前状态与证据](docs/STATUS.md)、[显示质量记录](docs/DISPLAY_QUALITY.md) |
 
-NFC 工程已并入本仓库，Keil 显示工程、NFC 固件、Android 应用和全部硬件资料在同一份版本树中。原 `SAMR21-213-NFC` 仓库暂时保留，待本仓库验收后再决定是否删除。
+NFC 工程已并入本仓库，Keil 显示工程、NFC 固件、Android 应用和全部硬件资料在同一份版本树中。原 NFC 仓库保留历史记录，后续不再维护。
 
 ## 硬件概况
 

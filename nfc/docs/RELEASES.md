@@ -1,5 +1,18 @@
 # Android 发布包与兼容
 
+## v0.2.0 · 图片＋时钟合并版 · 2026-10-27
+
+- [Android v0.2.0 APK](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.2.0/epaper-nfc-v0.2.0-debug.apk)，versionCode7，同v0.1.5证书，可覆盖安装。
+- [合并固件BIN](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.2.0/samr21-unified-v0.2.0.bin)，同时提供HEX与匹配AXF、SHA256SUMS-v0.2.0.txt。
+- 新授时需要同时升级App与固件；App图片模式仍支持旧v0.1.2，旧App图片协议兼容新固件。
+- 预发布：真实板端测试与新手机UI/RF验收分开记录，详见[合并说明](UNIFIED_20261027.md)。不替换历史Release附件。
+
+APK SHA256：5523ed86d5dcf33f34daad5075df1ccbcb8550a1f4a430bb17b11afb4936bd91。
+
+固件BIN SHA256：db6bd67b874f72d54216ce80bb9c8812167a2bd89111275094f4481480f4d8af.
+
+## 历史版本 v0.1.4 / v0.1.5
+
 Android 只发布 v0.1.4 和 v0.1.5。v0.1.4 汇总此前全部应用更新；v0.1.5 在提交 ACK 后允许用户拿开手机。两版配套板端固件 v0.1.2；本板用户已确认 v0.1.2 手机上传成功。
 
 ## 下载
