@@ -343,6 +343,10 @@
     "bytes": 8141,
     "sha256": "2da58565a604a7cea7e223bb9ba1432776a360fd18c7c75a354dd43ed96eee19"
   },
+  "docs/PARTIAL_CLOCK_20261027.md": {
+    "bytes": 3410,
+    "sha256": "a841682f6564affe8f7beabb6daa64056e335f54bb729d7d75c5dc13e192ef1c"
+  },
   "docs/PHOTO_INDEX.md": {
     "bytes": 7739,
     "sha256": "fbe3b48c542fb319262670566cd55930d05016955a1a5c552d8909237b723dd4"
@@ -356,8 +360,184 @@
     "sha256": "19a50cbd968c6e603bfb74a2a7cd787c12e18db554cc0f69b5933561175e926e"
   },
   "docs/STATUS.md": {
-    "bytes": 2658,
-    "sha256": "927665a8e06fc6e5e9f101dd2c0a992a89748ac487102e38b94a5de92072e0a1"
+    "bytes": 2918,
+    "sha256": "9c8593abde6662cb15d3e1a723fa922abe52382109ad7eddeffc20e9e9a5e10c"
+  },
+  "firmware/SAMR21_213_Clock/.gitignore": {
+    "bytes": 65,
+    "sha256": "8a91a86037430fca10835227b2fab27a081a0bf880665eeb77d56b988bdb7e1c"
+  },
+  "firmware/SAMR21_213_Clock/App/app.h": {
+    "bytes": 1267,
+    "sha256": "81986a6ffda45fa6ddcbe2e9007e08ef1e8e8ab034d0d6d94c9e6402f7d3f4a8"
+  },
+  "firmware/SAMR21_213_Clock/App/clock.c": {
+    "bytes": 2737,
+    "sha256": "da1cf5ddc1d84d9371657202072e0fb6187b4b0c4e92c9332012d4bded0ab2e2"
+  },
+  "firmware/SAMR21_213_Clock/App/clock_font.h": {
+    "bytes": 29480,
+    "sha256": "420b6dc90f27d4fac761fe1ea0310c51b4168c91f20368ed49496e7009a88337"
+  },
+  "firmware/SAMR21_213_Clock/App/graphics.c": {
+    "bytes": 5347,
+    "sha256": "9ba200c4a01ea390bdfc7415106eb14fb26d94421fbcc75a78c9b2f86f718a13"
+  },
+  "firmware/SAMR21_213_Clock/App/graphics.h": {
+    "bytes": 738,
+    "sha256": "d673fe5c335f6040e683277b0551f2869d046307a255962f1cec0bf72c098c9e"
+  },
+  "firmware/SAMR21_213_Clock/App/main.c": {
+    "bytes": 1657,
+    "sha256": "614769e1fce8735ae90c3e762a8177a806cf4f28e5bc88bc32ee8909cca5efe0"
+  },
+  "firmware/SAMR21_213_Clock/Assets/Oswald/OFL.txt": {
+    "bytes": 4389,
+    "sha256": "0b2472b17e950b9967818f169f2618b091c0c259d250d2dd8208961c7f5700e1"
+  },
+  "firmware/SAMR21_213_Clock/Assets/Oswald/Oswald.ttf": {
+    "bytes": 172088,
+    "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817"
+  },
+  "firmware/SAMR21_213_Clock/build.ps1": {
+    "bytes": 1665,
+    "sha256": "de539868b2b1a54bca1301617a3a8f043b5f619c0678f2caa5472b1828302cc1"
+  },
+  "firmware/SAMR21_213_Clock/clock_0000_preview.png": {
+    "bytes": 860,
+    "sha256": "f99368e18f3450ca69a252a3ab2d43cbc3d98618f346601e1697555333e01ca7"
+  },
+  "firmware/SAMR21_213_Clock/clock_1234_preview.png": {
+    "bytes": 1094,
+    "sha256": "c3b109487c68db6996124a9152f55430c0341e8267293e7d9c74cfb03ffc7e20"
+  },
+  "firmware/SAMR21_213_Clock/clock_2058_preview.png": {
+    "bytes": 1224,
+    "sha256": "18952b70766fa21aace6858e12081b9504c5971342b590a59753fa096300ce51"
+  },
+  "firmware/SAMR21_213_Clock/clock_2359_preview.png": {
+    "bytes": 1259,
+    "sha256": "6cb25d9072549da2f01d57161de15888b8561810ac6144c986a8d1fa1bddf4c7"
+  },
+  "firmware/SAMR21_213_Clock/clock_C_1234_readback.png": {
+    "bytes": 1080,
+    "sha256": "d162f57d526862222e283061c7233d223c56a66dab566cc9c9e2da1be0b74158"
+  },
+  "firmware/SAMR21_213_Clock/clock_C_1235_readback.png": {
+    "bytes": 1130,
+    "sha256": "e110b17f259b9ab325478fe04c4bc3d56cc6b944255c2c7cb65469f71c99231b"
+  },
+  "firmware/SAMR21_213_Clock/Drivers/epd.c": {
+    "bytes": 11463,
+    "sha256": "889515452ad22308503f4422a7a72a1f7618ffb0d37405b322b07cb4cda1dcd7"
+  },
+  "firmware/SAMR21_213_Clock/flash.ps1": {
+    "bytes": 738,
+    "sha256": "56ae6c4373ea8facd287329153f30efa64ce70e1e387d1f0686e396fa6d7e8de"
+  },
+  "firmware/SAMR21_213_Clock/Listings/epd_clock.map": {
+    "bytes": 21260,
+    "sha256": "b4f6fe56afce791f5f54ea014715ae4845e5817db212fc97e397c0159c989a84"
+  },
+  "firmware/SAMR21_213_Clock/Objects/epd_clock.axf": {
+    "bytes": 61492,
+    "sha256": "d657a8c1de50f4f63af732ab8f0a7ba9e539ac76c11536608bf35ab1bab606bb"
+  },
+  "firmware/SAMR21_213_Clock/Objects/epd_clock.bin": {
+    "bytes": 9676,
+    "sha256": "9902ba1a357d986aec5c9a517658b96565845b86d057b6d9231684a79ae87e23"
+  },
+  "firmware/SAMR21_213_Clock/Objects/epd_clock.hex": {
+    "bytes": 26660,
+    "sha256": "099514fcaea4dde9d5fccf37f8d3a153f286cf4e61019163a7043d607b4df16c"
+  },
+  "firmware/SAMR21_213_Clock/README.md": {
+    "bytes": 3827,
+    "sha256": "e25b47b7365fe6545779dcf9a2e2c9e433474429546fd843f85ff4b6c9cbd62d"
+  },
+  "firmware/SAMR21_213_Clock/samr21.sct": {
+    "bytes": 276,
+    "sha256": "cf3d11ba1decc0a43f7767fc08294c5fa93445f6b41264dd97fc5d281c1f1a2d"
+  },
+  "firmware/SAMR21_213_Clock/SAMR21_213_Clock.uvprojx": {
+    "bytes": 15354,
+    "sha256": "40eb444686fb0f80ad4b0392ebb2731372efd18500d006f4c9d5370ca0722a3c"
+  },
+  "firmware/SAMR21_213_Clock/Startup/startup_samr21.s": {
+    "bytes": 2059,
+    "sha256": "271a2561894a5e787abad88aa94c203686fbe257ac5afa4d9a0a1682a6c9f991"
+  },
+  "firmware/SAMR21_213_Clock/Startup/system_samr21.c": {
+    "bytes": 436,
+    "sha256": "a0801cbcf770ff8d4120fedf7452e1b88bc42c72acee0a12fcb341dc5b6e67e9"
+  },
+  "firmware/SAMR21_213_Clock/Tools/flash_app.py": {
+    "bytes": 7439,
+    "sha256": "29f9c15f0a64dff0673a6c4667f3d8879ce6380999a63228a47ecb87caf73ee1"
+  },
+  "firmware/SAMR21_213_Clock/Tools/font-requirements.txt": {
+    "bytes": 15,
+    "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+  },
+  "firmware/SAMR21_213_Clock/Tools/generate_clock_font.py": {
+    "bytes": 2130,
+    "sha256": "0bd06e7515f2fff7ea69e661b30c03749bd41f2ac7b99a6e3d7b189d68057b5c"
+  },
+  "firmware/SAMR21_213_Clock/Tools/jlink_backend.py": {
+    "bytes": 1555,
+    "sha256": "38c93abc6bc30791acdd3c4ff5d348409738d34d47e1c6e3024445a44fb0c503"
+  },
+  "firmware/SAMR21_213_Clock/Tools/requirements.txt": {
+    "bytes": 77,
+    "sha256": "6cb38e609d364d8176ad177075a55b5e386f68c3b5c954e1a95e9424f5043a16"
+  },
+  "firmware/SAMR21_213_Clock/validation/automatic_minute_test.json": {
+    "bytes": 900,
+    "sha256": "431eb397ad5b603c3c4e9138376d09d53fad0f8128e7e236ea81179962462631"
+  },
+  "firmware/SAMR21_213_Clock/validation/changed_glyph_120_100_test.json": {
+    "bytes": 3450,
+    "sha256": "9ee96b655786d86256b6779a920c612362bd4635e8c47c41fa1010ea15535747"
+  },
+  "firmware/SAMR21_213_Clock/validation/changed_glyph_force_white_single.json": {
+    "bytes": 772,
+    "sha256": "490f929d8344c86d6c30a7988e60844fea89a2f4a2bd6a7325ed7ff93fb24281"
+  },
+  "firmware/SAMR21_213_Clock/validation/clock_C_1234_frame.bin": {
+    "bytes": 2756,
+    "sha256": "f14a03964e5c67db98e20a67eaed7aea9c39f7aad6350138f4b898b6080e6468"
+  },
+  "firmware/SAMR21_213_Clock/validation/clock_C_1235_frame.bin": {
+    "bytes": 2756,
+    "sha256": "20c771b810b09577f13fa3af7f8f47a6d6d08d2bbe1e80d30f6e8c8f76112e96"
+  },
+  "firmware/SAMR21_213_Clock/validation/clock_C_flash_verified.json": {
+    "bytes": 883,
+    "sha256": "36bab6fffed13ab990e4b61440ea24424aef6a13e93df4e11d647ff4c76975be"
+  },
+  "firmware/SAMR21_213_Clock/validation/clock_C_hardware_test.json": {
+    "bytes": 3137,
+    "sha256": "abc8e71e547459e9696b4ed8bed7106f6f3f4067b6ce38260175f1dc9de82380"
+  },
+  "firmware/SAMR21_213_Clock/validation/epd_otp_4096.bin": {
+    "bytes": 4096,
+    "sha256": "e96a8870b0c309edd4937ecc81e549b0f99a074b7e55817be194bd19a622b73d"
+  },
+  "firmware/SAMR21_213_Clock/validation/full_60000ms_period_test.json": {
+    "bytes": 951,
+    "sha256": "214564f24b873603e9e4be1d7320be32f4c1761c633526c804af5b4b324a748c"
+  },
+  "firmware/SAMR21_213_Clock/validation/minute_clock_rollover_test.json": {
+    "bytes": 2957,
+    "sha256": "5c1dd413fe322095e1639f942a8ee3cdbd0a27465de48cb5a092411aed126bd0"
+  },
+  "firmware/SAMR21_213_Clock/validation/pink_erase60_draw100_four_slow_steps.json": {
+    "bytes": 2251,
+    "sha256": "029dac85538946a1468ede2b457e045c473243aedde12388d5205f40c67adc6e"
+  },
+  "firmware/SAMR21_213_Clock/validation/pink_erase60_draw100_single.json": {
+    "bytes": 914,
+    "sha256": "af49ca0b1010e700249a97e560560cfee8af4dc101f91a8a68b7cc680621c4b0"
   },
   "firmware/SAMR21_EPD_Keil/App/app.h": {
     "bytes": 975,
@@ -1260,8 +1440,8 @@
     "sha256": "51005fc7ad51cc3df9b4ad3380a0fdee3220d7c8119d55be406b8643c86f3784"
   },
   "nfc/docs/CHANGELOG.md": {
-    "bytes": 1344,
-    "sha256": "d6f802a000d49bdacaea45a15153e162b67028d8b19b5c9ed62675e9400186cc"
+    "bytes": 1361,
+    "sha256": "72e5c8db2db973e9b7acc88d5eb8e5aafd6d79571c8c2b402b7b99850058f7da"
   },
   "nfc/docs/firmware_flash_validation.json": {
     "bytes": 4098,
@@ -1296,8 +1476,8 @@
     "sha256": "5bf2c9ba5632a877f9185ec6137ffe2a18496708c9a1b183b9bb7a5190568173"
   },
   "nfc/docs/RELEASES.md": {
-    "bytes": 1442,
-    "sha256": "85d67bfe29d4b44038b0222d567f6d73e726c7fd71feab2168a11c08ab8e3191"
+    "bytes": 1467,
+    "sha256": "5ed1ea1bfbfc0dfd849a190fe335a4162a29f20f099ea665e7d2d3c387ffc5ae"
   },
   "nfc/docs/repository_review_20261022.json": {
     "bytes": 1101,
@@ -1812,8 +1992,8 @@
     "sha256": "65ea2072ba4aa07b50b1d2ae1c1f60bc30f1bb3f62350064a76e1592ceb82390"
   },
   "README.md": {
-    "bytes": 4227,
-    "sha256": "1fba07629c2b6668b4879732d07e8c88bb7562f3a74e88912f982892cc823102"
+    "bytes": 4563,
+    "sha256": "f5a0e42aebca31e61515bb43123054594b867e9af0ad7c2fdedb5fef7dd5c4f0"
   },
   "tools/check_repository.py": {
     "bytes": 6021,

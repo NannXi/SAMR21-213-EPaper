@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+Runs/
+Objects/*.o
+Objects/*.d
+Listings/*.lst

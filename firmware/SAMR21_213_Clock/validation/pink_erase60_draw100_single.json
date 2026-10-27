@@ -1,0 +1,46 @@
+{
+  "before": {
+    "magic": 1162888241,
+    "stage": 6,
+    "error": 0,
+    "ticks_ms": 162042,
+    "command": 0,
+    "completed": 2,
+    "last_epd_command": 2,
+    "busy": 0,
+    "busy_wait_ms": 16,
+    "refresh_ms": 2980,
+    "temperature_raw": 24,
+    "border": 119,
+    "bytes_sent": 11457,
+    "refresh_mode": 1,
+    "partial_count": 1,
+    "full_count": 1,
+    "busy_seen": 1
+  },
+  "parameters_before": {
+    "g_erase_frames": 120,
+    "g_draw_frames": 100,
+    "g_clear_ghost_pixels": 1
+  },
+  "erase_frames_test": 60,
+  "after": {
+    "magic": 1162888241,
+    "stage": 6,
+    "error": 0,
+    "ticks_ms": 164698,
+    "command": 0,
+    "completed": 3,
+    "last_epd_command": 2,
+    "busy": 0,
+    "busy_wait_ms": 16,
+    "refresh_ms": 2381,
+    "temperature_raw": 24,
+    "border": 119,
+    "bytes_sent": 11457,
+    "refresh_mode": 1,
+    "partial_count": 2,
+    "full_count": 1,
+    "busy_seen": 1
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "before": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 31719,
+      "command": 0,
+      "completed": 1,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 14969,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 5521,
+      "refresh_mode": 0,
+      "partial_count": 0,
+      "full_count": 1,
+      "busy_seen": 0
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 35971,
+      "command": 0,
+      "completed": 2,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 1,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 39310,
+      "command": 0,
+      "completed": 3,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 2,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 42495,
+      "command": 0,
+      "completed": 4,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 3,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 45833,
+      "command": 0,
+      "completed": 5,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 4,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 49018,
+      "command": 0,
+      "completed": 6,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2976,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 5,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "sample": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 52358,
+      "command": 0,
+      "completed": 7,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 6,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "final": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 52360,
+      "command": 0,
+      "completed": 7,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2977,
+      "temperature_raw": 23,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 6,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  }
+]

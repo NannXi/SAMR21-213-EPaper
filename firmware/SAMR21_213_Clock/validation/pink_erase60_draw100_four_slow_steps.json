@@ -1,0 +1,110 @@
+[
+  {
+    "step": 1,
+    "parameters": {
+      "g_erase_frames": 60,
+      "g_draw_frames": 100,
+      "g_clear_ghost_pixels": 1
+    },
+    "status": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 265949,
+      "command": 0,
+      "completed": 4,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2381,
+      "temperature_raw": 24,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 3,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "step": 2,
+    "parameters": {
+      "g_erase_frames": 60,
+      "g_draw_frames": 100,
+      "g_clear_ghost_pixels": 1
+    },
+    "status": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 276572,
+      "command": 0,
+      "completed": 5,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2381,
+      "temperature_raw": 24,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 4,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "step": 3,
+    "parameters": {
+      "g_erase_frames": 60,
+      "g_draw_frames": 100,
+      "g_clear_ghost_pixels": 1
+    },
+    "status": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 287196,
+      "command": 0,
+      "completed": 6,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2381,
+      "temperature_raw": 24,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 5,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  },
+  {
+    "step": 4,
+    "parameters": {
+      "g_erase_frames": 60,
+      "g_draw_frames": 100,
+      "g_clear_ghost_pixels": 1
+    },
+    "status": {
+      "magic": 1162888241,
+      "stage": 6,
+      "error": 0,
+      "ticks_ms": 297822,
+      "command": 0,
+      "completed": 7,
+      "last_epd_command": 2,
+      "busy": 0,
+      "busy_wait_ms": 16,
+      "refresh_ms": 2381,
+      "temperature_raw": 24,
+      "border": 119,
+      "bytes_sent": 11457,
+      "refresh_mode": 1,
+      "partial_count": 6,
+      "full_count": 1,
+      "busy_seen": 1
+    }
+  }
+]
