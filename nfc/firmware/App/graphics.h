@@ -17,4 +17,5 @@ void gfx_text(int x, int y, const char *text, int scale, GfxColor color);
 int gfx_text_width(const char *text, int scale);
 void gfx_demo(void);
 void gfx_clock(uint8_t hour, uint8_t minute);
+void gfx_sleep(void);
 #endif

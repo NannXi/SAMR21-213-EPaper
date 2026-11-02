@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02",
+  "version": "0.3.0",
+  "version_code": 8,
+  "apk_sha256": "b936e7e5a369a1fb1dbb62bf0bd43aaf021c421dc4559be157cb3f4a775766db",
+  "firmware_sha256": "cefc796afda7231fbfebd42aae76788205544f3cb3a73d212f7fb18a267b132c",
+  "signature_schemes": [
+    "v2",
+    "v3"
+  ],
+  "certificate_sha256": "b798b530ff90aa9e5ab52a83fb5f4613b01988647c206fec0d625a4bc57d848b",
+  "core_tests": "PASS: sleep interval encoding/bounds, time/timezone, CRC, same glyph preview and image processing",
+  "phone_rf_tested": false,
+  "current_measurement": false
+}

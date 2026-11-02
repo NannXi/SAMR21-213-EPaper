@@ -1,8 +1,10 @@
 # Keil5 固件
 
-## 当前合并固件 v0.2.0
+## 当前合并固件 v0.3.0
 
 同一个固件接收图片和授时命令；App/device_clock.c驱动24小时分钟时钟，支持每分钟全刷或局刷＋1–24小时全刷。Drivers/epd.c保留原厂全刷，局刷沿用已确认的60帧擦除/100帧写黑与C款Oswald字体。配置、时间与图片不掉电保存，未校准。
+
+v0.3.0在主循环空闲时使用WFI，关闭未使用的APB外设，分钟之间不忙轮询。时钟授时包增加就寝开始/结束分钟，默认00:00–06:00；就寝期间显示月亮/SLEEP画面，后台计时继续，跨界全刷恢复。由于本板未确认NTAG GPO接到哪根MCU脚，不假设外部中断唤醒，NFC在时钟运行时以约100ms间隔检查邮箱。
 
 Objects/epd_white.bin/.hex/.axf名称保留，Release另命名samr21-unified-v0.2.0。当前下载默认J-Link OB，依赖pylink-square与SEGGER DLL，可设JLINK_SERIAL/JLINK_DLL；EPD_DEBUGGER=stlink切回旧ST-Link路径，使用EPD_PROBE_SERIAL。SWD引脚不变。recover仍使用旧ST-Link工具，不能直接视为J-Link恢复路径。
 

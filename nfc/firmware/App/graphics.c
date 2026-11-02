@@ -168,3 +168,15 @@ void gfx_clock(uint8_t hour, uint8_t minute)
         }
     }
 }
+
+void gfx_sleep(void)
+{
+    int x,y;
+    gfx_clear(GFX_WHITE);
+    for(y=8;y<64;y++) for(x=8;x<64;x++) {
+        int dx=x-36,dy=y-36,dx2=x-48,dy2=y-27;
+        if(dx*dx+dy*dy<800 && dx2*dx2+dy2*dy2>360) gfx_pixel(x,y,GFX_BLACK);
+    }
+    gfx_text(82,28,"SLEEP",4,GFX_BLACK);
+    gfx_text(91,67,"SLEEP",1,GFX_BLACK);
+}

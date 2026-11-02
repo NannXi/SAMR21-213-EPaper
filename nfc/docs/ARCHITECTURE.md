@@ -35,3 +35,7 @@ Activity 和上传对话框使用 FLAG_KEEP_SCREEN_ON；完成、失败、取消
 | tools/check_repository.py | 电脑/CI | 离线资料、版本与哈希检查 |
 
 完整字段、时序和兼容说明见[协议](PROTOCOL.md)；实际证据与限制见[硬件与验证](HARDWARE_AND_VALIDATION.md)。
+
+## v0.3.0低功耗与就寝
+
+SysTick 10ms节拍维持软件时间与唤醒；空闲主循环使用WFI，时钟模式NFC邮箱检查间隔100ms，关闭未用APB外设。就寝区间以手机本地分钟表示，支持跨午夜，内存保持的后台秒数继续走，屏幕仅在进入/退出边界刷新SLEEP/时间画面。NFC GPO未确认接线，未配置外部中断唤醒。

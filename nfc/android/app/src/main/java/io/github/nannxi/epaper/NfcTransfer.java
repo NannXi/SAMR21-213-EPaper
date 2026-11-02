@@ -125,14 +125,14 @@ public final class NfcTransfer {
   }
 
   public void upload(Tag tag, byte[] image, Listener listener) throws IOException {
-    send(tag, image, -1, 1, listener);
+    send(tag, image, -1, 1, 0, 360, listener);
   }
 
-  public void configureClock(Tag tag, int policy, int fullHours, Listener listener) throws IOException {
-    send(tag, null, policy, fullHours, listener);
+  public void configureClock(Tag tag, int policy, int fullHours, int sleepStart, int sleepEnd, Listener listener) throws IOException {
+    send(tag, null, policy, fullHours, sleepStart, sleepEnd, listener);
   }
 
-  private void send(Tag tag, byte[] image, int policy, int fullHours, Listener listener) throws IOException {
+  private void send(Tag tag, byte[] image, int policy, int fullHours, int sleepStart, int sleepEnd, Listener listener) throws IOException {
     NfcA nfc = NfcA.get(tag);
     if (nfc == null) throw new IOException("这不是支持的 NFC-A 价签");
     try {
@@ -185,10 +185,12 @@ public final class NfcTransfer {
       if (policy >= 0) {
         if ((identity[41] & 3) != 3)
           throw new IOException("当前固件不支持时钟，请先升级到图片＋时钟合并固件 v0.2.0");
-        byte[] clock = ClockConfig.now(policy, fullHours);
-        log("CLOCK transfer=" + Long.toHexString(transfer) + " policy=" + policy + " fullHours=" + fullHours);
+        byte[] clock = ClockConfig.now(policy, fullHours, sleepStart, sleepEnd);
+        log("CLOCK transfer=" + Long.toHexString(transfer) + " policy=" + policy + " fullHours=" + fullHours + " sleep=" + sleepStart + ".." + sleepEnd);
         byte[] ack = exchange(nfc, Wire.packet(ClockConfig.OP_CLOCK, 0, transfer, 0, clock));
-        if ((ack[16] != 2 && ack[16] != 3) || ack[42] != 1 || (ack[43] & 255) != policy || (ack[44] & 255) != fullHours)
+        if ((ack[16] != 2 && ack[16] != 3) || ack[42] != 1 || (ack[43] & 255) != policy || (ack[44] & 255) != fullHours
+            || (((ack[45]&255)|((ack[46]&15)<<8)) != sleepStart)
+            || ((((ack[46]&240)>>>4)|((ack[47]&255)<<4)) != sleepEnd))
           throw new IOException("固件未确认时钟设置");
         listener.progress(100);
         listener.submitted();

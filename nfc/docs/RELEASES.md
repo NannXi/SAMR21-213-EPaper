@@ -1,5 +1,13 @@
 # Android 发布包与兼容
 
+## v0.3.0 · 2026-11-02
+
+- [Android APK](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.3.0/epaper-nfc-v0.3.0-debug.apk), versionCode8; compatible signing certificate retained.
+- Firmware BIN/HEX/AXF and SHA256SUMS-v0.3.0 are attached to the v0.3.0 release.
+- Default sleep screen 00:00–06:00, configurable whole-hour boundaries. Periodic full refresh options 1/2/4/6 h.
+- See [low-power validation limits](hardware_low_power_validation_20261102.json); no current draw or phone RF test is claimed.
+
+
 ## v0.2.0 · 图片＋时钟合并版 · 2026-10-27
 
 - [Android v0.2.0 APK](https://github.com/NannXi/SAMR21-213-EPaper/releases/download/v0.2.0/epaper-nfc-v0.2.0-debug.apk)，versionCode7，同v0.1.5证书，可覆盖安装。

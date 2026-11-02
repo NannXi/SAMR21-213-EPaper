@@ -1,8 +1,10 @@
 # Android 应用：墨屏
 
-## 当前 v0.2.0 / versionCode 7
+## 当前 v0.3.0 / versionCode 8
 
 配套图片＋时钟合并固件v0.2.0。顶部图片/时间切换，固定预览与底部操作；时间页选择每分钟全刷或局刷＋1–24小时全刷。ClockConfig在身份确认后取手机时间、时区和毫秒；ClockPreview与板端使用同源Oswald字形。时钟不需要选择图片。构建脚本从Manifest取版本，输出新版APK。
+
+v0.3.0增加1/2/4/6小时全刷选项、默认00:00–06:00就寝设置，以及与授时一起发送的就寝区间。固件在间隔内用WFI休眠，关闭未使用APB外设；NFC采用低频邮箱检查，未假设未知GPO引脚。
 
 Oswald许可随APK打包在res/raw/font_oswald_license.txt。新界面与RF授时尚待手机验收。
 

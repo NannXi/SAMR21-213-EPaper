@@ -118,7 +118,8 @@ def main():
     if merged_manifest.exists():
         attr = "{http://schemas.android.com/apk/res/android}"
         manifest = ET.parse(merged_manifest).getroot()
-        evidence = json.loads((ROOT / "nfc/docs/android_unified_build_validation_20261027.json").read_text(encoding="utf-8"))
+        evidence_name = "android_low_power_build_validation_20261102.json"
+        evidence = json.loads((ROOT / "nfc/docs" / evidence_name).read_text(encoding="utf-8"))
         if (manifest.attrib[attr + "versionName"] != evidence["version"] or
                 int(manifest.attrib[attr + "versionCode"]) != evidence["version_code"]):
             errors.append("Unified Android version differs from build evidence")

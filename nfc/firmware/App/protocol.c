@@ -29,6 +29,9 @@ static void response(const uint8_t *request,uint8_t result) {
     for(i=0;i<7;++i)reply[32+i]=g_nfc.uid[i];
     reply[39]=NFC_RF_PAGE;reply[40]=2;
     reply[41]=3;reply[42]=(uint8_t)g_clock_enabled;reply[43]=(uint8_t)g_clock_policy;reply[44]=(uint8_t)g_clock_full_hours;
+    reply[45]=(uint8_t)g_clock_sleep_start;
+    reply[46]=(uint8_t)((g_clock_sleep_start>>8)|((g_clock_sleep_end&0x0fU)<<4));
+    reply[47]=(uint8_t)(g_clock_sleep_end>>4);
     put32(reply+48,device_clock_seconds()); /* RF layout/timing revision. */
     put32(reply+60,protocol_crc32(reply,60));reply_pending=1;
 }
@@ -70,7 +73,7 @@ static void accept(const uint8_t *request) {
         }
     } else if(op==6U) {
         if(display_state==2U||active)error=4;
-        else if(!id||seq!=0U||offset!=0U||length!=16U||!device_clock_valid(request+16))error=3;
+        else if(!id||seq!=0U||offset!=0U||length!=20U||!device_clock_valid(request+16))error=3;
         else {
             transfer_id=id;received=0;expected_crc=0;next_sequence=1;
             device_clock_configure(request+16);

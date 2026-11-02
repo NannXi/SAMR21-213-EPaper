@@ -1,0 +1,19 @@
+{
+  "tested_at_utc": "2026-11-02",
+  "firmware_sha256": "cefc796afda7231fbfebd42aae76788205544f3cb3a73d212f7fb18a267b132c",
+  "verified": [
+    "J-Link flash with full readback and preserved unwritten flash",
+    "startup original full refresh completed",
+    "original 5512-byte image via SWD->I2C->SRAM and full display refresh",
+    "20-byte CLOCK command accepted; default initial clock full refresh completed",
+    "NFC EEPROM remained unchanged"
+  ],
+  "not_verified": [
+    "repeat CLOCK ACK polling occasionally timed out in SWD harness",
+    "full sleep entry/exit and all periodic policies not completed through harness",
+    "Android UI and phone RF",
+    "current draw and battery life",
+    "NTAG GPO wake wiring"
+  ],
+  "sleep_design": "WFI idle with 10ms SysTick and approximately 100ms NFC polling in clock mode; external GPO interrupt not assumed"
+}

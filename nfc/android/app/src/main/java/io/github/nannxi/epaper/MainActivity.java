@@ -33,6 +33,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
   private TextView[] modeOptions, refreshOptions;
   private TextView clockTimeLabel;
   private Spinner fullHoursSpinner;
+  private Spinner sleepStartSpinner, sleepEndSpinner;
   private int displayMode=0, refreshPolicy=1, fullHours=1;
   private boolean pendingClock;
   private int pendingPolicy,pendingHours;
@@ -357,14 +358,25 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
     clockCard.addView(refreshBar);gap(clockCard,18);
     clockCard.addView(text("局刷模式：每隔几小时全刷一次",13,MUTED));
     fullHoursSpinner=new Spinner(this);
-    String[] hours=new String[24];for(int i=0;i<24;i++)hours[i]="每 "+(i+1)+" 小时全刷";
+    int[] hourValues={1,2,4,6}; String[] hours={"每 1 小时全刷","每 2 小时全刷","每 4 小时全刷","每 6 小时全刷"};
     ArrayAdapter<String> hoursAdapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,hours);
     fullHoursSpinner.setAdapter(hoursAdapter);
     fullHoursSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
-      public void onItemSelected(AdapterView<?> a,View v,int pos,long id){fullHours=pos+1;}
+      public void onItemSelected(AdapterView<?> a,View v,int pos,long id){fullHours=hourValues[pos];}
       public void onNothingSelected(AdapterView<?> a){}
     });
     clockCard.addView(fullHoursSpinner,new LinearLayout.LayoutParams(-1,dp(52)));
+    gap(clockCard,12);
+    clockCard.addView(text("就寝模式",13,MUTED));
+    LinearLayout sleepRow=row();
+    sleepStartSpinner=new Spinner(this); sleepEndSpinner=new Spinner(this);
+    String[] sleepHours=new String[24]; for(int i=0;i<24;i++) sleepHours[i]=String.format(java.util.Locale.ROOT,"%02d:00",i);
+    ArrayAdapter<String> sleepAdapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,sleepHours);
+    sleepStartSpinner.setAdapter(sleepAdapter); sleepEndSpinner.setAdapter(sleepAdapter);
+    sleepStartSpinner.setSelection(0); sleepEndSpinner.setSelection(6);
+    sleepRow.addView(sleepStartSpinner,new LinearLayout.LayoutParams(0,dp(52),1));
+    TextView arrow=text(" 至 ",13,MUTED); arrow.setGravity(Gravity.CENTER); sleepRow.addView(arrow,new LinearLayout.LayoutParams(dp(38),dp(52)));
+    sleepRow.addView(sleepEndSpinner,new LinearLayout.LayoutParams(0,dp(52),1)); clockCard.addView(sleepRow);
     gap(clockCard,12);
     clockCard.addView(text("24 小时制 · 大字时钟\n局刷仍可能出现暂时淡粉色残影。时钟未校准，断电后需要重新授时。",12,MUTED));
     LinearLayout footer = column();
@@ -745,7 +757,7 @@ public final class MainActivity extends Activity implements NfcAdapter.ReaderCal
                         });
                   }
                 };
-            if(pendingClock)transfer.configureClock(tag,pendingPolicy,pendingHours,listener);
+            if(pendingClock)transfer.configureClock(tag,pendingPolicy,pendingHours,sleepStartSpinner.getSelectedItemPosition()*60,sleepEndSpinner.getSelectedItemPosition()*60,listener);
             else transfer.upload(tag,pending,listener);
           } catch (Exception e) {
             runOnUiThread(

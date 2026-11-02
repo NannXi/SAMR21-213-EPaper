@@ -2,12 +2,13 @@
 #include "nfc.h"
 #include "protocol.h"
 #include "device_clock.h"
+#include "low_power.h"
 
 volatile AppStatus g_status;
 
 void SysTick_Handler(void)
 {
-    g_status.ticks_ms++;
+    g_status.ticks_ms+=10U;
 }
 
 void delay_ms(uint32_t ms)
@@ -27,17 +28,22 @@ void HardFault_Handler(void)
 int main(void)
 {
     uint32_t request;
+    uint32_t last_nfc_poll=0;
     g_status.magic = APP_MAGIC;
     g_status.stage = 1;
     SCB->VTOR = 0;
     SCB->SCR = 0;  /* Keep debugger accessible; no deep sleep. */
-    SysTick_Config(SystemCoreClock/1000U);
+    SysTick_Config(SystemCoreClock/100U);
     __enable_irq();
+    low_power_init();
     epd_gpio_init();
     nfc_init();
     g_status.command = APP_STARTUP_COMMAND;  /* One refresh per power-up, then wait. */
     while (1) {
-        nfc_poll();
+        if(!g_clock_enabled || (uint32_t)(g_status.ticks_ms-last_nfc_poll)>=100U) {
+            nfc_poll();
+            last_nfc_poll=g_status.ticks_ms;
+        }
         request = g_status.command;
         if (request != 0U) {
             g_status.command = 0;
@@ -61,6 +67,6 @@ int main(void)
             }
         }
         device_clock_poll();
-        __NOP(); /* Stay awake for the SRAM mailbox; low power is not enabled. */
+        low_power_idle();
     }
 }
